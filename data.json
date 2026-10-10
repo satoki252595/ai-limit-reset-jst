@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T08:30:00+09:00",
+ "updated_jst": "2026-10-11T09:10:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -102,6 +102,50 @@
    "official_name": "OpenAI Codex",
    "items": [
     {
+     "announced_utc": "2026-10-10T22:15:39Z",
+     "announced_jst": "2026-10-11T07:15:39+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "発表時点で即時リセット（発表文より）",
+     "effective_jst_iso": null,
+     "summary": "「28日間チャレンジ」6日目として全体リセットを実施（投稿は「Day 6/ Reset」のみ）。",
+     "url": "https://x.com/thsottiaux/status/2109045220411351517",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "10月4日（UTC）告知の「今後28日間、毎日改善を1つ出すかフルリセットする」企画の一環（https://x.com/thsottiaux/status/2106845241357824205）。次回リセットの日時は未発表。"
+    },
+    {
+     "announced_utc": "2026-10-07T19:19:17Z",
+     "announced_jst": "2026-10-08T04:19:17+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "保存型リセット。全アカウントへの反映完了を2026年10月8日 12:44（日本時間）に告知",
+     "effective_jst_iso": null,
+     "summary": "28日間チャレンジ3日目。Codex/ChatGPT Workの利用者4,000万人突破を記念し、全有料アカウントに保存型（banked）リセットを付与。",
+     "url": "https://x.com/thsottiaux/status/2107913674593644711",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "反映完了の投稿：https://x.com/thsottiaux/status/2108040921044639779"
+    },
+    {
+     "announced_utc": "2026-10-07T03:35:09Z",
+     "announced_jst": "2026-10-07T12:35:09+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "発表時点で即時リセット（発表文より）",
+     "effective_jst_iso": null,
+     "summary": "28日間チャレンジ2日目。コミュニティ投票の結果を受け、リセットを実施済みと発表。",
+     "url": "https://x.com/thsottiaux/status/2107676072871600470",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": null
+    },
+    {
+     "announced_utc": "2026-10-02T02:14:51Z",
+     "announced_jst": "2026-10-02T11:14:51+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "予告日時：「tomorrow 10am PST」＝2026年10月3日 3時（日本時間、PST表記どおり換算）。10月3日 6時18分（日本時間）に反映完了を告知",
+     "effective_jst_iso": "2026-10-03T03:00:00+09:00",
+     "summary": "GPT-6.1 Solの立ち上がりの遅さを謝罪し、翌日午前10時（PST）に全有料ChatGPTアカウント向けのグローバルリセットを予告。",
+     "url": "https://x.com/thsottiaux/status/2105843926221660585",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "10月は通常PDTのため、PDTの意味なら日本時間10月3日2時。反映完了：https://x.com/thsottiaux/status/2106131810921136451"
+    },
+    {
      "announced_utc": "2026-09-26T00:07:13Z",
      "announced_jst": "2026-09-26T09:07:13+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
@@ -109,6 +153,50 @@
      "effective_jst_iso": null,
      "summary": "短時間の障害から復旧し、CodexとChatGPT Workの全有料ユーザーの使用上限をリセットすると発表。",
      "url": "https://x.com/thsottiaux/status/2103637477760311522",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": null
+    },
+    {
+     "announced_utc": "2026-09-22T18:23:37Z",
+     "announced_jst": "2026-09-23T03:23:37+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "保存型リセット（各自が任意のタイミングで使用）",
+     "effective_jst_iso": null,
+     "summary": "GPT-6 Sol/Lunaの公開とAPI半額化に合わせ、Plus/Pro/Business全アカウントに保存型リセットを付与。",
+     "url": "https://x.com/thsottiaux/status/2102463847714247142",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": null
+    },
+    {
+     "announced_utc": "2026-09-12T03:20:36Z",
+     "announced_jst": "2026-09-12T12:20:36+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "「当日深夜（midnight today）までに」実施と予告（タイムゾーン未明記）。2026年9月12日 17:09（日本時間）に反映完了を告知",
+     "effective_jst_iso": null,
+     "summary": "Astraの品質問題の修正報告とともに、当日深夜までにリセットを実施すると予告。",
+     "url": "https://x.com/thsottiaux/status/2098612714704891959",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "反映完了：https://x.com/thsottiaux/status/2098685367058612394"
+    },
+    {
+     "announced_utc": "2026-09-07T19:24:57Z",
+     "announced_jst": "2026-09-08T04:24:57+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "予告日時：「today 6pm PST頃」＝2026年9月8日 11時（日本時間、PST表記どおり換算）。同日13時05分（日本時間）に反映完了を告知",
+     "effective_jst_iso": "2026-09-08T11:00:00+09:00",
+     "summary": "Astraを使い切ったユーザー向けに、全有料プランでグローバルリセットを実施すると予告。",
+     "url": "https://x.com/thsottiaux/status/2097043464538264003",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "9月は通常PDTのため、PDTの意味なら日本時間9月8日10時。OpenAIヘルプセンターも9月7日のグローバルリセットを記載（https://help.openai.com/en/articles/20001498-how-banked-codex-resets-work）。反映完了：https://x.com/thsottiaux/status/2097174560412246215"
+    },
+    {
+     "announced_utc": "2026-09-05T00:39:25Z",
+     "announced_jst": "2026-09-05T09:39:25+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "保存型リセット。「当日中（end of day）」に付与と告知（タイムゾーン未明記）",
+     "effective_jst_iso": null,
+     "summary": "GPT-6 Astraの前倒し公開を記念し、Plus/Pro/Business全員に保存型のフルリセットを当日付与すると発表。",
+     "url": "https://x.com/thsottiaux/status/2096035437299237298",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
      "note": null
     },
@@ -343,7 +431,8 @@
      "poster": "OpenAI Developers 公式（@OpenAIDevs）",
      "note": null
     }
-   ]
+   ],
+   "next_reset_note": "2026年10月11日時点、日時が発表された今後のリセットはありません（28日間チャレンジ中は日によってリセットの可能性あり）。"
   },
   {
    "id": "claude",

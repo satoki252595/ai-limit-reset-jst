@@ -3,7 +3,7 @@ const fmt=s=>F.format(new Date(s))+'（日本時間）';
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let cds=[];
 function tick(){document.getElementById('now').textContent='現在：'+fmt(new Date());
- cds.forEach(([el,t])=>{let d=t-Date.now();if(d<=0){el.textContent='リセット実施済み';return}
+ cds.forEach(([el,t])=>{let d=t-Date.now();if(d<=0){el.textContent='予告日時は経過済み（リセット実施済み）';el.classList.add('past');return}
  const D=Math.floor(d/864e5),h=Math.floor(d/36e5)%24,m=Math.floor(d/6e4)%60,s=Math.floor(d/1e3)%60;el.textContent=`リセットまで あと ${D}日 ${h}時間 ${m}分 ${s}秒`;});}
 fetch('data.json').then(r=>r.json()).then(d=>{
  document.getElementById('updated').textContent='データ更新：'+fmt(d.updated_jst);
@@ -11,7 +11,7 @@ fetch('data.json').then(r=>r.json()).then(d=>{
  const app=document.getElementById('app');app.innerHTML='';
  d.services.forEach(s=>{const items=[...s.items].sort((a,b)=>new Date(b.announced_utc)-new Date(a.announced_utc));
   const sec=document.createElement('section');sec.id=s.id;
-  sec.innerHTML=`<h2>${esc(s.name)}</h2><div class="off">公式名：${esc(s.official_name)}</div>`+(items.length?items.map((it,i)=>`<div class="item">
+  sec.innerHTML=`<h2>${esc(s.name)}</h2><div class="off">公式名：${esc(s.official_name)}</div>`+(s.next_reset_note?`<div class="cd">${esc(s.next_reset_note)}</div>`:'')+(items.length?items.map((it,i)=>`<div class="item">
    <div class="dt">発表：${fmt(it.announced_utc)}</div><div class="sub">元の時刻：${it.announced_utc.replace('T',' ').replace('Z','')} ${esc(it.original_timezone)}</div>
    <div class="eff">リセット適用：${esc(it.effective)}${it.effective_jst_iso?'／'+fmt(it.effective_jst_iso)+'まで':''}</div>
    ${it.effective_jst_iso?`<div class="cd" data-t="${it.effective_jst_iso}"></div>`:''}
