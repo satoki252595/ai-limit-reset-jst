@@ -11,13 +11,13 @@ fetch('data.json').then(r=>r.json()).then(d=>{
  const app=document.getElementById('app');app.innerHTML='';
  d.services.forEach(s=>{const items=[...s.items].sort((a,b)=>new Date(b.announced_utc)-new Date(a.announced_utc));
   const sec=document.createElement('section');sec.id=s.id;
-  sec.innerHTML=`<h2>${esc(s.name)}</h2><div class="off">公式名：${esc(s.official_name)}</div>`+(s.next_reset_note?`<div class="cd">${esc(s.next_reset_note)}</div>`:'')+(items.length?items.map((it,i)=>`<div class="item">
+  sec.innerHTML=`<h2>${esc(s.name)}</h2><div class="off">公式名：${esc(s.official_name)}</div>`+(s.next_reset_note?`<div class="nextnote">${esc(s.next_reset_note)}</div>`:'')+(items.length?items.map((it,i)=>`<div class="item">
    <div class="dt">発表：${fmt(it.announced_utc)}</div><div class="sub">元の時刻：${it.announced_utc.replace('T',' ').replace('Z','')} ${esc(it.original_timezone)}</div>
    <div class="eff">リセット適用：${esc(it.effective)}${it.effective_jst_iso?'／'+fmt(it.effective_jst_iso)+'まで':''}</div>
    ${it.effective_jst_iso?`<div class="cd" data-t="${it.effective_jst_iso}"></div>`:''}
    <div>${esc(it.summary)}</div>${it.note?`<div class="note">※${esc(it.note)}</div>`:''}
    <div class="sub">投稿者：${esc(it.poster)}</div><a href="${esc(it.url)}" target="_blank" rel="noopener">原文を見る</a></div>`).join(''):'<p class="none">確認できた発表なし</p>');
   app.appendChild(sec);});
- cds=[...document.querySelectorAll('.cd')].map(el=>[el,new Date(el.dataset.t).getTime()]);tick();setInterval(tick,1000);
+ cds=[...document.querySelectorAll(".cd[data-t]")].map(el=>[el,new Date(el.dataset.t).getTime()]);tick();setInterval(tick,1000);
 }).catch(()=>document.getElementById('app').textContent='data.jsonの読み込みに失敗しました。');
 tick();
