@@ -40,28 +40,45 @@ function card(it,s,now){
    <p class="e-sum"${translated?` title="${esc(t('translated_note'))}"`:''}>${esc(sum)}</p>
    <dl class="meta">
     <dt>${esc(t('announced'))}</dt><dd>${esc(C.fmtDate(posted,lang,tz))}${tz!=='UTC'?` <span class="muted">· ${esc(C.fmtDate(posted,lang,'UTC'))}</span>`:''}</dd>
-    ${Number.isNaN(eff)?'':`<dt>${esc(t('scheduled_for'))}</dt><dd class="strong">${esc(C.fmtDate(eff,lang,tz))}${it.source_time_text?` <span class="muted">“${esc(it.source_time_text)}” · ${esc(it.source_tz||'')}</span>`:''}</dd>`}
+    ${Number.isNaN(eff)?'':`<dt>${esc(t('prec_'+C.precision(it)))}</dt><dd class="${C.isConfirmed(it)?'':'strong'}">${C.precision(it)==='deadline'?esc(fill('hero_deadline',{t:C.fmtDate(eff,lang,tz)})):esc(C.fmtDate(eff,lang,tz))}${it.source_time_text?` <span class="muted">${esc(t('orig_wording'))}: “${esc(it.source_time_text)}”${it.source_tz?' · '+esc(it.source_tz_assumed?fill('tz_assumed',{z:it.source_tz}):fill('tz_stated',{z:it.source_tz})):''}</span>`:''}</dd>`}
     <dt>${esc(t('effective'))}</dt><dd>${esc(effTxt)}</dd>
-    ${Number.isNaN(conf)?'':`<dt>${esc(t('confirmed_at'))}</dt><dd>${esc(C.fmtDate(conf,lang,tz))}</dd>`}
+    ${Number.isNaN(conf)?'':`<dt>${esc(t('confirmed_at'))}</dt><dd class="strong">${esc(fill('done_at',{t:C.fmtDate(conf,lang,tz)}))}</dd>`}
     ${scope?`<dt>${esc(t('scope'))}</dt><dd>${esc(scope)}</dd>`:''}
     <dt>${esc(t('poster'))}</dt><dd>${esc(C.localized(it,'poster',lang))}</dd>
    </dl>
    ${note?`<p class="e-note">${esc(note)}</p>`:''}
-   <div class="e-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a>`:''}${curl?`<a href="${esc(curl)}" target="_blank" rel="noopener">${esc(t('confirmed'))} ↗</a>`:''}${(!Number.isNaN(eff)&&eff>now)?`<button type="button" class="link" data-ics="${esc(it.id)}">${esc(t('ics'))}</button>`:''}</div>
+   <div class="e-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a>`:''}${curl?`<a href="${esc(curl)}" target="_blank" rel="noopener">${esc(t('confirmed'))} ↗</a>`:''}${(!Number.isNaN(eff)&&eff>now&&!C.isConfirmed(it))?`<button type="button" class="link" data-ics="${esc(it.id)}">${esc(t('ics'))}</button>`:''}</div>
   </div>
   </article>`;
 }
+const fill=(k,o)=>t(k).replace(/\{(\w)\}/g,(_,c)=>o[c]??'');
+function srcLine(it){ if(!it.source_time_text) return '';
+  const z=it.source_tz?(it.source_tz_assumed?fill('tz_assumed',{z:it.source_tz}):fill('tz_stated',{z:it.source_tz})):'';
+  return `<p class="h-src"><span class="prec">${esc(t('prec_'+C.precision(it)))}</span> ${esc(t('orig_wording'))}: “${esc(it.source_time_text)}”${z?` · ${esc(z)}`:''}</p>`; }
 function renderHero(svcs,now){
-  const fut=svcs.flatMap(s=>s.items.map(it=>({s,it,t:Date.parse(it.effective_jst_iso)}))).filter(x=>x.t>now).sort((a,b)=>a.t-b.t);
-  const body=$('hero-body'); timers=[];
-  if(!fut.length){ body.innerHTML=`<p class="h-none">${esc(t('none_next'))}</p>`; return; }
-  const n=fut[0];
+  const body=$('hero-body'); timers=[]; $('hero-h').textContent=t('next');
+  const pick=C.heroPick(svcs.flatMap(s=>s.items.map(it=>({s,it}))),now);
+  if(!pick){ body.innerHTML=`<p class="h-none">${esc(t('none_next'))}</p>`; return; }
+  const n=pick.x, it=n.it, links=`<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a>`;
+  if(pick.mode==='done'){
+    $('hero-h').textContent=t('recent_done');
+    body.innerHTML=`<p class="h-svc">${esc(svcName(n.s))}</p>
+   <p class="h-done"><span class="status done">${esc(t('st_done'))}</span> <time datetime="${esc(it.confirmed_utc)}">${esc(fill('done_at',{t:C.fmtShort(n.c,lang,tz)}))}</time></p>
+   ${srcLine(it)}
+   <p class="h-sum">${esc(C.localized(it,'summary',lang))}</p>
+   <div class="actions">${safe(it.confirmed_url)?`<a class="primary" href="${esc(it.confirmed_url)}" target="_blank" rel="noopener">${esc(t('confirmed'))} ↗</a>`:''}${links}<button type="button" class="link" id="share">${esc(t('share'))}</button></div>`;
+    return; }
+  const when=C.fmtDate(n.t,lang,tz), p=pick.precision;
+  const whenHtml=p==='exact'?esc(when):esc(fill(p==='deadline'?'hero_deadline':'hero_approx',{t:when}));
+  const lab=p==='exact'?t('until'):t('until_deadline');
   body.innerHTML=`<p class="h-svc">${esc(svcName(n.s))}</p>
-   <p class="h-when"><time datetime="${esc(n.it.effective_jst_iso)}">${esc(C.fmtDate(n.t,lang,tz))}</time></p>
-   <div class="count" id="count" role="timer" aria-label="${esc(t('until'))}">${countHtml(n.t-now)}</div>
-   <p class="h-sum">${esc(C.localized(n.it,'summary',lang))}</p>
-   <div class="actions"><button type="button" class="link primary" data-ics="${esc(n.it.id)}">${esc(t('ics'))}</button><button type="button" class="link" id="share">${esc(t('share'))}</button><a href="${esc(n.it.url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a></div>`;
-  timers.push(n);
+   <p class="h-when ${p}"><time datetime="${esc(it.effective_jst_iso)}">${whenHtml}</time></p>
+   ${srcLine(it)}
+   <p class="count-label">${esc(lab)}</p>
+   <div class="count ${p}" id="count" role="timer" aria-label="${esc(lab)}">${countHtml(n.t-now)}</div>
+   <p class="h-sum">${esc(C.localized(it,'summary',lang))}</p>
+   <div class="actions"><button type="button" class="link primary" data-ics="${esc(it.id)}">${esc(t('ics'))}</button><button type="button" class="link" id="share">${esc(t('share'))}</button>${links}</div>`;
+  timers.push({...n,p});
 }
 function render(){
   if(!DATA) return; applyStatic(); const now=Date.now(); const svcs=services();
@@ -78,9 +95,9 @@ function render(){
   syncUrl();
 }
 function tick(){ const now=Date.now(); for(const n of timers){ const el=$('count'); if(!el) continue; const left=n.t-now;
-  if(left<=0){ el.innerHTML=`<p class="passed">${esc(t('passed'))}</p>`; $('live').textContent=t('passed'); timers=[]; setTimeout(render,1500); return; }
+  if(left<=0){ const pm=n.p==='exact'?t('passed'):t('deadline_passed'); el.innerHTML=`<p class="passed">${esc(pm)}</p>`; $('live').textContent=pm; timers=[]; setTimeout(render,1500); return; }
   el.innerHTML=countHtml(left);
-  if(now-lastAnnounce>60000){ lastAnnounce=now; const p=C.parts(left); $('live').textContent=`${t('until')} ${p.d}${t('d')} ${p.h}${t('h')} ${p.m}${t('m')}`; } } }
+  if(now-lastAnnounce>60000){ lastAnnounce=now; const p=C.parts(left); $('live').textContent=`${n.p==='exact'?t('until'):t('until_deadline')} ${p.d}${t('d')} ${p.h}${t('h')} ${p.m}${t('m')}`; } } }
 function toast(msg){ const el=$('toast'); el.textContent=msg; el.hidden=false; clearTimeout(toast.t); toast.t=setTimeout(()=>el.hidden=true,1800); }
 function findItem(id){ for(const s of DATA.services||[]) for(const it of s.items||[]) if(it.id===id) return {s,it}; return null; }
 document.addEventListener('click',e=>{

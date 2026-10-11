@@ -45,6 +45,13 @@ for (const s of d.services) {
     if (it.confirmed_url && !/^https:\/\/x\.com\/[A-Za-z0-9_]+\/status\/\d+$/.test(it.confirmed_url)) err(`${tag}: confirmed_url`);
     if (it.confirmed_utc) { const cid=it.confirmed_url.split('/').pop(); const cms=Number((BigInt(cid)>>22n)+1288834974657n); if (Math.floor(cms/1000)*1000!==Date.parse(it.confirmed_utc)) err(`${tag}: confirmed snowflake`); }
     if (it.status==='done' && it.effective_jst_iso && Date.parse(it.effective_jst_iso) > Date.now() && !it.confirmed_url) err(`${tag}: future time but status done`);
+    if (it.type==='scheduled' && !['exact','deadline','approximate'].includes(it.time_precision)) err(`${tag}: time_precision`);
+    if (it.type!=='scheduled' && it.time_precision!=null) err(`${tag}: time_precision only for scheduled`);
+    if (it.time_precision==='exact' && !it.source_local_datetime) err(`${tag}: exact needs source_local_datetime`);
+    if (it.source_tz && typeof it.source_tz_assumed!=='boolean') err(`${tag}: source_tz_assumed must be boolean when source_tz set`);
+    if (it.time_precision==='deadline' && it.source_local_datetime && !it.source_time_text) err(`${tag}: deadline needs original wording`);
+    if (it.status==='done' && it.type==='scheduled' && it.effective_jst_iso && Date.parse(it.effective_jst_iso)>Date.parse(d.updated_jst) && !it.confirmed_utc) err(`${tag}: done before deadline w/o confirmation`);
+    if (it.confirmed_utc && !ISO_Z.test(it.confirmed_utc)) err(`${tag}: confirmed_utc format`);
     if (/\uFFFD|Ã.|â€/.test(JSON.stringify(it))) err(`${tag}: mojibake`);
   }
 }
@@ -116,4 +123,16 @@ const NOWB = Date.parse('2026-10-11T08:00:00Z');
 if (Core.badge({type:'scheduled',status:'scheduled',effective_jst_iso:'2026-10-11T16:00:00+09:00'}, Date.parse('2026-10-11T06:00:00Z')) !== 'scheduled') err('badge scheduled');
 if (Core.badge({type:'scheduled',status:'scheduled',effective_jst_iso:'2026-10-11T16:00:00+09:00'}, NOWB) !== 'done') err('badge passed');
 if (Core.badge({type:'immediate',status:'done'}, NOWB) !== 'immediate') err('badge immediate');
+// precision / hero
+if (Core.precision({time_precision:'deadline'})!=='deadline' || Core.precision({source_local_datetime:'2026-10-11T00:00'})!=='exact' || Core.precision({})!=='approximate') err('precision');
+const hs={id:'s'}, H=(it)=>({s:hs,it});
+const dl={type:'scheduled',status:'scheduled',time_precision:'deadline',effective_jst_iso:'2026-10-11T16:00:00+09:00'};
+let hp=Core.heroPick([H(dl)], Date.parse('2026-10-11T04:00:00Z')); if(!hp||hp.mode!=='upcoming'||hp.precision!=='deadline') err('hero upcoming deadline');
+const dn={...dl,status:'done',confirmed_utc:'2026-10-11T04:01:09Z',confirmed_url:'https://x.com/a/status/1'};
+hp=Core.heroPick([H(dn)], Date.parse('2026-10-11T04:45:00Z')); if(!hp||hp.mode!=='done') err('hero confirmed must show done, not countdown');
+if (Core.heroPick([H(dn)], Date.parse('2026-10-12T05:00:00Z'))!==null) err('hero done expires after 24h');
+if (Core.badge(dn, Date.parse('2026-10-11T04:45:00Z'))!=='done') err('badge confirmed before deadline');
+if (Core.fmtTime(Date.parse('2026-10-11T04:01:09Z'),'ja','Asia/Tokyo')!=='13:01') err('fmtTime');
+for (const l of REQUIRED_LOCALES) for (const k of ['hero_deadline','hero_approx','done_at']) if (!UI[l][k].includes('{t}')) err(`i18n ${l}.${k} needs {t}`);
+for (const l of REQUIRED_LOCALES) if (!UI[l].tz_assumed.includes('{z}')) err(`i18n ${l}.tz_assumed needs {z}`);
 console.log(fail ? `${fail} failure(s)` : `OK: ${seenId.size} entries`); process.exit(fail?1:0);
