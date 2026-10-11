@@ -153,4 +153,7 @@ for (const l of REQUIRED_LOCALES) if (!UI[l].tz_assumed.includes('{z}')) err(`i1
   if (Core.heroPick([L[0]],N).rest.length!==0) err('single upcoming has no rest');
   const same=[mk('z','9','2026-10-12T10:00:00+09:00','exact'),mk('y','8','2026-10-12T10:00:00+09:00','exact')]; if (Core.upcoming(same,N)[0].s.id!=='y') err('tie by service id');
   for (const l of REQUIRED_LOCALES) for (const k of ['others_up','tag_deadline','tag_approximate']) if (!UI[l][k]) err(`i18n ${l}.${k}`); }
+{ const o=Core.lastPerService([{id:'a',items:[{announced_utc:'2026-10-01T00:00:00Z'},{announced_utc:'2026-09-01T00:00:00Z',confirmed_utc:'2026-10-05T00:00:00Z'}]},{id:'b',items:[]},{id:'c',items:[{announced_utc:'2026-10-03T00:00:00Z'}]}]);
+  if (o.withItems.map(x=>x.s.id).join()!=='a,c' || o.empty.map(s=>s.id).join()!=='b' || o.withItems[0].count!==2) err('lastPerService');
+  if (Core.shortUrl('https://x.com/a/status/2109132167112782291')!=='x.com/a/status/…2291') err('shortUrl'); }
 console.log(fail ? `${fail} failure(s)` : `OK: ${seenId.size} entries`); process.exit(fail?1:0);

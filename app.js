@@ -7,13 +7,13 @@ const sysTz=(()=>{try{return Intl.DateTimeFormat().resolvedOptions().timeZone||'
 let lang=LOCALES.includes(qs.get('lang'))?qs.get('lang'):(LOCALES.includes(store.get('lang'))?store.get('lang'):pick(navigator.languages||[navigator.language]));
 let tz=qs.get('tz')||store.get('tz')||sysTz; try{new Intl.DateTimeFormat('en',{timeZone:tz})}catch(e){tz=sysTz}
 let view=qs.get('view')==='service'?'service':'timeline'; let svcFilter=qs.get('svc')||'all';
-let DATA=null, timers=[], lastAnnounce=0;
+let showEmpty=qs.get('empty')==='1'; let DATA=null, timers=[], lastAnnounce=0;
 const t=k=>(S[lang]&&S[lang][k])||S.en[k]||S.ja[k]||k;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safe=u=>/^https:\/\//.test(u||'')?u:null;
 const $=id=>document.getElementById(id);
 const svcName=s=>(lang==='ja'?s.name:((s.name_i18n||{})[lang]||s.name_en||s.name));
-function syncUrl(){ const p=new URLSearchParams(); if(lang!=='ja')p.set('lang',lang); if(view!=='timeline')p.set('view',view); if(svcFilter!=='all')p.set('svc',svcFilter); if(qs.get('tz')||tz!==sysTz)p.set('tz',tz); const q=p.toString(); history.replaceState(null,'',location.pathname+(q?'?'+q:'')); }
+function syncUrl(){ const p=new URLSearchParams(); if(lang!=='ja')p.set('lang',lang); if(view!=='timeline')p.set('view',view); if(svcFilter!=='all')p.set('svc',svcFilter); if(showEmpty)p.set('empty','1'); if(qs.get('tz')||tz!==sysTz)p.set('tz',tz); const q=p.toString(); history.replaceState(null,'',location.pathname+(q?'?'+q:'')); }
 function applyStatic(){
   document.documentElement.lang=lang; document.title=t('title');
   document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=t(el.dataset.i18n)});
@@ -28,6 +28,10 @@ function applyStatic(){
 function services(){ const days=Number(DATA.retention_days)||LimitFilter.DAYS, now=Date.now();
   return (DATA.services||[]).map(s=>({...s,items:(Array.isArray(s.items)?s.items:[]).filter(it=>LimitFilter.isVisible(it,now,days)).sort(LimitFilter.newestFirst)})); }
 function countHtml(ms){ const p=C.parts(ms); return ['d','h','m','s'].map(k=>`<div><b>${k==='d'?p[k]:String(p[k]).padStart(2,'0')}</b><span>${esc(t(k))}</span></div>`).join(''); }
+function noteHtml(s){ return String(s).split(/(https:\/\/[^\s。、，）)]+)/).map((p,i)=>i%2?`<a href="${esc(p)}" target="_blank" rel="noopener">${esc(C.shortUrl(p))}</a>`:esc(p)).join(''); }
+function renderOverview(svcs,now){ const o=C.lastPerService(svcs), el=$('overview'); if(!el) return;
+  el.innerHTML=`<h2 class="eyebrow" id="ov-h">${esc(t('overview_h'))}</h2><div class="ov-body"><ul class="ov-list">${o.withItems.map(x=>`<li><button type="button" class="ov-svc" data-svc="${esc(x.s.id)}">${esc(svcName(x.s))}</button><span class="status ${C.badge(x.it,now)}">${esc(t('st_'+C.badge(x.it,now)))}</span><time datetime="${new Date(x.t).toISOString()}">${esc(C.fmtShort(x.t,lang,tz))}</time><span class="ov-rel">${esc(C.relTime(x.t,now,lang))}</span></li>`).join('')}</ul>
+  ${o.empty.length?`<p class="ov-empty"><span class="muted">${esc(t('none_30d'))}:</span> ${o.empty.map(s=>esc(svcName(s))).join(' · ')}</p>`:''}</div>`; }
 function card(it,s,now){
   const b=C.badge(it,now), eff=Date.parse(it.effective_jst_iso), conf=Date.parse(it.confirmed_utc), url=safe(it.url), curl=safe(it.confirmed_url);
   const sum=C.localized(it,'summary',lang), translated=lang!=='ja'&&(it.summary_i18n||{})[lang];
@@ -46,7 +50,7 @@ function card(it,s,now){
     ${scope?`<dt>${esc(t('scope'))}</dt><dd>${esc(scope)}</dd>`:''}
     <dt>${esc(t('poster'))}</dt><dd>${esc(C.localized(it,'poster',lang))}</dd>
    </dl>
-   ${note?`<p class="e-note">${esc(note)}</p>`:''}
+   ${note?`<p class="e-note">${noteHtml(note)}</p>`:''}
    <div class="e-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a>`:''}${curl?`<a href="${esc(curl)}" target="_blank" rel="noopener">${esc(t('confirmed'))} ↗</a>`:''}${(!Number.isNaN(eff)&&eff>now&&!C.isConfirmed(it))?`<button type="button" class="link" data-ics="${esc(it.id)}">${esc(t('ics'))}</button>`:''}</div>
   </div>
   </article>`;
@@ -68,7 +72,7 @@ function renderHero(svcs,now){
   const n=pick.x, it=n.it, links=`<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a>`;
   if(pick.mode==='done'){
     $('hero-h').textContent=t('recent_done');
-    body.innerHTML=`<p class="h-svc">${esc(svcName(n.s))}</p>
+    body.innerHTML=`<p class="h-note">${esc(t('none_next'))}</p><p class="h-svc">${esc(svcName(n.s))}</p>
    <p class="h-done"><span class="status done">${esc(t('st_done'))}</span> <time datetime="${esc(it.confirmed_utc)}">${esc(fill('done_at',{t:C.fmtShort(n.c,lang,tz)}))}</time></p>
    ${srcLine(it)}
    <p class="h-sum">${esc(C.localized(it,'summary',lang))}</p>
@@ -90,9 +94,12 @@ function render(){
   if(!DATA) return; applyStatic(); const now=Date.now(); const svcs=services();
   renderHero(svcs,now);
   const total=svcs.reduce((a,s)=>a+s.items.length,0);
+  renderOverview(svcs,now);
+  const nEmpty=svcs.filter(s=>!s.items.length).length, chipSvcs=svcs.filter(s=>showEmpty||s.items.length||s.id===svcFilter);
   $('chips').innerHTML=[`<button type="button" aria-pressed="${svcFilter==='all'}" data-svc="all">${esc(t('all'))}<span class="n">${total}</span></button>`]
-    .concat(svcs.map(s=>`<button type="button" aria-pressed="${svcFilter===s.id}" data-svc="${esc(s.id)}">${esc(svcName(s))}<span class="n">${s.items.length}</span></button>`)).join('');
-  const shown=svcs.filter(s=>svcFilter==='all'||s.id===svcFilter); let html='';
+    .concat(chipSvcs.map(s=>`<button type="button" aria-pressed="${svcFilter===s.id}" data-svc="${esc(s.id)}"${s.items.length?'':' class="zero"'}>${esc(svcName(s))}<span class="n">${s.items.length}</span></button>`))
+    .concat(nEmpty?[`<button type="button" class="more" id="toggle-empty" aria-expanded="${showEmpty}">${esc(showEmpty?t('hide_empty'):fill('show_empty',{n:nEmpty}))}</button>`]:[]).join('');
+  const shown=svcs.filter(s=>(svcFilter==='all'&&(view==='timeline'||showEmpty||s.items.length))||s.id===svcFilter); let html='';
   if(view==='timeline'){ const all=shown.flatMap(s=>s.items.map(it=>({s,it}))).sort((a,b)=>LimitFilter.newestFirst(a.it,b.it));
     html=all.length?all.map(x=>card(x.it,x.s,now)).join(''):`<p class="empty">${esc(t(svcFilter==='all'?'empty':'empty_filter'))}</p>`;
   } else html=shown.map(s=>`<section aria-labelledby="g-${esc(s.id)}"><h2 class="group-h" id="g-${esc(s.id)}">${esc(svcName(s))}</h2>${s.items.length?s.items.map(it=>card(it,s,now)).join(''):`<p class="empty">${esc(t('empty_filter'))}</p>`}</section>`).join('');
@@ -107,7 +114,8 @@ function tick(){ const now=Date.now(); for(const n of timers){ const el=$('count
 function toast(msg){ const el=$('toast'); el.textContent=msg; el.hidden=false; clearTimeout(toast.t); toast.t=setTimeout(()=>el.hidden=true,1800); }
 function findItem(id){ for(const s of DATA.services||[]) for(const it of s.items||[]) if(it.id===id) return {s,it}; return null; }
 document.addEventListener('click',e=>{
-  const c=e.target.closest('[data-svc]'); if(c){ svcFilter=c.dataset.svc; render(); return; }
+  if(e.target.closest('#toggle-empty')){ showEmpty=!showEmpty; render(); const b=$('toggle-empty'); if(b) b.focus(); return; }
+  const c=e.target.closest('[data-svc]'); if(c){ svcFilter=c.dataset.svc; render(); if(c.classList.contains('ov-svc')){ const ix=document.querySelector('.index'); if(ix) ix.scrollIntoView({block:'start'}); } return; }
   const v=e.target.closest('#viewsel [data-v]'); if(v){ view=v.dataset.v; render(); return; }
   const i=e.target.closest('[data-ics]'); if(i){ const f=findItem(i.dataset.ics); if(!f) return; const ics=C.buildIcs(f.it,f.s.name_en||f.s.name,Date.now()); if(!ics) return;
     const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'})); a.download=`reset-${f.it.id}.ics`; document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500); return; }
