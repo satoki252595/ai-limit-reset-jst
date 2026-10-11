@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T10:30:00+09:00",
+ "updated_jst": "2026-10-11T10:25:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -35,19 +35,19 @@
      "announced_utc": "2026-10-10T22:15:39Z",
      "announced_jst": "2026-10-11T07:15:39+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「本日中（by EOD）にグローバルリセット」と予告（タイムゾーン未明記）。反映完了は未確認",
-     "effective_jst_iso": null,
+     "effective": "「by EOD」＝2026年10月11日 16時（日本時間）まで（太平洋時間10月10日の終わり）。反映完了は未確認",
+     "effective_jst_iso": "2026-10-11T16:00:00+09:00",
      "summary": "「28日間チャレンジ」6日目はリセット。続く自己返信で本日中（by EOD）のグローバルリセットを予告。",
      "url": "https://x.com/thsottiaux/status/2109045220411351517",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "予告の自己返信：https://x.com/thsottiaux/status/2109045392684032299 。終了時刻のタイムゾーンが未明記のためカウントダウンは表示していません（太平洋時間なら日本時間10月11日16時ごろ。確認待ち）。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2109045392684032299 。投稿にタイムゾーンの明記はなく、ユーザー承認のもと太平洋時間（America/Los_Angeles）の当日終わりとして換算。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
      "id": "2109045220411351517",
      "scope": "全体（グローバルリセット、対象プランは未明記）",
      "type": "scheduled",
      "status": "scheduled",
      "source_time_text": "Global reset by EOD",
-     "source_tz": null,
-     "source_local_datetime": null,
+     "source_tz": "America/Los_Angeles",
+     "source_local_datetime": "2026-10-11T00:00",
      "confirmed_url": null,
      "confirmed_utc": null
     },
