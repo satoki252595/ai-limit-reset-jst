@@ -1,6 +1,71 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI使用上限リセット発表トラッカー（日本時間）</title><link rel="stylesheet" href="style.css"></head><body>
-<header><h1>AI使用上限 グローバルリセット発表トラッカー</h1><p>各AIサービスのCEO・公式アカウントによる「使用上限の一斉リセット」発表を日本時間（JST）でまとめています。</p><p id="now"></p><p id="updated"></p></header>
-<div id="next" class="nextbox"></div><div id="views" class="views"><button data-v="all">全サービス（新しい順）</button><button data-v="svc">サービス別</button></div><p id="range" class="range"></p><nav id="toc"></nav><main id="app">読み込み中…</main>
-<footer><p>出典は各リンク先の原文をご確認ください。要約は独自のもので、全文転載はしていません。データは data.json で管理しています。</p></footer>
-<script src="filter.js"></script><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI使用上限リセット・トラッカー | AI Usage-Limit Reset Tracker</title>
+<meta name="description" content="主要AIサービス（OpenAI Codex、Claude、Grok、Gemini、Cursor、Meta Muse）の使用上限一斉リセットの公式発表と次回リセットのカウントダウン。Official AI usage-limit reset announcements with a countdown, in your time zone.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://satoki252595.github.io/ai-limit-reset-jst/">
+<link rel="alternate" hreflang="ja" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=ja">
+<link rel="alternate" hreflang="en" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=en">
+<link rel="alternate" hreflang="zh-Hans" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=zh-Hans">
+<link rel="alternate" hreflang="zh-Hant" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=zh-Hant">
+<link rel="alternate" hreflang="ko" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=ko">
+<link rel="alternate" hreflang="es" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=es">
+<link rel="alternate" hreflang="fr" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=fr">
+<link rel="alternate" hreflang="de" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=de">
+<link rel="alternate" hreflang="pt-BR" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=pt-BR">
+<link rel="alternate" hreflang="hi" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=hi">
+<link rel="alternate" hreflang="id" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=id">
+<link rel="alternate" hreflang="x-default" href="https://satoki252595.github.io/ai-limit-reset-jst/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Usage-Limit Reset Tracker">
+<meta property="og:description" content="Official global usage-limit reset announcements from major AI services, with a countdown in your time zone.">
+<meta property="og:url" content="https://satoki252595.github.io/ai-limit-reset-jst/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>try{var q=new URLSearchParams(location.search).get('theme');if(q==='light'||q==='dark')localStorage.setItem('theme',q);var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">本文へスキップ</a>
+<header class="top">
+ <div class="wrap bar">
+  <h1 class="brand"><span aria-hidden="true">⏱️</span> <span data-i18n="title">AI使用上限リセット・トラッカー</span></h1>
+  <div class="controls">
+   <label><span class="sr" data-i18n="lang">言語</span><span aria-hidden="true">🌐</span><select id="lang"></select></label>
+   <label><span class="sr" data-i18n="tz">タイムゾーン</span><span aria-hidden="true">🕒</span><select id="tz"></select></label>
+   <button id="theme" type="button" class="iconbtn"></button>
+  </div>
+ </div>
+</header>
+<main id="main" class="wrap">
+ <p class="tagline" data-i18n="tagline"></p>
+ <section id="hero" class="hero" aria-labelledby="hero-h">
+  <h2 id="hero-h" data-i18n="next">次のリセット予定</h2>
+  <div id="hero-body"></div>
+  <p id="live" class="sr" aria-live="polite" aria-atomic="true"></p>
+ </section>
+ <div class="toolbar">
+  <div class="seg" role="radiogroup" id="viewsel" aria-label="view">
+   <button type="button" role="radio" data-v="timeline" data-i18n="timeline">タイムライン</button>
+   <button type="button" role="radio" data-v="service" data-i18n="by_service">サービス別</button>
+  </div>
+  <div class="chips" id="chips" role="group"></div>
+ </div>
+ <div id="list" aria-live="off"></div>
+ <section class="about" aria-labelledby="about-h">
+  <h2 id="about-h" data-i18n="about_title">データについて</h2>
+  <p data-i18n="about"></p>
+  <p id="updated" class="muted"></p>
+ </section>
+</main>
+<footer class="wrap muted small"><a href="https://github.com/satoki252595/ai-limit-reset-jst">GitHub</a> · data.json</footer>
+<div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+<noscript><p class="wrap">JavaScript is required. Data: <a href="data.json">data.json</a></p></noscript>
+<script src="filter.js"></script><script src="i18n.js"></script><script src="core.js"></script><script src="app.js"></script>
+</body>
+</html>

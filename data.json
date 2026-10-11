@@ -1,30 +1,41 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T10:25:00+09:00",
+ "updated_jst": "2026-10-11T13:00:00+09:00",
  "services": [
   {
    "id": "cursor",
    "name": "Cursor",
    "official_name": "Cursor (Anysphere)",
-   "items": []
+   "items": [],
+   "name_en": "Cursor",
+   "icon": "🖱️"
   },
   {
    "id": "grok",
    "name": "Grok（xAI）",
    "official_name": "Grok / xAI",
-   "items": []
+   "items": [],
+   "name_en": "Grok (xAI)",
+   "icon": "𝕏"
   },
   {
    "id": "meta",
    "name": "Meta Muse",
    "official_name": "Muse（Metaのパーソナル AIエージェント、2026年9月8日公開。基盤モデル名は「Muse Spark」、アプリ名は「Meta AI」）",
-   "items": []
+   "items": [],
+   "official_name_i18n": {
+    "en": "Muse (Meta's personal AI agent, launched Sep 8, 2026; underlying model: Muse Spark; app: Meta AI)"
+   },
+   "name_en": "Meta Muse",
+   "icon": "🎨"
   },
   {
    "id": "gemini",
    "name": "Google Gemini",
    "official_name": "Google Gemini / Antigravity",
-   "items": []
+   "items": [],
+   "name_en": "Google Gemini",
+   "icon": "✨"
   },
   {
    "id": "codex",
@@ -49,7 +60,28 @@
      "source_tz": "America/Los_Angeles",
      "source_local_datetime": "2026-10-11T00:00",
      "confirmed_url": null,
-     "confirmed_utc": null
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Day 6 of the \"28-day challenge\" is a reset. A follow-up self-reply announced a global reset \"by EOD\".",
+      "zh-Hans": "“28天挑战”第6天为重置。随后的自我回复预告“今天结束前（by EOD）”进行全局重置。",
+      "zh-Hant": "「28天挑戰」第6天為重置。隨後的自我回覆預告「今天結束前（by EOD）」進行全域重置。",
+      "ko": "'28일 챌린지' 6일차는 리셋. 이어진 본인 답글에서 '오늘 중(by EOD)' 글로벌 리셋을 예고.",
+      "es": "El día 6 del \"reto de 28 días\" es un reinicio. En una autorrespuesta posterior anunció un reinicio global \"by EOD\" (antes del fin del día).",
+      "fr": "Le jour 6 du « défi de 28 jours » est une réinitialisation. Une auto-réponse a ensuite annoncé une réinitialisation globale « by EOD » (d'ici la fin de la journée).",
+      "de": "Tag 6 der „28-Tage-Challenge“ ist ein Reset. In einer anschließenden Selbstantwort wurde ein globaler Reset „by EOD“ (bis Tagesende) angekündigt.",
+      "pt-BR": "O dia 6 do \"desafio de 28 dias\" é um reset. Em uma autorresposta, anunciou um reset global \"by EOD\" (até o fim do dia).",
+      "hi": "\"28-दिन चैलेंज\" का दिन 6 रीसेट है। बाद के स्व-उत्तर में \"by EOD\" (दिन के अंत तक) ग्लोबल रीसेट की घोषणा की गई।",
+      "id": "Hari ke-6 \"tantangan 28 hari\" adalah reset. Balasan lanjutan mengumumkan reset global \"by EOD\" (sebelum akhir hari)."
+     },
+     "effective_i18n": {
+      "en": "Scheduled: \"by EOD\" (end of Oct 10, Pacific time). Not yet confirmed as applied."
+     },
+     "scope_i18n": {
+      "en": "Global reset (plans not specified)"
+     },
+     "note_i18n": {
+      "en": "Announcement self-reply: https://x.com/thsottiaux/status/2109045392684032299 . The post does not state a time zone; with the site owner's approval it is read as end of day in Pacific time (America/Los_Angeles). 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+     }
     },
     {
      "announced_utc": "2026-10-07T19:19:17Z",
@@ -69,7 +101,28 @@
      "source_tz": null,
      "source_local_datetime": null,
      "confirmed_url": "https://x.com/thsottiaux/status/2108040921044639779",
-     "confirmed_utc": "2026-10-08T03:44:55Z"
+     "confirmed_utc": "2026-10-08T03:44:55Z",
+     "summary_i18n": {
+      "en": "Day 3 of the 28-day challenge. To celebrate 40M users across Codex/ChatGPT Work, a banked reset was given to all paid accounts.",
+      "zh-Hans": "28天挑战第3天。为庆祝Codex/ChatGPT Work用户突破4000万，向所有付费账户发放可保存（banked）的重置。",
+      "zh-Hant": "28天挑戰第3天。為慶祝Codex/ChatGPT Work用戶突破4000萬，向所有付費帳戶發放可保存（banked）的重置。",
+      "ko": "28일 챌린지 3일차. Codex/ChatGPT Work 사용자 4,000만 명 돌파를 기념해 모든 유료 계정에 저장형(banked) 리셋을 지급.",
+      "es": "Día 3 del reto de 28 días. Para celebrar 40 millones de usuarios en Codex/ChatGPT Work, se dio un reinicio guardable (banked) a todas las cuentas de pago.",
+      "fr": "Jour 3 du défi de 28 jours. Pour fêter 40 M d'utilisateurs de Codex/ChatGPT Work, une réinitialisation à conserver (banked) a été offerte à tous les comptes payants.",
+      "de": "Tag 3 der 28-Tage-Challenge. Zur Feier von 40 Mio. Nutzern von Codex/ChatGPT Work erhielten alle zahlenden Konten einen gespeicherten (banked) Reset.",
+      "pt-BR": "Dia 3 do desafio de 28 dias. Para celebrar 40 milhões de usuários no Codex/ChatGPT Work, um reset guardável (banked) foi dado a todas as contas pagas.",
+      "hi": "28-दिन चैलेंज का दिन 3। Codex/ChatGPT Work के 4 करोड़ उपयोगकर्ताओं के जश्न में सभी पेड खातों को सहेजने योग्य (banked) रीसेट दिया गया।",
+      "id": "Hari ke-3 tantangan 28 hari. Merayakan 40 juta pengguna Codex/ChatGPT Work, reset tersimpan (banked) diberikan ke semua akun berbayar."
+     },
+     "effective_i18n": {
+      "en": "Banked reset. Delivery to all accounts was confirmed later (see link)."
+     },
+     "scope_i18n": {
+      "en": "All paid accounts"
+     },
+     "note_i18n": {
+      "en": "Confirmation post: https://x.com/thsottiaux/status/2108040921044639779"
+     }
     },
     {
      "announced_utc": "2026-10-07T03:35:09Z",
@@ -89,7 +142,26 @@
      "source_tz": null,
      "source_local_datetime": null,
      "confirmed_url": null,
-     "confirmed_utc": null
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Day 2 of the 28-day challenge. Following a community vote, a reset was announced as processed.",
+      "zh-Hans": "28天挑战第2天。根据社区投票结果，宣布重置已完成。",
+      "zh-Hant": "28天挑戰第2天。根據社群投票結果，宣布重置已完成。",
+      "ko": "28일 챌린지 2일차. 커뮤니티 투표 결과에 따라 리셋을 완료했다고 발표.",
+      "es": "Día 2 del reto de 28 días. Tras una votación de la comunidad, se anunció que el reinicio ya se había procesado.",
+      "fr": "Jour 2 du défi de 28 jours. Après un vote de la communauté, la réinitialisation a été annoncée comme effectuée.",
+      "de": "Tag 2 der 28-Tage-Challenge. Nach einer Community-Abstimmung wurde der Reset als durchgeführt gemeldet.",
+      "pt-BR": "Dia 2 do desafio de 28 dias. Após votação da comunidade, anunciou que o reset foi processado.",
+      "hi": "28-दिन चैलेंज का दिन 2। समुदाय के मतदान के बाद रीसेट पूरा होने की घोषणा की गई।",
+      "id": "Hari ke-2 tantangan 28 hari. Setelah voting komunitas, reset diumumkan telah diproses."
+     },
+     "effective_i18n": {
+      "en": "Immediate reset at the time of the announcement (per the post)."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {}
     },
     {
      "announced_utc": "2026-10-02T02:14:51Z",
@@ -109,7 +181,28 @@
      "source_tz": "America/Los_Angeles",
      "source_local_datetime": "2026-10-02T10:00",
      "confirmed_url": "https://x.com/thsottiaux/status/2106131810921136451",
-     "confirmed_utc": "2026-10-02T21:18:48Z"
+     "confirmed_utc": "2026-10-02T21:18:48Z",
+     "summary_i18n": {
+      "en": "Apologizing for the slow start of GPT-6.1 Sol, announced a global reset for all paid ChatGPT accounts at 10am (PST) the next day.",
+      "zh-Hans": "就GPT-6.1 Sol起步缓慢致歉，预告次日上午10点（PST）对所有付费ChatGPT账户进行全局重置。",
+      "zh-Hant": "就GPT-6.1 Sol起步緩慢致歉，預告次日上午10點（PST）對所有付費ChatGPT帳戶進行全域重置。",
+      "ko": "GPT-6.1 Sol의 느린 출발을 사과하며, 다음 날 오전 10시(PST)에 모든 유료 ChatGPT 계정의 글로벌 리셋을 예고.",
+      "es": "Disculpándose por el lento arranque de GPT-6.1 Sol, anunció un reinicio global para todas las cuentas de pago de ChatGPT a las 10 a. m. (PST) del día siguiente.",
+      "fr": "S'excusant du démarrage lent de GPT-6.1 Sol, il a annoncé une réinitialisation globale pour tous les comptes ChatGPT payants le lendemain à 10 h (PST).",
+      "de": "Mit einer Entschuldigung für den langsamen Start von GPT-6.1 Sol wurde ein globaler Reset für alle zahlenden ChatGPT-Konten am nächsten Tag um 10 Uhr (PST) angekündigt.",
+      "pt-BR": "Pedindo desculpas pelo início lento do GPT-6.1 Sol, anunciou um reset global para todas as contas pagas do ChatGPT às 10h (PST) do dia seguinte.",
+      "hi": "GPT-6.1 Sol की धीमी शुरुआत के लिए माफ़ी मांगते हुए, अगले दिन सुबह 10 बजे (PST) सभी पेड ChatGPT खातों के लिए ग्लोबल रीसेट की घोषणा की।",
+      "id": "Meminta maaf atas awal yang lambat GPT-6.1 Sol, mengumumkan reset global untuk semua akun ChatGPT berbayar pukul 10 pagi (PST) keesokan harinya."
+     },
+     "effective_i18n": {
+      "en": "Scheduled: \"tomorrow 10am PST\". Propagation was confirmed later (see link)."
+     },
+     "scope_i18n": {
+      "en": "All paid ChatGPT accounts"
+     },
+     "note_i18n": {
+      "en": "The post said \"PST\" during daylight saving time, so it is converted as Pacific Daylight Time (PDT, UTC-7). Confirmation: https://x.com/thsottiaux/status/2106131810921136451"
+     }
     },
     {
      "announced_utc": "2026-09-26T00:07:13Z",
@@ -129,7 +222,28 @@
      "source_tz": null,
      "source_local_datetime": null,
      "confirmed_url": "https://x.com/thsottiaux/status/2103911959544610829",
-     "confirmed_utc": "2026-09-26T18:17:54Z"
+     "confirmed_utc": "2026-09-26T18:17:54Z",
+     "summary_i18n": {
+      "en": "After recovering from a brief outage, announced a usage-limit reset for all paid users of Codex and ChatGPT Work.",
+      "zh-Hans": "短暂故障恢复后，宣布为Codex和ChatGPT Work的所有付费用户重置使用上限。",
+      "zh-Hant": "短暫故障恢復後，宣布為Codex和ChatGPT Work的所有付費用戶重置使用上限。",
+      "ko": "짧은 장애에서 복구한 뒤, Codex와 ChatGPT Work의 모든 유료 사용자 사용 한도를 리셋한다고 발표.",
+      "es": "Tras recuperarse de una breve caída, anunció un reinicio de los límites de uso para todos los usuarios de pago de Codex y ChatGPT Work.",
+      "fr": "Après le rétablissement d'une brève panne, il a annoncé la réinitialisation des limites d'utilisation pour tous les utilisateurs payants de Codex et ChatGPT Work.",
+      "de": "Nach der Behebung eines kurzen Ausfalls wurde ein Reset der Nutzungslimits für alle zahlenden Nutzer von Codex und ChatGPT Work angekündigt.",
+      "pt-BR": "Após se recuperar de uma breve interrupção, anunciou o reset dos limites de uso para todos os usuários pagos do Codex e ChatGPT Work.",
+      "hi": "एक छोटी रुकावट से उबरने के बाद, Codex और ChatGPT Work के सभी पेड उपयोगकर्ताओं की उपयोग सीमा रीसेट करने की घोषणा की।",
+      "id": "Setelah pulih dari gangguan singkat, mengumumkan reset batas penggunaan untuk semua pengguna berbayar Codex dan ChatGPT Work."
+     },
+     "effective_i18n": {
+      "en": "Announced as \"we'll reset\" (no time given). Propagation was confirmed later (see link)."
+     },
+     "scope_i18n": {
+      "en": "All paid users of Codex and ChatGPT Work"
+     },
+     "note_i18n": {
+      "en": "Confirmation: https://x.com/thsottiaux/status/2103911959544610829"
+     }
     },
     {
      "announced_utc": "2026-09-22T18:23:37Z",
@@ -149,7 +263,26 @@
      "source_tz": null,
      "source_local_datetime": null,
      "confirmed_url": null,
-     "confirmed_utc": null
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Alongside the GPT-6 Sol/Luna launch and a 50% API price cut, a banked reset was given to all Plus/Pro/Business accounts.",
+      "zh-Hans": "配合GPT-6 Sol/Luna发布及API降价50%，向所有Plus/Pro/Business账户发放可保存的重置。",
+      "zh-Hant": "配合GPT-6 Sol/Luna發布及API降價50%，向所有Plus/Pro/Business帳戶發放可保存的重置。",
+      "ko": "GPT-6 Sol/Luna 출시와 API 50% 인하에 맞춰 모든 Plus/Pro/Business 계정에 저장형 리셋을 지급.",
+      "es": "Junto con el lanzamiento de GPT-6 Sol/Luna y una rebaja del 50% en la API, se dio un reinicio guardable a todas las cuentas Plus/Pro/Business.",
+      "fr": "Avec le lancement de GPT-6 Sol/Luna et une baisse de 50 % du prix de l'API, une réinitialisation à conserver a été offerte à tous les comptes Plus/Pro/Business.",
+      "de": "Zum Start von GPT-6 Sol/Luna und einer API-Preissenkung um 50 % erhielten alle Plus/Pro/Business-Konten einen gespeicherten Reset.",
+      "pt-BR": "Com o lançamento do GPT-6 Sol/Luna e o corte de 50% no preço da API, um reset guardável foi dado a todas as contas Plus/Pro/Business.",
+      "hi": "GPT-6 Sol/Luna लॉन्च और API की 50% कीमत कटौती के साथ, सभी Plus/Pro/Business खातों को सहेजने योग्य रीसेट दिया गया।",
+      "id": "Bersamaan dengan peluncuran GPT-6 Sol/Luna dan pemotongan harga API 50%, reset tersimpan diberikan ke semua akun Plus/Pro/Business."
+     },
+     "effective_i18n": {
+      "en": "Banked reset (each user applies it whenever they choose)."
+     },
+     "scope_i18n": {
+      "en": "Plus/Pro/Business"
+     },
+     "note_i18n": {}
     },
     {
      "announced_utc": "2026-09-12T03:20:36Z",
@@ -169,10 +302,32 @@
      "source_tz": null,
      "source_local_datetime": null,
      "confirmed_url": "https://x.com/thsottiaux/status/2098685367058612394",
-     "confirmed_utc": "2026-09-12T08:09:17Z"
+     "confirmed_utc": "2026-09-12T08:09:17Z",
+     "summary_i18n": {
+      "en": "Along with a report on fixes for Astra quality issues, announced a reset landing by midnight that day.",
+      "zh-Hans": "在报告Astra质量问题修复的同时，预告当天午夜前进行重置。",
+      "zh-Hant": "在報告Astra品質問題修復的同時，預告當天午夜前進行重置。",
+      "ko": "Astra 품질 문제 수정 보고와 함께, 당일 자정까지 리셋을 실시한다고 예고.",
+      "es": "Junto con un informe sobre correcciones de calidad de Astra, anunció un reinicio antes de la medianoche de ese día.",
+      "fr": "Avec un point sur les correctifs de qualité d'Astra, il a annoncé une réinitialisation d'ici minuit le jour même.",
+      "de": "Zusammen mit einem Bericht über Qualitätskorrekturen bei Astra wurde ein Reset bis Mitternacht desselben Tages angekündigt.",
+      "pt-BR": "Junto com um relatório sobre correções de qualidade do Astra, anunciou um reset até a meia-noite daquele dia.",
+      "hi": "Astra की गुणवत्ता समस्याओं के सुधार की रिपोर्ट के साथ, उसी दिन आधी रात तक रीसेट की घोषणा की।",
+      "id": "Bersama laporan perbaikan masalah kualitas Astra, mengumumkan reset paling lambat tengah malam hari itu."
+     },
+     "effective_i18n": {
+      "en": "Scheduled \"by midnight today\" (time zone not stated). Propagation was confirmed later (see link)."
+     },
+     "scope_i18n": {
+      "en": "Not specified (post addressed to Astra users)"
+     },
+     "note_i18n": {
+      "en": "Confirmation: https://x.com/thsottiaux/status/2098685367058612394"
+     }
     }
    ],
-   "next_reset_note": "2026年10月11日時点、日時が発表された今後のリセットはありません（28日間チャレンジ中は日によってリセットの可能性あり）。"
+   "name_en": "OpenAI Codex",
+   "icon": "⌨️"
   },
   {
    "id": "claude",
@@ -197,9 +352,30 @@
      "source_tz": null,
      "source_local_datetime": null,
      "confirmed_url": null,
-     "confirmed_utc": null
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Raised five-hour limits on Pro/Max/Team and gave subscribers a banked reset they can use whenever they choose.",
+      "zh-Hans": "提高Pro/Max/Team的5小时上限，并向订阅用户发放可随时使用的可保存重置。",
+      "zh-Hant": "提高Pro/Max/Team的5小時上限，並向訂閱用戶發放可隨時使用的可保存重置。",
+      "ko": "Pro/Max/Team의 5시간 한도를 상향하고, 구독자에게 원할 때 쓸 수 있는 저장형 리셋을 지급.",
+      "es": "Aumentó los límites de cinco horas en Pro/Max/Team y dio a los suscriptores un reinicio guardable que pueden usar cuando quieran.",
+      "fr": "Hausse des limites sur cinq heures pour Pro/Max/Team et réinitialisation à conserver, utilisable à tout moment, offerte aux abonnés.",
+      "de": "Die Fünf-Stunden-Limits für Pro/Max/Team wurden erhöht, und Abonnenten erhielten einen gespeicherten Reset, den sie jederzeit nutzen können.",
+      "pt-BR": "Aumentou os limites de cinco horas no Pro/Max/Team e deu aos assinantes um reset guardável para usar quando quiserem.",
+      "hi": "Pro/Max/Team की पाँच-घंटे की सीमा बढ़ाई और सब्सक्राइबरों को कभी भी इस्तेमाल करने योग्य सहेजा जाने वाला रीसेट दिया।",
+      "id": "Menaikkan batas lima jam di Pro/Max/Team dan memberi pelanggan reset tersimpan yang bisa dipakai kapan saja."
+     },
+     "effective_i18n": {
+      "en": "Banked reset: each user applies it whenever they choose."
+     },
+     "scope_i18n": {
+      "en": "Subscribers (limit increase applies to Pro/Max/Team)"
+     },
+     "note_i18n": {}
     }
-   ]
+   ],
+   "name_en": "Claude (Anthropic)",
+   "icon": "✳️"
   }
  ],
  "schema_version": 2,
