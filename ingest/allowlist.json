@@ -129,6 +129,58 @@
     "role": "Claude Code team, Anthropic (X bio: 'Claude Code @AnthropicAI @ClaudeDevs')",
     "source": "https://x.com/lydiahallie/status/2095967323412930677 (Max weekly reset 2026-09-04); tracked by https://didreset.com/"
    }
+  ],
+  "glm": [
+   {
+    "username": "Zai_org",
+    "role": "Z.ai official account (GLM models, GLM Coding Plan, ZCode)",
+    "source": "X business-verified; announced GLM Coding Plan resets https://x.com/Zai_org/status/2087040814677725262"
+   }
+  ],
+  "bolt": [
+   {
+    "username": "boltdotnew",
+    "role": "bolt.new official account",
+    "source": "X business-verified; https://x.com/boltdotnew/status/2106053610412847520"
+   },
+   {
+    "username": "EricSimons",
+    "role": "CEO of Bolt / StackBlitz (X bio: 'CEO @boltdotnew')",
+    "source": "X bio; old account @EricSimons40 points here"
+   }
+  ],
+  "kimi": [
+   {
+    "username": "Kimi_Moonshot",
+    "role": "Kimi / Moonshot AI official account",
+    "source": "linked from https://www.kimi.com ; PR contact globalpr@moonshot.ai in bio"
+   }
+  ],
+  "kiro": [
+   {
+    "username": "kirodotdev",
+    "role": "Kiro (AWS) official account",
+    "source": "X business-verified; linked from https://kiro.dev"
+   }
+  ],
+  "copilot": [
+   {
+    "username": "github",
+    "role": "GitHub official account",
+    "source": "X business-verified official company account"
+   },
+   {
+    "username": "GitHubCopilot",
+    "role": "GitHub Copilot product account (largely dormant)",
+    "source": "official product handle"
+   }
+  ],
+  "windsurf": [
+   {
+    "username": "cognition",
+    "role": "Cognition official account (owner of Windsurf, now Devin Desktop)",
+    "source": "X business-verified; @windsurf bio: 'The product formerly known as Windsurf ... a product by @cognition'"
+   }
   ]
  },
  "excluded": [
@@ -159,6 +211,10 @@
   {
    "username": "blankspeaker",
    "reason": "Community moderator; relayed the Grok Bot email reset (2026-09-17). Not an official account."
+  },
+  {
+   "username": "windsurf",
+   "reason": "Retired account (bio: 'The product formerly known as Windsurf'); posts nothing. Use @cognition."
   }
  ]
 }

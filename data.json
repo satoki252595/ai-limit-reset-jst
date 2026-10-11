@@ -1,13 +1,25 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T16:30:00+09:00",
+ "updated_jst": "2026-10-11T17:05:00+09:00",
  "services": [
   {
    "id": "cursor",
    "name": "Cursor",
    "official_name": "Cursor (Anysphere)",
    "items": [],
-   "name_en": "Cursor"
+   "name_en": "Cursor",
+   "name_i18n": {
+    "en": "Cursor",
+    "zh-Hans": "Cursor",
+    "zh-Hant": "Cursor",
+    "ko": "Cursor",
+    "es": "Cursor",
+    "fr": "Cursor",
+    "de": "Cursor",
+    "pt-BR": "Cursor",
+    "hi": "Cursor",
+    "id": "Cursor"
+   }
   },
   {
    "id": "grok",
@@ -57,7 +69,19 @@
      }
     }
    ],
-   "name_en": "Grok (xAI)"
+   "name_en": "Grok (xAI)",
+   "name_i18n": {
+    "en": "Grok (xAI)",
+    "zh-Hans": "Grok（xAI）",
+    "zh-Hant": "Grok（xAI）",
+    "ko": "Grok (xAI)",
+    "es": "Grok (xAI)",
+    "fr": "Grok (xAI)",
+    "de": "Grok (xAI)",
+    "pt-BR": "Grok (xAI)",
+    "hi": "Grok (xAI)",
+    "id": "Grok (xAI)"
+   }
   },
   {
    "id": "meta",
@@ -114,14 +138,38 @@
    "official_name_i18n": {
     "en": "Muse (Meta's personal AI agent, launched Sep 8, 2026; underlying model: Muse Spark; app: Meta AI)"
    },
-   "name_en": "Meta Muse"
+   "name_en": "Meta Muse",
+   "name_i18n": {
+    "en": "Meta Muse",
+    "zh-Hans": "Meta Muse",
+    "zh-Hant": "Meta Muse",
+    "ko": "Meta Muse",
+    "es": "Meta Muse",
+    "fr": "Meta Muse",
+    "de": "Meta Muse",
+    "pt-BR": "Meta Muse",
+    "hi": "Meta Muse",
+    "id": "Meta Muse"
+   }
   },
   {
    "id": "gemini",
    "name": "Google Gemini",
    "official_name": "Google Gemini / Antigravity",
    "items": [],
-   "name_en": "Google Gemini"
+   "name_en": "Google Gemini",
+   "name_i18n": {
+    "en": "Google Gemini",
+    "zh-Hans": "Google Gemini",
+    "zh-Hant": "Google Gemini",
+    "ko": "Google Gemini",
+    "es": "Google Gemini",
+    "fr": "Google Gemini",
+    "de": "Google Gemini",
+    "pt-BR": "Google Gemini",
+    "hi": "Google Gemini",
+    "id": "Google Gemini"
+   }
   },
   {
    "id": "codex",
@@ -447,7 +495,19 @@
      }
     }
    ],
-   "name_en": "OpenAI Codex"
+   "name_en": "OpenAI Codex",
+   "name_i18n": {
+    "en": "OpenAI Codex",
+    "zh-Hans": "OpenAI Codex",
+    "zh-Hant": "OpenAI Codex",
+    "ko": "OpenAI Codex",
+    "es": "OpenAI Codex",
+    "fr": "OpenAI Codex",
+    "de": "OpenAI Codex",
+    "pt-BR": "OpenAI Codex",
+    "hi": "OpenAI Codex",
+    "id": "OpenAI Codex"
+   }
   },
   {
    "id": "claude",
@@ -499,7 +559,176 @@
      }
     }
    ],
-   "name_en": "Claude (Anthropic)"
+   "name_en": "Claude (Anthropic)",
+   "name_i18n": {
+    "en": "Claude (Anthropic)",
+    "zh-Hans": "Claude (Anthropic)",
+    "zh-Hant": "Claude (Anthropic)",
+    "ko": "Claude (Anthropic)",
+    "es": "Claude (Anthropic)",
+    "fr": "Claude (Anthropic)",
+    "de": "Claude (Anthropic)",
+    "pt-BR": "Claude (Anthropic)",
+    "hi": "Claude (Anthropic)",
+    "id": "Claude (Anthropic)"
+   }
+  },
+  {
+   "id": "glm",
+   "name": "Z.ai GLM Coding Plan",
+   "official_name": "Z.ai (Zhipu) GLM Coding Plan / ZCode",
+   "items": [],
+   "name_en": "Z.ai GLM Coding Plan",
+   "name_i18n": {
+    "en": "Z.ai GLM Coding Plan",
+    "zh-Hans": "Z.ai GLM Coding Plan",
+    "zh-Hant": "Z.ai GLM Coding Plan",
+    "ko": "Z.ai GLM Coding Plan",
+    "es": "Z.ai GLM Coding Plan",
+    "fr": "Z.ai GLM Coding Plan",
+    "de": "Z.ai GLM Coding Plan",
+    "pt-BR": "Z.ai GLM Coding Plan",
+    "hi": "Z.ai GLM Coding Plan",
+    "id": "Z.ai GLM Coding Plan"
+   }
+  },
+  {
+   "id": "bolt",
+   "name": "Bolt",
+   "official_name": "Bolt (bolt.new / StackBlitz)",
+   "items": [
+    {
+     "announced_utc": "2026-10-02T16:08:03Z",
+     "announced_jst": "2026-10-03T01:08:03+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "発表時点で即時リセット（発表文より）",
+     "effective_jst_iso": null,
+     "summary": "全BoltユーザーのForgeトークンをリセットしたと発表。あわせてGLM・DeepSeek・Kimiがモデル選択に並んでいると案内。",
+     "url": "https://x.com/boltdotnew/status/2106053610412847520",
+     "poster": "bolt.new（@boltdotnew / 公式アカウント）",
+     "id": "2106053610412847520",
+     "scope": "全BoltユーザーのForgeトークン",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Announced that Forge tokens were reset for every Bolt user, noting GLM, DeepSeek and Kimi are available in the model picker.",
+      "zh-Hans": "宣布已为所有 Bolt 用户重置 Forge 代币，并提示模型选择器中已提供 GLM、DeepSeek 和 Kimi。",
+      "zh-Hant": "宣布已為所有 Bolt 使用者重置 Forge 代幣，並提示模型選擇器中已提供 GLM、DeepSeek 與 Kimi。",
+      "ko": "모든 Bolt 사용자의 Forge 토큰을 리셋했다고 발표하고, 모델 선택기에서 GLM·DeepSeek·Kimi를 쓸 수 있다고 안내.",
+      "es": "Anunció que se reiniciaron los tokens Forge de todos los usuarios de Bolt y que GLM, DeepSeek y Kimi están en el selector de modelos.",
+      "fr": "Annonce de la réinitialisation des jetons Forge de tous les utilisateurs de Bolt ; GLM, DeepSeek et Kimi sont disponibles dans le sélecteur de modèles.",
+      "de": "Kündigte an, dass die Forge-Tokens aller Bolt-Nutzer zurückgesetzt wurden; GLM, DeepSeek und Kimi stehen in der Modellauswahl bereit.",
+      "pt-BR": "Anunciou o reset dos tokens Forge de todos os usuários do Bolt e que GLM, DeepSeek e Kimi estão no seletor de modelos.",
+      "hi": "सभी Bolt उपयोगकर्ताओं के Forge टोकन रीसेट करने की घोषणा; मॉडल पिकर में GLM, DeepSeek और Kimi उपलब्ध हैं।",
+      "id": "Mengumumkan reset token Forge untuk semua pengguna Bolt; GLM, DeepSeek, dan Kimi tersedia di pemilih model."
+     },
+     "effective_i18n": {
+      "en": "Immediate reset at the time of the announcement (per the post)."
+     },
+     "scope_i18n": {
+      "en": "Forge tokens for every Bolt user"
+     },
+     "poster_i18n": {
+      "en": "bolt.new (@boltdotnew, official account)"
+     }
+    }
+   ],
+   "name_en": "Bolt",
+   "name_i18n": {
+    "en": "Bolt",
+    "zh-Hans": "Bolt",
+    "zh-Hant": "Bolt",
+    "ko": "Bolt",
+    "es": "Bolt",
+    "fr": "Bolt",
+    "de": "Bolt",
+    "pt-BR": "Bolt",
+    "hi": "Bolt",
+    "id": "Bolt"
+   }
+  },
+  {
+   "id": "kimi",
+   "name": "Kimi Code",
+   "official_name": "Kimi Code (Moonshot AI)",
+   "items": [],
+   "name_en": "Kimi Code",
+   "name_i18n": {
+    "en": "Kimi Code",
+    "zh-Hans": "Kimi Code",
+    "zh-Hant": "Kimi Code",
+    "ko": "Kimi Code",
+    "es": "Kimi Code",
+    "fr": "Kimi Code",
+    "de": "Kimi Code",
+    "pt-BR": "Kimi Code",
+    "hi": "Kimi Code",
+    "id": "Kimi Code"
+   }
+  },
+  {
+   "id": "kiro",
+   "name": "Amazon Kiro",
+   "official_name": "Kiro (AWS)",
+   "items": [],
+   "name_en": "Amazon Kiro",
+   "name_i18n": {
+    "en": "Amazon Kiro",
+    "zh-Hans": "亚马逊 Kiro",
+    "zh-Hant": "亞馬遜 Kiro",
+    "ko": "아마존 Kiro",
+    "es": "Amazon Kiro",
+    "fr": "Amazon Kiro",
+    "de": "Amazon Kiro",
+    "pt-BR": "Amazon Kiro",
+    "hi": "Amazon Kiro",
+    "id": "Amazon Kiro"
+   }
+  },
+  {
+   "id": "copilot",
+   "name": "GitHub Copilot",
+   "official_name": "GitHub Copilot (GitHub / Microsoft)",
+   "items": [],
+   "name_en": "GitHub Copilot",
+   "name_i18n": {
+    "en": "GitHub Copilot",
+    "zh-Hans": "GitHub Copilot",
+    "zh-Hant": "GitHub Copilot",
+    "ko": "GitHub Copilot",
+    "es": "GitHub Copilot",
+    "fr": "GitHub Copilot",
+    "de": "GitHub Copilot",
+    "pt-BR": "GitHub Copilot",
+    "hi": "GitHub Copilot",
+    "id": "GitHub Copilot"
+   }
+  },
+  {
+   "id": "windsurf",
+   "name": "Windsurf（Devin Desktop）",
+   "official_name": "Windsurf → Devin Desktop (Cognition)",
+   "items": [],
+   "name_en": "Windsurf (Devin Desktop)",
+   "name_i18n": {
+    "en": "Windsurf (Devin Desktop)",
+    "zh-Hans": "Windsurf（Devin Desktop）",
+    "zh-Hant": "Windsurf（Devin Desktop）",
+    "ko": "Windsurf (Devin Desktop)",
+    "es": "Windsurf (Devin Desktop)",
+    "fr": "Windsurf (Devin Desktop)",
+    "de": "Windsurf (Devin Desktop)",
+    "pt-BR": "Windsurf (Devin Desktop)",
+    "hi": "Windsurf (Devin Desktop)",
+    "id": "Windsurf (Devin Desktop)"
+   }
   }
  ],
  "schema_version": 2,

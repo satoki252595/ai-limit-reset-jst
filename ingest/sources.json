@@ -168,6 +168,104 @@
    "type": "third_party_tracker",
    "fetch": "WebFetch; discovery only",
    "official": false
+  },
+  {
+   "service": "copilot",
+   "url": "https://github.blog/changelog/feed/",
+   "type": "changelog_rss",
+   "fetch": "WebFetch RSS; filter Copilot posts (limits, credits, rate limits)",
+   "official": true
+  },
+  {
+   "service": "copilot",
+   "url": "https://www.githubstatus.com/history.rss",
+   "type": "status_rss",
+   "fetch": "WebFetch RSS; Copilot incidents",
+   "official": true
+  },
+  {
+   "service": "windsurf",
+   "url": "https://windsurf.com/changelog",
+   "type": "changelog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "windsurf",
+   "url": "https://windsurf.com/blog",
+   "type": "blog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "windsurf",
+   "url": "https://status.windsurf.com/history.rss",
+   "type": "status_rss",
+   "fetch": "WebFetch RSS",
+   "official": true
+  },
+  {
+   "service": "kiro",
+   "url": "https://kiro.dev/changelog/",
+   "type": "changelog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "kiro",
+   "url": "https://kiro.dev/blog/",
+   "type": "blog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "kiro",
+   "url": "https://github.com/kirodotdev/Kiro/releases.atom",
+   "type": "github_releases",
+   "fetch": "WebFetch Atom",
+   "official": true
+  },
+  {
+   "service": "bolt",
+   "url": "https://bolt.new/blog",
+   "type": "blog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "bolt",
+   "url": "https://status.bolt.new/",
+   "type": "status_page",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "bolt",
+   "url": "https://support.bolt.new/",
+   "type": "help_center",
+   "fetch": "WebFetch (tokens / limits articles)",
+   "official": true
+  },
+  {
+   "service": "kimi",
+   "url": "https://www.kimi.com/code/docs/",
+   "type": "docs",
+   "fetch": "WebFetch (quota and plan notes)",
+   "official": true
+  },
+  {
+   "service": "kimi",
+   "url": "https://www.kimi.ai/help/kimi-code/benefits",
+   "type": "help_article",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "glm",
+   "url": "https://docs.z.ai/devpack/overview",
+   "type": "docs",
+   "fetch": "WebFetch (GLM Coding Plan quota, reset cards)",
+   "official": true
   }
  ]
 }
