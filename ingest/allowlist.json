@@ -1,0 +1,42 @@
+{
+ "description": "Accounts whose posts may be auto-published. Only accounts with a verified role are listed. Excluded accounts are recorded with reasons and must never be auto-published.",
+ "verified_on": "2026-10-11",
+ "services": {
+  "cursor": [
+   {"username": "cursor_ai", "role": "Cursor official account", "source": "official product account"}
+  ],
+  "grok": [
+   {"username": "xai", "role": "xAI official account", "source": "official company account"},
+   {"username": "elonmusk", "role": "xAI founder / CEO", "source": "https://x.ai/company"}
+  ],
+  "meta": [
+   {"username": "AIatMeta", "role": "Meta AI official account", "source": "official company account"},
+   {"username": "alexandr_wang", "role": "Meta Chief AI Officer (Muse)", "source": "https://www.businessinsider.com/alexandr-wang-meta-muse-social-media-posts-pr-strategy-2026-9"}
+  ],
+  "gemini": [
+   {"username": "GoogleAI", "role": "Google AI official account", "source": "official company account"},
+   {"username": "GeminiApp", "role": "Google Gemini app official account", "source": "official product account"},
+   {"username": "OfficialLoganK", "role": "Google DeepMind director, lead for AI Studio / Gemini API", "source": "https://linkedin.com/in/logankilpatrick"}
+  ],
+  "codex": [
+   {"username": "OpenAI", "role": "OpenAI official account", "source": "official company account"},
+   {"username": "OpenAIDevs", "role": "OpenAI Developers official account", "source": "official company account"},
+   {"username": "thsottiaux", "role": "OpenAI head of core products (ChatGPT and Codex), former Codex lead", "source": "https://www.wired.com/story/model-behavior-interview-with-openai-codex-lead-tibo-sottiaux/"},
+   {"username": "sama", "role": "OpenAI CEO", "source": "https://openai.com/our-structure/"}
+  ],
+  "claude": [
+   {"username": "claudeai", "role": "Claude official account", "source": "official product account"},
+   {"username": "AnthropicAI", "role": "Anthropic official account", "source": "official company account"},
+   {"username": "bcherny", "role": "Creator and Head of Claude Code, Anthropic", "source": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny"},
+   {"username": "_catwu", "role": "Head of Product, Claude Code, Anthropic", "source": "https://linkedin.com/in/cat-wu"},
+   {"username": "trq212", "role": "Member of Technical Staff, Claude Code team, Anthropic", "source": "https://linkedin.com/in/thariqshihipar"}
+  ]
+ },
+ "excluded": [
+  {"username": "grok", "reason": "Automated assistant that replies to users; its replies discuss resets but are not announcements (all trial-run noise came from it)."},
+  {"username": "leerob", "reason": "Left Cursor in Aug 2026 (leerob.com/cursor; Cursor joined SpaceX) and now works on Grok; current service attribution unverified."},
+  {"username": "joshwoodward", "reason": "Role not verified in this session."},
+  {"username": "mntruell", "reason": "Role not verified in this session."},
+  {"username": "embirico", "reason": "Role not verified in this session."}
+ ]
+}

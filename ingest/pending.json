@@ -1,0 +1,18 @@
+{
+ "description": "Borderline candidates. Never published automatically; a human must approve and move them into data.json.",
+ "candidates": [
+  {
+   "id": "2109045392684032299",
+   "url": "https://x.com/thsottiaux/status/2109045392684032299",
+   "author": "thsottiaux",
+   "service": "codex",
+   "posted_utc": "2026-10-10T22:16:20Z",
+   "posted_jst": "2026-10-11T07:16:20+09:00",
+   "summary": "Day 6の自己返信で「本日中（by EOD）にグローバルリセット」と予告。",
+   "source_time_text": "Global reset by EOD",
+   "reason": "Time zone not stated. If EOD means end of the poster's day in America/Los_Angeles (posted 15:16 PDT on 2026-10-10), the reset would be due by 2026-10-11 00:00 PDT = 2026-10-11 16:00 JST. That interpretation is not stated in the post, so no countdown is published. Not yet confirmed as propagated at the time of the run.",
+   "proposed_effective_jst_iso_if_approved": "2026-10-11T16:00:00+09:00",
+   "added_jst": "2026-10-11T10:30:00+09:00"
+  }
+ ]
+}
