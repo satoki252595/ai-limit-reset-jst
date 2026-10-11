@@ -29,19 +29,30 @@ function itemHtml(it){
   ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">原文を見る</a>` : ''}${curl ? ` ／ <a href="${esc(curl)}" target="_blank" rel="noopener">反映完了の投稿</a>` : ''}
   </div>`;
 }
+let DATA = null, VIEW = 'all';
 function render(d){
-  const services = Array.isArray(d && d.services) ? d.services : [];
+  DATA = d;
+  const days = (d && Number(d.retention_days)) || LimitFilter.DAYS;
+  const services = (Array.isArray(d && d.services) ? d.services : []).map(s => ({...s, items: (Array.isArray(s.items) ? s.items : []).filter(it => LimitFilter.isVisible(it, Date.now(), days)).sort(LimitFilter.newestFirst)}));
+  document.getElementById('range').textContent = `表示範囲：直近${days}日間の投稿（未実施の予告リセットは期間外でも表示）`;
   document.getElementById('updated').textContent = 'データ更新：' + fmt(d && d.updated_jst);
   document.getElementById('toc').innerHTML = services.map(s => `<a href="#${esc(s.id)}">${esc(s.name)}（${(s.items||[]).length}）</a>`).join('');
   const now = Date.now(); const future = [];
   const app = document.getElementById('app'); app.innerHTML = '';
-  for (const s of services) {
-    const items = (Array.isArray(s.items) ? s.items : []).filter(Boolean).sort((a,b) => (Date.parse(b.announced_utc)||0) - (Date.parse(a.announced_utc)||0));
-    items.forEach(it => { const t = Date.parse(it.effective_jst_iso); if (t > now) future.push({s, it, t}); });
+  services.forEach(s => s.items.forEach(it => { const t = Date.parse(it.effective_jst_iso); if (t > now) future.push({s, it, t}); }));
+  document.querySelectorAll('#views button').forEach(b => b.classList.toggle('on', b.dataset.v === VIEW));
+  document.getElementById('toc').style.display = VIEW === 'all' ? 'none' : '';
+  if (VIEW === 'all') {
+    const all = services.flatMap(s => s.items.map(it => ({...it, _svc: s.name}))).sort(LimitFilter.newestFirst);
+    const sec = document.createElement('section'); sec.id = 'all';
+    sec.innerHTML = `<h2>全サービス（新しい順・${all.length}件）</h2>` + (all.length ? all.map(it => `<div class="svc">${esc(it._svc)}</div>` + itemHtml(it)).join('') : '<p class="none">直近の発表はありません</p>');
+    app.appendChild(sec);
+  } else for (const s of services) {
+    const items = s.items;
     const sec = document.createElement('section'); sec.id = s.id || '';
     sec.innerHTML = `<h2>${esc(s.name)}</h2>${s.official_name ? `<div class="off">公式名：${esc(s.official_name)}</div>` : ''}`
       + (s.next_reset_note ? `<div class="nextnote">${esc(s.next_reset_note)}</div>` : '')
-      + (items.length ? items.map(itemHtml).join('') : '<p class="none">確認できた発表なし</p>');
+      + (items.length ? items.map(itemHtml).join('') : '<p class="none">確認できた発表なし（直近' + days + '日間）</p>');
     app.appendChild(sec);
   }
   future.sort((a,b) => a.t - b.t);
@@ -51,5 +62,6 @@ function render(d){
   tick();
 }
 setInterval(tick, 1000); tick();
+document.getElementById('views').addEventListener('click', e => { const v = e.target.dataset && e.target.dataset.v; if (v && DATA) { VIEW = v; render(DATA); } });
 fetch('data.json?v=' + Date.now(), {cache:'no-store'}).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(render).catch(e => { document.getElementById('app').textContent = 'data.jsonの読み込みに失敗しました（' + e.message + '）。'; });
