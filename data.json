@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T09:05:00+09:00",
+ "updated_jst": "2026-10-11T09:30:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -16,7 +16,16 @@
      "summary": "Botを全有料顧客に提供開始し、Bot顧客全員の週間使用上限をリセットしたと発表。",
      "url": "https://x.com/leerob/status/2092666596179521906",
      "poster": "Lee Robinson（@leerob / Cursor）",
-     "note": "投稿内の「@Bot」はCursorの製品を指すと解釈。Cursor公式アカウントの投稿は未確認。"
+     "note": "投稿内の「@Bot」はCursorの製品を指すと解釈。Cursor公式アカウントの投稿は未確認。",
+     "id": "2092666596179521906",
+     "scope": "Botの全顧客（有料）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     }
    ]
   },
@@ -34,7 +43,16 @@
      "summary": "Grok Botの使用上限をリセットしたと告知（引用投稿）。",
      "url": "https://x.com/elonmusk/status/2096332306847875580",
      "poster": "Elon Musk（@elonmusk / xAI CEO）",
-     "note": null
+     "note": null,
+     "id": "2096332306847875580",
+     "scope": "Grok Botユーザー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-09-01T15:45:03Z",
@@ -45,7 +63,16 @@
      "summary": "全Grok Botユーザーにトークン使用量の無料リセットを再度実施すると発表。",
      "url": "https://x.com/elonmusk/status/2094813795742847123",
      "poster": "Elon Musk（@elonmusk / xAI CEO）",
-     "note": null
+     "note": null,
+     "id": "2094813795742847123",
+     "scope": "全Grok Botユーザー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-08-26T19:12:39Z",
@@ -56,7 +83,16 @@
      "summary": "Grok Botユーザー向けに無料使用上限のリセットを告知（引用投稿）。",
      "url": "https://x.com/elonmusk/status/2092691713399931124",
      "poster": "Elon Musk（@elonmusk / xAI CEO）",
-     "note": null
+     "note": null,
+     "id": "2092691713399931124",
+     "scope": "Grok Botユーザー（無料使用分）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     }
    ]
   },
@@ -74,7 +110,16 @@
      "summary": "全ユーザーのMuseトークン使用量をリセットしたと発表。",
      "url": "https://x.com/alexandr_wang/status/2097880616041885901",
      "poster": "Alexandr Wang（@alexandr_wang / Meta 最高AI責任者）",
-     "note": null
+     "note": null,
+     "id": "2097880616041885901",
+     "scope": "全ユーザー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     }
    ]
   },
@@ -92,7 +137,16 @@
      "summary": "Antigravity 2.0のIDE表示に関する混乱を謝罪し、全員の週間上限をリセットしたと発表。",
      "url": "https://x.com/OfficialLoganK/status/2057912550633947436",
      "poster": "Logan Kilpatrick（@OfficialLoganK / Google）",
-     "note": "対象はGoogleのAntigravity（Geminiアプリ本体ではない）。"
+     "note": "対象はGoogleのAntigravity（Geminiアプリ本体ではない）。",
+     "id": "2057912550633947436",
+     "scope": "Antigravity全ユーザー（週間上限）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     }
    ]
   },
@@ -110,7 +164,16 @@
      "summary": "「28日間チャレンジ」6日目として全体リセットを実施（投稿は「Day 6/ Reset」のみ）。",
      "url": "https://x.com/thsottiaux/status/2109045220411351517",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "10月4日（UTC）告知の「今後28日間、毎日改善を1つ出すかフルリセットする」企画の一環（https://x.com/thsottiaux/status/2106845241357824205）。次回リセットの日時は未発表。"
+     "note": "10月4日（UTC）告知の「今後28日間、毎日改善を1つ出すかフルリセットする」企画の一環（https://x.com/thsottiaux/status/2106845241357824205）。次回リセットの日時は未発表。",
+     "id": "2109045220411351517",
+     "scope": "未明記（28日間チャレンジの対象はCodex/Work利用者）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-10-07T19:19:17Z",
@@ -121,7 +184,16 @@
      "summary": "28日間チャレンジ3日目。Codex/ChatGPT Workの利用者4,000万人突破を記念し、全有料アカウントに保存型（banked）リセットを付与。",
      "url": "https://x.com/thsottiaux/status/2107913674593644711",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "反映完了の投稿：https://x.com/thsottiaux/status/2108040921044639779"
+     "note": "反映完了の投稿：https://x.com/thsottiaux/status/2108040921044639779",
+     "id": "2107913674593644711",
+     "scope": "全有料アカウント",
+     "type": "banked",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": "https://x.com/thsottiaux/status/2108040921044639779",
+     "confirmed_utc": "2026-10-08T03:44:55Z"
     },
     {
      "announced_utc": "2026-10-07T03:35:09Z",
@@ -132,7 +204,16 @@
      "summary": "28日間チャレンジ2日目。コミュニティ投票の結果を受け、リセットを実施済みと発表。",
      "url": "https://x.com/thsottiaux/status/2107676072871600470",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2107676072871600470",
+     "scope": "未明記",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-10-02T02:14:51Z",
@@ -143,18 +224,36 @@
      "summary": "GPT-6.1 Solの立ち上がりの遅さを謝罪し、翌日午前10時（PST）に全有料ChatGPTアカウント向けのグローバルリセットを予告。",
      "url": "https://x.com/thsottiaux/status/2105843926221660585",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "投稿は夏時間期間中に「PST」と表記していたため、太平洋夏時間（PDT, UTC-7）として換算。 反映完了：https://x.com/thsottiaux/status/2106131810921136451"
+     "note": "投稿は夏時間期間中に「PST」と表記していたため、太平洋夏時間（PDT, UTC-7）として換算。 反映完了：https://x.com/thsottiaux/status/2106131810921136451",
+     "id": "2105843926221660585",
+     "scope": "全有料ChatGPTアカウント",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": "tomorrow 10am PST",
+     "source_tz": "America/Los_Angeles",
+     "source_local_datetime": "2026-10-02T10:00",
+     "confirmed_url": "https://x.com/thsottiaux/status/2106131810921136451",
+     "confirmed_utc": "2026-10-02T21:18:48Z"
     },
     {
      "announced_utc": "2026-09-26T00:07:13Z",
      "announced_jst": "2026-09-26T09:07:13+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "発表時点で即時リセット（発表文より）",
+     "effective": "「we’ll reset」と予告（時刻未明記）。2026年9月27日 3時17分（日本時間）に反映完了を告知",
      "effective_jst_iso": null,
      "summary": "短時間の障害から復旧し、CodexとChatGPT Workの全有料ユーザーの使用上限をリセットすると発表。",
      "url": "https://x.com/thsottiaux/status/2103637477760311522",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": "反映完了：https://x.com/thsottiaux/status/2103911959544610829",
+     "id": "2103637477760311522",
+     "scope": "CodexとChatGPT Workの全有料ユーザー",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": "https://x.com/thsottiaux/status/2103911959544610829",
+     "confirmed_utc": "2026-09-26T18:17:54Z"
     },
     {
      "announced_utc": "2026-09-22T18:23:37Z",
@@ -165,7 +264,16 @@
      "summary": "GPT-6 Sol/Lunaの公開とAPI半額化に合わせ、Plus/Pro/Business全アカウントに保存型リセットを付与。",
      "url": "https://x.com/thsottiaux/status/2102463847714247142",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2102463847714247142",
+     "scope": "Plus/Pro/Business",
+     "type": "banked",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-09-12T03:20:36Z",
@@ -176,7 +284,16 @@
      "summary": "Astraの品質問題の修正報告とともに、当日深夜までにリセットを実施すると予告。",
      "url": "https://x.com/thsottiaux/status/2098612714704891959",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "反映完了：https://x.com/thsottiaux/status/2098685367058612394"
+     "note": "反映完了：https://x.com/thsottiaux/status/2098685367058612394",
+     "id": "2098612714704891959",
+     "scope": "未明記（Astra利用者向け投稿）",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": "https://x.com/thsottiaux/status/2098685367058612394",
+     "confirmed_utc": "2026-09-12T08:09:17Z"
     },
     {
      "announced_utc": "2026-09-07T19:24:57Z",
@@ -187,7 +304,16 @@
      "summary": "Astraを使い切ったユーザー向けに、全有料プランでグローバルリセットを実施すると予告。",
      "url": "https://x.com/thsottiaux/status/2097043464538264003",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "投稿は夏時間期間中に「PST」と表記していたため、太平洋夏時間（PDT, UTC-7）として換算。 OpenAIヘルプセンターも9月7日のグローバルリセットを記載（https://help.openai.com/en/articles/20001498-how-banked-codex-resets-work）。反映完了：https://x.com/thsottiaux/status/2097174560412246215"
+     "note": "投稿は夏時間期間中に「PST」と表記していたため、太平洋夏時間（PDT, UTC-7）として換算。 OpenAIヘルプセンターも9月7日のグローバルリセットを記載（https://help.openai.com/en/articles/20001498-how-banked-codex-resets-work）。反映完了：https://x.com/thsottiaux/status/2097174560412246215",
+     "id": "2097043464538264003",
+     "scope": "全有料サブスクリプション",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": "Lands around 6pm PST today",
+     "source_tz": "America/Los_Angeles",
+     "source_local_datetime": "2026-09-07T18:00",
+     "confirmed_url": "https://x.com/thsottiaux/status/2097174560412246215",
+     "confirmed_utc": "2026-09-08T04:05:53Z"
     },
     {
      "announced_utc": "2026-09-05T00:39:25Z",
@@ -198,7 +324,16 @@
      "summary": "GPT-6 Astraの前倒し公開を記念し、Plus/Pro/Business全員に保存型のフルリセットを当日付与すると発表。",
      "url": "https://x.com/thsottiaux/status/2096035437299237298",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": "投稿時点の太平洋時間は9月4日夕方。追記の「8pm PT」（新規・アップグレードの対象期限）は2026年9月5日 12:00（日本時間）。OpenAIヘルプセンターにも9月4日 8 PM PTの期限を記載。",
+     "id": "2096035437299237298",
+     "scope": "Plus/Pro/Business",
+     "type": "banked",
+     "status": "done",
+     "source_time_text": "before 8pm PT (eligibility cutoff)",
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-08-08T20:29:22Z",
@@ -209,7 +344,16 @@
      "summary": "GPT-5.6 Solの公開を記念し、ChatGPT WorkとCodexの全有料ユーザーの使用上限をリセット。",
      "url": "https://x.com/thsottiaux/status/2086188036493344823",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2086188036493344823",
+     "scope": "ChatGPT WorkとCodexの全有料ユーザー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-08-01T03:32:37Z",
@@ -220,7 +364,16 @@
      "summary": "効率改善の1週間を記念し、CodexとChatGPT Workの使用上限をリセット。",
      "url": "https://x.com/thsottiaux/status/2083395449814229287",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2083395449814229287",
+     "scope": "Codex/ChatGPT Work（プラン未明記）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-07-25T19:17:12Z",
@@ -231,7 +384,16 @@
      "summary": "前夜のほぼ全域的な障害を受け、CodexとChatGPT Workの全ユーザーの使用上限をリセット。",
      "url": "https://x.com/thsottiaux/status/2081096447718723984",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2081096447718723984",
+     "scope": "Codex/ChatGPT Work全ユーザー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-06-28T23:54:07Z",
@@ -242,7 +404,16 @@
      "summary": "調査継続中のため全員のCodex使用上限をハードリセット。",
      "url": "https://x.com/thsottiaux/status/2071381664853319742",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2071381664853319742",
+     "scope": "全員",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-06-16T18:49:52Z",
@@ -253,7 +424,16 @@
      "summary": "不具合修正を受け、全プランのCodexレート制限を24時間以内にリセットすると予告。",
      "url": "https://x.com/thsottiaux/status/2066956441173323943",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2066956441173323943",
+     "scope": "全プラン",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": "Give us 24 hours",
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-06-04T00:25:58Z",
@@ -264,7 +444,16 @@
      "summary": "24時間で3件の小規模障害があったため、全有料プランのCodex使用上限をリセット。",
      "url": "https://x.com/thsottiaux/status/2062329981548802523",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2062329981548802523",
+     "scope": "全有料プラン",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-04-28T05:28:43Z",
@@ -275,7 +464,16 @@
      "summary": "好調な1週間を記念し、全有料プランのCodexレート制限をリセット。",
      "url": "https://x.com/thsottiaux/status/2048997818673537399",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2048997818673537399",
+     "scope": "全有料プラン",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-04-21T14:52:11Z",
@@ -286,7 +484,16 @@
      "summary": "Codexのアクティブユーザー400万人突破を記念し、数時間後にレート制限をリセットすると予告（Sam Altman氏も同日告知）。",
      "url": "https://x.com/thsottiaux/status/2046602907077038501",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2046602907077038501",
+     "scope": "未明記",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": "in a few hours",
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-04-17T00:58:21Z",
@@ -297,7 +504,16 @@
      "summary": "Codex 1周年を記念し、全プランのレート制限をリセット。",
      "url": "https://x.com/thsottiaux/status/2044943514832871564",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2044943514832871564",
+     "scope": "全プラン",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-04-09T17:38:16Z",
@@ -308,7 +524,16 @@
      "summary": "$200 Proユーザーへの感謝として2倍利用プロモを延長し、Codexレート制限をリセット。",
      "url": "https://x.com/OpenAI/status/2042296046009626989",
      "poster": "OpenAI 公式（@OpenAI）",
-     "note": "対象は$200 Proプランのユーザー。"
+     "note": "対象は$200 Proプランのユーザー。",
+     "id": "2042296046009626989",
+     "scope": "$200 Proプランのみ",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-04-07T23:13:38Z",
@@ -319,7 +544,16 @@
      "summary": "週間利用者300万人突破を記念し、レート制限をリセットすると発表。",
      "url": "https://x.com/thsottiaux/status/2041655669892546624",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": "同投稿で「1,000万人に達するまで100万人増えるごとにリセットする」とも表明。",
+     "id": "2041655669892546624",
+     "scope": "未明記",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-04-01T07:48:39Z",
@@ -330,7 +564,16 @@
      "summary": "上限到達ユーザーの増加を受け、念のため全プランの使用上限をリセット。",
      "url": "https://x.com/thsottiaux/status/2039248564967424483",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2039248564967424483",
+     "scope": "全プラン",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-03-27T01:52:28Z",
@@ -341,7 +584,16 @@
      "summary": "新プラグイン公開に合わせ、全プランのCodex使用上限をリセット。",
      "url": "https://x.com/thsottiaux/status/2037346989244096581",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2037346989244096581",
+     "scope": "全プラン",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-03-08T02:42:13Z",
@@ -352,7 +604,16 @@
      "summary": "使用量の消費が早いとの報告を受け、Plus・Proのレート制限をリセット。",
      "url": "https://x.com/thsottiaux/status/2030474136024400173",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "対象はPlus・Proサブスクリプション。"
+     "note": "対象はPlus・Proサブスクリプション。",
+     "id": "2030474136024400173",
+     "scope": "Plus・Proのみ",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-12-25T08:01:03Z",
@@ -363,7 +624,16 @@
      "summary": "クリスマスの贈り物としてレート制限をリセットし、1月1日まで上限を通常の2倍に。",
      "url": "https://x.com/thsottiaux/status/2004100061933064395",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2004100061933064395",
+     "scope": "Codexユーザー（未明記）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-12-19T22:01:37Z",
@@ -374,7 +644,16 @@
      "summary": "使用量計測システムの書き換えに伴い使用上限をリセット。",
      "url": "https://x.com/thsottiaux/status/2002137269134819610",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2002137269134819610",
+     "scope": "未明記",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-12-17T02:18:14Z",
@@ -385,7 +664,16 @@
      "summary": "障害のお詫びとして全員の使用上限をリセット。",
      "url": "https://x.com/thsottiaux/status/2001114683047317723",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "2001114683047317723",
+     "scope": "全員",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-12-02T22:49:02Z",
@@ -396,7 +684,16 @@
      "summary": "不具合の緩和策として全員の使用上限をリセット（約10分で全ユーザーに反映）。",
      "url": "https://x.com/thsottiaux/status/1995988609896513743",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "1995988609896513743",
+     "scope": "全員",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": "over the next 10 mins",
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-11-22T23:13:56Z",
@@ -407,7 +704,16 @@
      "summary": "米国付近での高レイテンシの補償として全Codexユーザーのレート制限をリセット。",
      "url": "https://x.com/thsottiaux/status/1992370994028388670",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "1992370994028388670",
+     "scope": "全Codexユーザー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-11-05T20:19:29Z",
@@ -418,7 +724,16 @@
      "summary": "全域的な障害の解消に伴いレート制限をリセット。",
      "url": "https://x.com/thsottiaux/status/1986166501435711936",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null
+     "note": null,
+     "id": "1986166501435711936",
+     "scope": "未明記",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-10-30T17:59:19Z",
@@ -429,7 +744,16 @@
      "summary": "Plus/Pro向けCodexクレジットを導入し、ボーナスとして全員のレート制限をリセット。",
      "url": "https://x.com/OpenAIDevs/status/1983956896852988014",
      "poster": "OpenAI Developers 公式（@OpenAIDevs）",
-     "note": null
+     "note": null,
+     "id": "1983956896852988014",
+     "scope": "全員",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     }
    ],
    "next_reset_note": "2026年10月11日時点、日時が発表された今後のリセットはありません（28日間チャレンジ中は日によってリセットの可能性あり）。"
@@ -448,7 +772,16 @@
      "summary": "Pro/Max/Teamの5時間上限を引き上げ、サブスク利用者に好きな時に使える「保存型」リセットを付与。",
      "url": "https://x.com/claudeai/status/2102435538120691886",
      "poster": "Claude 公式（@claudeai）",
-     "note": null
+     "note": null,
+     "id": "2102435538120691886",
+     "scope": "サブスク利用者（上限引き上げはPro/Max/Team）",
+     "type": "banked",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-04-23T18:05:50Z",
@@ -459,7 +792,16 @@
      "summary": "フィードバックへの感謝として、サブスク利用者の使用上限をリセット。",
      "url": "https://x.com/bcherny/status/2047376417340756322",
      "poster": "Boris Cherny（@bcherny / Claude Code責任者）",
-     "note": null
+     "note": null,
+     "id": "2047376417340756322",
+     "scope": "サブスク利用者",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2026-02-27T03:59:48Z",
@@ -470,7 +812,16 @@
      "summary": "プロンプトキャッシュの不具合で上限消費が早まったため、全Claude Codeユーザーのレート制限をリセット（2.1.62で修正）。",
      "url": "https://x.com/trq212/status/2027232172810416493",
      "poster": "Thariq（@trq212 / Anthropic Claude Code）",
-     "note": null
+     "note": null,
+     "id": "2027232172810416493",
+     "scope": "全Claude Codeユーザー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-12-23T20:09:01Z",
@@ -481,7 +832,16 @@
      "summary": "年末年始にOpus 4.5を楽しめるようレート制限をリセット（翌日から大晦日まで上限2倍も告知）。",
      "url": "https://x.com/trq212/status/2003558482931597413",
      "poster": "Thariq（@trq212 / Anthropic Claude Code）",
-     "note": null
+     "note": null,
+     "id": "2003558482931597413",
+     "scope": "未明記（Claude Codeユーザー向け）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     },
     {
      "announced_utc": "2025-10-01T23:05:34Z",
@@ -492,9 +852,19 @@
      "summary": "Opusの上限到達が想定より早いとの声を受け、1回限りのレート制限リセットを実施。",
      "url": "https://x.com/_catwu/status/1973524721875689559",
      "poster": "Cat Wu（@_catwu / Anthropic Claude Code）",
-     "note": null
+     "note": null,
+     "id": "1973524721875689559",
+     "scope": "未明記（Claude Code利用者）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "confirmed_url": null,
+     "confirmed_utc": null
     }
    ]
   }
- ]
+ ],
+ "schema_version": 2
 }

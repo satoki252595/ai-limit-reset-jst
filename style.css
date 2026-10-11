@@ -7,3 +7,7 @@ section{background:#fff;border-radius:10px;padding:14px 16px;margin:16px 0;box-s
 .none{color:#888}.cd{background:#fff3cd;padding:8px;border-radius:6px;margin:6px 0}a{color:#0057b8;word-break:break-all}footer{font-size:.8rem;color:#666}
 .cd.past{background:#eee;color:#666}
 .nextnote{background:#e8f0fe;padding:8px;border-radius:6px;margin:6px 0;font-size:.9rem}
+.nextbox{max-width:860px;margin:8px auto;padding:10px 16px;background:#fff3cd;border-radius:8px}
+.badge{display:inline-block;font-size:.7rem;background:#eef;color:#336;padding:0 6px;border-radius:8px;vertical-align:middle}
+@media (max-width:480px){header h1{font-size:1.15rem}section{padding:12px}.nextbox{margin:8px}}
+body{overflow-wrap:anywhere}
