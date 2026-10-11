@@ -93,6 +93,7 @@ for (const s of d.services) for (const it of s.items) {
   if (Core.localized(it,'summary','xx') !== it.summary_i18n.en) err('fallback to en');
 }
 if (Core.localized({summary:'ja'},'summary','fr') !== 'ja') err('fallback to ja');
+if (Core.localized({summary:'日本語',summary_i18n:{en:'English'}},'summary','ja') !== '日本語') err('ja must use Japanese source');
 // timezone rendering for several zones (same instant)
 const inst = Date.parse('2026-10-11T16:00:00+09:00');
 const tzCases = {'Asia/Tokyo':'16:00','America/New_York':'03:00','Europe/London':'08:00','Asia/Kolkata':'12:30','America/Los_Angeles':'00:00','UTC':'07:00','Asia/Shanghai':'15:00'};

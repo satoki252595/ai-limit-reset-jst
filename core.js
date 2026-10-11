@@ -9,7 +9,7 @@ function relTime(ms, now, lang){
   if (a<86400) return rtf.format(Math.round(d/3600),'hour'); return rtf.format(Math.round(d/86400),'day');
 }
 function parts(ms){ const t=Math.max(0,Math.floor(ms/1000)); return {d:Math.floor(t/86400),h:Math.floor(t/3600)%24,m:Math.floor(t/60)%60,s:t%60}; }
-function localized(it, field, lang){ const m=it[field+'_i18n']||{}; return m[lang]||m.en||it[field]||''; }
+function localized(it, field, lang){ if (lang==='ja') return it[field]||''; const m=it[field+'_i18n']||{}; return m[lang]||m.en||it[field]||''; }
 function icsEscape(s){ return String(s).replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\r?\n/g,'\\n'); }
 function icsStamp(ms){ return new Date(ms).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,''); }
 function buildIcs(it, serviceName, nowMs){

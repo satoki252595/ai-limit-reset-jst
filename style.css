@@ -48,3 +48,4 @@ footer{padding:16px;margin-bottom:24px}
 .controls{flex-wrap:nowrap}.controls select{max-width:34vw;min-width:0}
 @media (max-width:480px){.top{position:static}.bar{gap:6px}.brand{width:100%}.controls{width:100%}.controls label{flex:1;min-width:0}.controls select{max-width:none;width:100%}}
 .hero .when .muted{display:block}
+.seg button{white-space:nowrap}.seg{flex:none}
