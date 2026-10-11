@@ -1,0 +1,173 @@
+{
+ "description": "Non-X sources each routine run checks with WebFetch (official first; third-party trackers are discovery-only and never a basis for publishing).",
+ "sources": [
+  {
+   "service": "codex",
+   "url": "https://help.openai.com/en/articles/20001498-how-banked-codex-resets-work",
+   "type": "help_article",
+   "fetch": "WebFetch (Cloudflare may 403; fall back to WebSearch for the article); diff the 'Note:' lines listing global/banked reset dates",
+   "official": true
+  },
+  {
+   "service": "codex",
+   "url": "https://status.openai.com/history.rss",
+   "type": "status_rss",
+   "fetch": "WebFetch RSS; incidents for Codex often precede a reset",
+   "official": true
+  },
+  {
+   "service": "codex",
+   "url": "https://developers.openai.com/codex/changelog",
+   "type": "changelog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "codex",
+   "url": "https://github.com/openai/codex/releases.atom",
+   "type": "github_releases",
+   "fetch": "WebFetch Atom",
+   "official": true
+  },
+  {
+   "service": "claude",
+   "url": "https://www.anthropic.com/news",
+   "type": "blog",
+   "fetch": "WebFetch; model launches have carried banked resets (Opus 5.5, 2026-09-22)",
+   "official": true
+  },
+  {
+   "service": "claude",
+   "url": "https://status.anthropic.com/history.rss",
+   "type": "status_rss",
+   "fetch": "WebFetch RSS",
+   "official": true
+  },
+  {
+   "service": "claude",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "type": "changelog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "claude",
+   "url": "https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan",
+   "type": "help_article",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "cursor",
+   "url": "https://cursor.com/changelog",
+   "type": "changelog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "cursor",
+   "url": "https://cursor.com/blog",
+   "type": "blog",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "cursor",
+   "url": "https://status.cursor.com/history.rss",
+   "type": "status_rss",
+   "fetch": "WebFetch RSS",
+   "official": true
+  },
+  {
+   "service": "cursor",
+   "url": "https://forum.cursor.com/c/announcements/11.rss",
+   "type": "forum_rss",
+   "fetch": "WebFetch RSS; staff posts only",
+   "official": true
+  },
+  {
+   "service": "grok",
+   "url": "https://docs.x.ai/grok/faq",
+   "type": "help_article",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "grok",
+   "url": "https://status.x.ai/",
+   "type": "status_page",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "grok",
+   "url": "https://github.com/xai-org/grok-build/releases.atom",
+   "type": "github_releases",
+   "fetch": "WebFetch Atom",
+   "official": true
+  },
+  {
+   "service": "meta",
+   "url": "https://dev.meta.ai/resources/blog",
+   "type": "blog",
+   "fetch": "WebFetch (Muse Code plans/limits posts)",
+   "official": true
+  },
+  {
+   "service": "gemini",
+   "url": "https://antigravity.google/docs/plans",
+   "type": "help_article",
+   "fetch": "WebFetch",
+   "official": true
+  },
+  {
+   "service": "gemini",
+   "url": "https://github.com/google-gemini/gemini-cli/releases.atom",
+   "type": "github_releases",
+   "fetch": "WebFetch Atom",
+   "official": true
+  },
+  {
+   "service": "gemini",
+   "url": "https://blog.google/technology/developers/rss/",
+   "type": "blog_rss",
+   "fetch": "WebFetch RSS",
+   "official": true
+  },
+  {
+   "service": "gemini",
+   "url": "https://status.cloud.google.com/en/feed.atom",
+   "type": "status_rss",
+   "fetch": "WebFetch Atom (Gemini / Vertex AI incidents)",
+   "official": true
+  },
+  {
+   "service": "all",
+   "url": "https://didreset.com/",
+   "type": "third_party_tracker",
+   "fetch": "WebFetch; discovery only (Codex/Claude/Grok)",
+   "official": false
+  },
+  {
+   "service": "all",
+   "url": "https://whenaireset.com/",
+   "type": "third_party_tracker",
+   "fetch": "WebFetch; discovery only; per-provider pages /openai /xai /google /cursor",
+   "official": false
+  },
+  {
+   "service": "claude",
+   "url": "https://claude-resets.com/rss.xml",
+   "type": "third_party_tracker",
+   "fetch": "WebFetch RSS; discovery only",
+   "official": false
+  },
+  {
+   "service": "meta",
+   "url": "https://quotaresets.com/",
+   "type": "third_party_tracker",
+   "fetch": "WebFetch; discovery only",
+   "official": false
+  }
+ ]
+}

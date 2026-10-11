@@ -1,4 +1,21 @@
 {
  "description": "Borderline candidates. Never published automatically; a human must approve and move them into data.json.",
- "candidates": []
+ "candidates": [
+  {
+   "id": "devday-2026-09-29-codex-banked",
+   "service": "codex",
+   "announced_utc": "2026-09-29T17:00:00Z",
+   "channel": "livestream (OpenAI DevDay keynote, Sam Altman + Tibo on stage)",
+   "url": "https://whenaireset.com/openai",
+   "reason": "Banked reset for all users announced on stage; no allowlisted X post or official written page found (Tibo only replied '@theo Shhhhhh', https://x.com/thsottiaux/status/2105120226027450685). Time not exact. Publish only if an official written source is found."
+  },
+  {
+   "id": "email-2026-09-17-grokbot",
+   "service": "grok",
+   "announced_utc": "2026-09-17T20:32:52Z",
+   "channel": "email to Grok Bot users (relayed on X by @blankspeaker)",
+   "url": "https://x.com/blankspeaker/status/2100684433074634953",
+   "reason": "Only evidence is a non-official relay of an email; no @bot/@xai post. Needs an official acknowledgement."
+  }
+ ]
 }

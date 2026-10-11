@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T13:50:00+09:00",
+ "updated_jst": "2026-10-11T16:30:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -13,14 +13,104 @@
    "id": "grok",
    "name": "Grok（xAI）",
    "official_name": "Grok / xAI",
-   "items": [],
+   "items": [
+    {
+     "announced_utc": "2026-10-02T18:05:23Z",
+     "announced_jst": "2026-10-03T03:05:23+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "発表時点で即時リセット（発表文より）",
+     "effective_jst_iso": null,
+     "summary": "Grok Botの全ユーザーの使用上限をリセットしたと発表。",
+     "url": "https://x.com/bot/status/2106083136002310193",
+     "poster": "Grok Bot（@bot / 公式アカウント）",
+     "id": "2106083136002310193",
+     "scope": "Grok Botの全ユーザー（Grok本体のウィークリー枠とは別）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Announced that usage limits were reset for all Grok Bot users.",
+      "zh-Hans": "宣布已重置所有 Grok Bot 用户的使用上限。",
+      "zh-Hant": "宣布已重置所有 Grok Bot 使用者的使用上限。",
+      "ko": "모든 Grok Bot 사용자의 사용 한도를 리셋했다고 발표.",
+      "es": "Anunció que se reiniciaron los límites de uso de todos los usuarios de Grok Bot.",
+      "fr": "Annonce de la réinitialisation des limites d'utilisation de tous les utilisateurs de Grok Bot.",
+      "de": "Kündigte an, dass die Nutzungslimits aller Grok-Bot-Nutzer zurückgesetzt wurden.",
+      "pt-BR": "Anunciou o reset dos limites de uso de todos os usuários do Grok Bot.",
+      "hi": "सभी Grok Bot उपयोगकर्ताओं की उपयोग सीमा रीसेट करने की घोषणा।",
+      "id": "Mengumumkan reset batas penggunaan untuk semua pengguna Grok Bot."
+     },
+     "effective_i18n": {
+      "en": "Immediate reset at the time of the announcement (per the post)."
+     },
+     "scope_i18n": {
+      "en": "All Grok Bot users (separate from the main Grok weekly pool)"
+     },
+     "poster_i18n": {
+      "en": "Grok Bot (@bot, official account)"
+     }
+    }
+   ],
    "name_en": "Grok (xAI)"
   },
   {
    "id": "meta",
    "name": "Meta Muse",
    "official_name": "Muse（Metaのパーソナル AIエージェント、2026年9月8日公開。基盤モデル名は「Muse Spark」、アプリ名は「Meta AI」）",
-   "items": [],
+   "items": [
+    {
+     "announced_utc": "2026-09-16T05:04:46Z",
+     "announced_jst": "2026-09-16T14:04:46+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "「本日中に全サブスクの使用量をリセット」とするMuse Code側の告知を引用し、リセット実施を告知",
+     "effective_jst_iso": null,
+     "summary": "Muse Codeのサブスク更新（コントリビューター枠の上限を大幅拡大）に合わせ、全サブスクの使用量リセットを告知。",
+     "url": "https://x.com/alexandr_wang/status/2100088481586479411",
+     "poster": "Alexandr Wang（@alexandr_wang / Meta Chief AI Officer）",
+     "note": "引用元（Muse Code担当 Cosmo Du）：https://x.com/Answeror/status/2099981484291690773",
+     "id": "2100088481586479411",
+     "scope": "Muse Codeの全サブスクリプション",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Alongside a Muse Code subscription update (much larger contributor-tier limits), announced a usage reset for all subscriptions.",
+      "zh-Hans": "随 Muse Code 订阅更新（贡献者档位上限大幅提高），宣布重置所有订阅的用量。",
+      "zh-Hant": "隨 Muse Code 訂閱更新（貢獻者方案上限大幅提高），宣布重置所有訂閱的用量。",
+      "ko": "Muse Code 구독 업데이트(기여자 티어 한도 대폭 확대)와 함께 모든 구독의 사용량 리셋을 발표.",
+      "es": "Junto con una actualización de suscripciones de Muse Code (límites del nivel contributor mucho mayores), anunció un reinicio de uso para todas las suscripciones.",
+      "fr": "Avec une mise à jour des abonnements Muse Code (limites du niveau contributor bien plus élevées), annonce d'une réinitialisation de l'usage pour tous les abonnements.",
+      "de": "Zusammen mit einem Muse-Code-Abo-Update (deutlich höhere Limits für die Contributor-Stufe) wurde ein Nutzungs-Reset für alle Abos angekündigt.",
+      "pt-BR": "Junto com uma atualização das assinaturas do Muse Code (limites do nível contributor bem maiores), anunciou um reset de uso para todas as assinaturas.",
+      "hi": "Muse Code सदस्यता अपडेट (contributor टियर की सीमा काफी बढ़ी) के साथ सभी सदस्यताओं के उपयोग रीसेट की घोषणा।",
+      "id": "Bersamaan dengan pembaruan langganan Muse Code (batas tier contributor jauh lebih besar), mengumumkan reset penggunaan untuk semua langganan."
+     },
+     "effective_i18n": {
+      "en": "Quoted the Muse Code team's note that usage would be reset for all subscriptions that day, and announced the reset."
+     },
+     "scope_i18n": {
+      "en": "All Muse Code subscriptions"
+     },
+     "note_i18n": {
+      "en": "Quoted post (Cosmo Du, Muse Code): https://x.com/Answeror/status/2099981484291690773"
+     },
+     "poster_i18n": {
+      "en": "Alexandr Wang (@alexandr_wang, Meta Chief AI Officer)"
+     }
+    }
+   ],
    "official_name_i18n": {
     "en": "Muse (Meta's personal AI agent, launched Sep 8, 2026; underlying model: Muse Spark; app: Meta AI)"
    },
