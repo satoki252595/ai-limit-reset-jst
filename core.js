@@ -25,11 +25,16 @@ const PRECISIONS=['exact','deadline','approximate'];
 function precision(it){ if (PRECISIONS.includes(it&&it.time_precision)) return it.time_precision; return (it&&it.source_local_datetime)?'exact':'approximate'; }
 function isConfirmed(it){ return !!(it&&it.confirmed_utc) && !Number.isNaN(Date.parse(it.confirmed_utc)); }
 // Hero choice: next unconfirmed upcoming reset; else a scheduled reset confirmed in the last 24h (shown as done, no countdown).
+// Upcoming unconfirmed resets, by time; ties: exact < deadline < approximate, then service id, then entry id.
+function upcoming(list, now){
+  return list.map(x=>({...x,t:Date.parse(x.it.effective_jst_iso),p:precision(x.it)})).filter(x=>x.it.status==='scheduled'&&!isConfirmed(x.it)&&x.t>now)
+    .sort((a,b)=>(a.t-b.t)||(PRECISIONS.indexOf(a.p)-PRECISIONS.indexOf(b.p))||String(a.s&&a.s.id).localeCompare(String(b.s&&b.s.id))||String(a.it.id).localeCompare(String(b.it.id)));
+}
 function heroPick(list, now){
-  const up=list.map(x=>({...x,t:Date.parse(x.it.effective_jst_iso)})).filter(x=>x.it.status==='scheduled'&&!isConfirmed(x.it)&&x.t>now).sort((a,b)=>a.t-b.t);
-  if (up.length) return {mode:'upcoming',x:up[0],precision:precision(up[0].it)};
+  const up=upcoming(list, now);
+  if (up.length) return {mode:'upcoming',x:up[0],precision:up[0].p,rest:up.slice(1)};
   const dn=list.map(x=>({...x,c:Date.parse(x.it.confirmed_utc)})).filter(x=>x.it.type==='scheduled'&&isConfirmed(x.it)&&x.c<=now&&now-x.c<86400000).sort((a,b)=>b.c-a.c);
-  if (dn.length) return {mode:'done',x:dn[0],precision:precision(dn[0].it)};
+  if (dn.length) return {mode:'done',x:dn[0],precision:precision(dn[0].it),rest:[]};
   return null;
 }
 function fmtTime(ms, lang, tz){ return new Intl.DateTimeFormat(INTL_LOCALE[lang]||lang,{timeZone:tz,hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(ms)); }
@@ -43,5 +48,5 @@ const CITY={
 function offset(tz, ms){ try{ const p=new Intl.DateTimeFormat('en-US',{timeZone:tz,timeZoneName:'shortOffset'}).formatToParts(new Date(ms)).find(x=>x.type==='timeZoneName'); return p?p.value.replace('GMT','UTC').replace(/^UTC$/,'UTC±0'):''; }catch(e){ return ''; } }
 function tzLabel(tz, lang, ms){ const c=(CITY[lang]||CITY.en)[tz]||CITY.en[tz]||tz.split('/').pop().replace(/_/g,' '); return c+' '+offset(tz, ms); }
 function fmtShort(ms, lang, tz){ return new Intl.DateTimeFormat(INTL_LOCALE[lang]||lang,{timeZone:tz,month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(ms)); }
-g.Core={precision,isConfirmed,heroPick,fmtTime,PRECISIONS,tzLabel,offset,fmtShort,ZONES,INTL_LOCALE,fmtDate,relTime,parts,localized,buildIcs,badge};
+g.Core={upcoming,precision,isConfirmed,heroPick,fmtTime,PRECISIONS,tzLabel,offset,fmtShort,ZONES,INTL_LOCALE,fmtDate,relTime,parts,localized,buildIcs,badge};
 })(typeof globalThis!=='undefined'?globalThis:window);

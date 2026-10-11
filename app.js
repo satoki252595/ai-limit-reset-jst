@@ -55,6 +55,12 @@ const fill=(k,o)=>t(k).replace(/\{(\w)\}/g,(_,c)=>o[c]??'');
 function srcLine(it){ if(!it.source_time_text) return '';
   const z=it.source_tz?(it.source_tz_assumed?fill('tz_assumed',{z:it.source_tz}):fill('tz_stated',{z:it.source_tz})):'';
   return `<p class="h-src"><span class="prec">${esc(t('prec_'+C.precision(it)))}</span> ${esc(t('orig_wording'))}: “${esc(it.source_time_text)}”${z?` · ${esc(z)}`:''}</p>`; }
+function othersHtml(rest,now){ if(!rest||!rest.length) return '';
+  return `<section class="others" aria-labelledby="others-h"><h2 id="others-h" class="others-h">${esc(t('others_up'))} <span class="n">${rest.length}</span></h2><ol>${rest.map(x=>`<li class="o-${x.p}">
+   <span class="o-svc">${esc(svcName(x.s))}</span>
+   <span class="o-when">${x.p!=='exact'?`<span class="o-tag" title="${esc(t('prec_'+x.p))}">${esc(t('tag_'+x.p))}</span> `:''}<time datetime="${esc(x.it.effective_jst_iso)}">${esc(C.fmtShort(x.t,lang,tz))}</time></span>
+   <span class="o-rel">${esc(C.relTime(x.t,now,lang))}</span>
+   ${safe(x.it.url)?`<a class="o-src" href="${esc(x.it.url)}" target="_blank" rel="noopener" aria-label="${esc(svcName(x.s)+' '+t('source'))}">↗</a>`:''}</li>`).join('')}</ol></section>`; }
 function renderHero(svcs,now){
   const body=$('hero-body'); timers=[]; $('hero-h').textContent=t('next');
   const pick=C.heroPick(svcs.flatMap(s=>s.items.map(it=>({s,it}))),now);
@@ -77,7 +83,7 @@ function renderHero(svcs,now){
    <p class="count-label">${esc(lab)}</p>
    <div class="count ${p}" id="count" role="timer" aria-label="${esc(lab)}">${countHtml(n.t-now)}</div>
    <p class="h-sum">${esc(C.localized(it,'summary',lang))}</p>
-   <div class="actions"><button type="button" class="link primary" data-ics="${esc(it.id)}">${esc(t('ics'))}</button><button type="button" class="link" id="share">${esc(t('share'))}</button>${links}</div>`;
+   <div class="actions"><button type="button" class="link primary" data-ics="${esc(it.id)}">${esc(t('ics'))}</button><button type="button" class="link" id="share">${esc(t('share'))}</button>${links}</div>${othersHtml(pick.rest,now)}`;
   timers.push({...n,p});
 }
 function render(){
