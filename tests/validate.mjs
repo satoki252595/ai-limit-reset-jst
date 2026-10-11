@@ -93,6 +93,12 @@ for (const s of d.services) for (const it of s.items) {
   if (Core.localized(it,'summary','xx') !== it.summary_i18n.en) err('fallback to en');
 }
 if (Core.localized({summary:'ja'},'summary','fr') !== 'ja') err('fallback to ja');
+// times must come from structured fields, never be baked into text
+for (const s of d.services) for (const it of s.items) for (const f of ['effective','note']) { const vals=[it[f]||'', ...Object.values(it[f+'_i18n']||{})];
+  for (const v of vals) if (/日本時間|JST|\d+時\d+分|\b\d{1,2}:\d{2}\b/.test(v)) err(`${s.id}/${it.id}: hard-coded time in ${f}: ${v}`); }
+for (const z of Core.ZONES) { const lab = Core.tzLabel(z,'ja',Date.parse('2026-10-11T00:00:00Z')); if (!/UTC/.test(lab)) err('tzLabel '+z+' '+lab); }
+if (Core.tzLabel('America/Los_Angeles','en',Date.parse('2026-10-11T00:00:00Z')) !== 'Los Angeles UTC-7') err('tzLabel LA PDT '+Core.tzLabel('America/Los_Angeles','en',Date.parse('2026-10-11T00:00:00Z')));
+if (Core.tzLabel('America/Los_Angeles','en',Date.parse('2026-11-05T00:00:00Z')) !== 'Los Angeles UTC-8') err('tzLabel LA PST');
 if (Core.localized({summary:'日本語',summary_i18n:{en:'English'}},'summary','ja') !== '日本語') err('ja must use Japanese source');
 // timezone rendering for several zones (same instant)
 const inst = Date.parse('2026-10-11T16:00:00+09:00');
