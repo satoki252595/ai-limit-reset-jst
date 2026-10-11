@@ -135,4 +135,15 @@ if (Core.badge(dn, Date.parse('2026-10-11T04:45:00Z'))!=='done') err('badge conf
 if (Core.fmtTime(Date.parse('2026-10-11T04:01:09Z'),'ja','Asia/Tokyo')!=='13:01') err('fmtTime');
 for (const l of REQUIRED_LOCALES) for (const k of ['hero_deadline','hero_approx','done_at']) if (!UI[l][k].includes('{t}')) err(`i18n ${l}.${k} needs {t}`);
 for (const l of REQUIRED_LOCALES) if (!UI[l].tz_assumed.includes('{z}')) err(`i18n ${l}.tz_assumed needs {z}`);
+// multiple upcoming: order by time, ties by precision, rest list
+{ const N=Date.parse('2026-10-11T00:00:00Z'), sv=id=>({id});
+  const mk=(sid,id,iso,p)=>({s:sv(sid),it:{id,type:'scheduled',status:'scheduled',effective_jst_iso:iso,time_precision:p}});
+  const L=[mk('b','4','2026-10-12T10:00:00+09:00','approximate'),mk('a','1','2026-10-12T10:00:00+09:00','deadline'),mk('c','2','2026-10-11T12:00:00+09:00','exact'),mk('d','3','2026-10-12T10:00:00+09:00','exact'),
+    mk('a','5','2026-10-13T00:00:00+09:00','exact'),{...mk('a','6','2026-10-12T00:00:00+09:00','exact'),it:{...mk('a','6','2026-10-12T00:00:00+09:00','exact').it,confirmed_utc:'2026-10-11T00:00:00Z'}},mk('a','7','2026-10-10T00:00:00+09:00','exact')];
+  const u=Core.upcoming(L,N).map(x=>x.it.id).join(',');
+  if (u!=='2,3,1,4,5') err('upcoming order/tie-break/filter: '+u);
+  const hp=Core.heroPick(L,N); if (hp.x.it.id!=='2' || hp.rest.length!==4 || hp.rest[0].it.id!=='3') err('heroPick rest');
+  if (Core.heroPick([L[0]],N).rest.length!==0) err('single upcoming has no rest');
+  const same=[mk('z','9','2026-10-12T10:00:00+09:00','exact'),mk('y','8','2026-10-12T10:00:00+09:00','exact')]; if (Core.upcoming(same,N)[0].s.id!=='y') err('tie by service id');
+  for (const l of REQUIRED_LOCALES) for (const k of ['others_up','tag_deadline','tag_approximate']) if (!UI[l][k]) err(`i18n ${l}.${k}`); }
 console.log(fail ? `${fail} failure(s)` : `OK: ${seenId.size} entries`); process.exit(fail?1:0);
