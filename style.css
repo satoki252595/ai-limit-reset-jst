@@ -128,3 +128,33 @@ dl.meta .strong{font-weight:600}
 dl.meta .strong .muted{font-weight:400}
 @media (max-width:760px){.count{column-gap:clamp(12px,5vw,22px)}.count b{font-size:clamp(2.75rem,15vw,4.75rem)}}
 .actions,.e-links{align-items:baseline}
+
+/* v7 */
+.lede{margin:0 auto;padding-top:var(--s4);font-size:.9375rem;color:var(--ink-2);max-width:1200px}
+.hero{padding-top:var(--s5)}
+.hero{padding-bottom:var(--s5)}.hero-body{min-height:220px}
+.h-note{margin:0 0 var(--s3);font-size:.875rem;color:var(--ink-2)}
+.overview{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--s4);padding-top:var(--s4);padding-bottom:var(--s6)}
+.overview .eyebrow{grid-column:1/4;padding-top:.7em}.ov-body{grid-column:4/13}
+.ov-list{list-style:none;margin:0;padding:0}
+.ov-list li{display:grid;grid-template-columns:minmax(9em,1.4fr) minmax(5em,.8fr) minmax(7em,1fr) minmax(5em,.8fr);gap:var(--s3);align-items:center;border-bottom:1px solid var(--rule);min-height:44px}
+.ov-svc{font:inherit;font-weight:600;color:var(--ink);background:none;border:0;padding:0;text-align:left;cursor:pointer;min-height:44px}
+.ov-svc:hover{color:var(--accent)}
+.ov-list time{font-feature-settings:"tnum" 1}.ov-rel{color:var(--ink-2);font-size:.8125rem}
+.ov-empty{margin:var(--s3) 0 0;font-size:.875rem;line-height:1.7}
+.filters button,.tabs button,.link,.actions a,.e-links a,.e-links button{min-height:44px;display:inline-flex;align-items:center}
+.filters .zero{color:var(--ink-2)}
+.filters .more{color:var(--ink-2);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;border-bottom:0}
+.pref select,.pref-btn{min-height:44px}
+.e-note a{word-break:break-all}
+:lang(ja) .e-sum,:lang(zh-Hans) .e-sum,:lang(zh-Hant) .e-sum,:lang(ko) .e-sum{line-height:1.75}
+:lang(ja) .e-note,:lang(zh-Hans) .e-note,:lang(zh-Hant) .e-note,:lang(ko) .e-note{line-height:1.8}
+@media (max-width:760px){
+ .overview{grid-template-columns:minmax(0,1fr)}.overview .eyebrow,.ov-body{grid-column:1/-1}.overview .eyebrow{padding:0 0 var(--s2)}
+ .ov-list li{grid-template-columns:1fr auto;row-gap:0;padding:var(--s2) 0}.ov-list .status{grid-column:2;grid-row:1}.ov-list time{grid-column:1;font-size:.8125rem;color:var(--ink-2)}.ov-rel{grid-column:2;justify-self:end}
+ .ov-svc{min-height:32px}
+ .hero-body{min-height:240px}
+ .h-done{font-size:1.375rem;line-height:1.35}
+ .actions{gap:0 var(--s4);margin-top:var(--s4)}
+ .masthead .row{row-gap:0}
+}

@@ -38,6 +38,14 @@ function heroPick(list, now){
   return null;
 }
 function fmtTime(ms, lang, tz){ return new Intl.DateTimeFormat(INTL_LOCALE[lang]||lang,{timeZone:tz,hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(ms)); }
+// Latest event per service (confirmation time if confirmed, else announcement time); services without items listed separately.
+function lastPerService(svcs){
+  const withItems=[], empty=[];
+  for (const s of svcs){ const ev=(s.items||[]).map(it=>({it,t:Date.parse(it.confirmed_utc||it.announced_utc)})).filter(x=>!Number.isNaN(x.t)).sort((a,b)=>b.t-a.t);
+    if (ev.length) withItems.push({s,it:ev[0].it,t:ev[0].t,count:ev.length}); else empty.push(s); }
+  withItems.sort((a,b)=>b.t-a.t); return {withItems,empty};
+}
+function shortUrl(u){ return String(u).replace(/^https:\/\/(www\.)?/,'').replace(/\/status\/(\d+)$/,(m,id)=>'/status/…'+id.slice(-4)); }
 function badge(it, now){ if (it.type==='banked') return 'banked'; if (isConfirmed(it)) return 'done'; if (it.status==='scheduled'){ const t=Date.parse(it.effective_jst_iso); return (!Number.isNaN(t)&&t<=now)?'done':'scheduled'; } return it.type==='immediate'?'immediate':'done'; }
 const CITY={
  en:{'Asia/Tokyo':'Tokyo','Asia/Seoul':'Seoul','Asia/Shanghai':'Shanghai','Asia/Singapore':'Singapore','Asia/Kolkata':'Kolkata','Asia/Dubai':'Dubai','Europe/London':'London','Europe/Paris':'Paris','Europe/Berlin':'Berlin','America/Sao_Paulo':'São Paulo','America/New_York':'New York','America/Chicago':'Chicago','America/Los_Angeles':'Los Angeles','UTC':'UTC'},
@@ -48,5 +56,5 @@ const CITY={
 function offset(tz, ms){ try{ const p=new Intl.DateTimeFormat('en-US',{timeZone:tz,timeZoneName:'shortOffset'}).formatToParts(new Date(ms)).find(x=>x.type==='timeZoneName'); return p?p.value.replace('GMT','UTC').replace(/^UTC$/,'UTC±0'):''; }catch(e){ return ''; } }
 function tzLabel(tz, lang, ms){ const c=(CITY[lang]||CITY.en)[tz]||CITY.en[tz]||tz.split('/').pop().replace(/_/g,' '); return c+' '+offset(tz, ms); }
 function fmtShort(ms, lang, tz){ return new Intl.DateTimeFormat(INTL_LOCALE[lang]||lang,{timeZone:tz,month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(ms)); }
-g.Core={upcoming,precision,isConfirmed,heroPick,fmtTime,PRECISIONS,tzLabel,offset,fmtShort,ZONES,INTL_LOCALE,fmtDate,relTime,parts,localized,buildIcs,badge};
+g.Core={lastPerService,shortUrl,upcoming,precision,isConfirmed,heroPick,fmtTime,PRECISIONS,tzLabel,offset,fmtShort,ZONES,INTL_LOCALE,fmtDate,relTime,parts,localized,buildIcs,badge};
 })(typeof globalThis!=='undefined'?globalThis:window);
