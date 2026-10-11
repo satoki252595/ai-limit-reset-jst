@@ -18,7 +18,10 @@ export function zonedToUtc(local, tz) {
 // self-test of tz conversion incl. DST end (first Sunday of Nov 2026 = Nov 1)
 const t1 = jstOf(zonedToUtc('2026-10-31T10:00','America/Los_Angeles')); if (t1!=='2026-11-01T02:00:00+09:00') err('DST PDT conv '+t1);
 const t2 = jstOf(zonedToUtc('2026-11-02T10:00','America/Los_Angeles')); if (t2!=='2026-11-03T03:00:00+09:00') err('PST conv '+t2);
-if (!Array.isArray(d.services) || d.services.length!==6) err('services');
+if (!Array.isArray(d.services) || d.services.length!==12) err('services');
+const SVC_IDS=['cursor','grok','meta','gemini','codex','claude','glm','bolt','kimi','kiro','copilot','windsurf'];
+for (const id of SVC_IDS) { const s=d.services.find(x=>x.id===id); if(!s) { err('service missing '+id); continue; }
+  if (!s.name_en) err(id+': name_en'); for (const l of ['en','zh-Hans','zh-Hant','ko','es','fr','de','pt-BR','hi','id']) if (!(s.name_i18n||{})[l]) err(`${id}: name_i18n.${l}`); }
 const seenId = new Set(), seenUrl = new Set();
 for (const s of d.services) {
   for (const k of ['id','name','official_name']) if (typeof s[k]!=='string') err(`${s.id}: ${k}`);

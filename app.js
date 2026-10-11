@@ -12,7 +12,7 @@ const t=k=>(S[lang]&&S[lang][k])||S.en[k]||S.ja[k]||k;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safe=u=>/^https:\/\//.test(u||'')?u:null;
 const $=id=>document.getElementById(id);
-const svcName=s=>(lang==='ja'?s.name:(s.name_en||s.name));
+const svcName=s=>(lang==='ja'?s.name:((s.name_i18n||{})[lang]||s.name_en||s.name));
 function syncUrl(){ const p=new URLSearchParams(); if(lang!=='ja')p.set('lang',lang); if(view!=='timeline')p.set('view',view); if(svcFilter!=='all')p.set('svc',svcFilter); if(qs.get('tz')||tz!==sysTz)p.set('tz',tz); const q=p.toString(); history.replaceState(null,'',location.pathname+(q?'?'+q:'')); }
 function applyStatic(){
   document.documentElement.lang=lang; document.title=t('title');
