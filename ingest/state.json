@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-11T15:45:00Z",
- "last_run_jst": "2026-10-12T00:45:00+09:00",
+ "last_run_utc": "2026-10-11T17:46:00Z",
+ "last_run_jst": "2026-10-12T02:46:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2109278619818447077",
+ "newest_seen_id": "2109339100474224775",
  "x_calls_this_run": 2,
- "note": "Scheduled run: no new allowlisted or non-allowlisted reset posts since newest_seen_id. No open scheduled entries. Non-X sources skipped (audited 2026-10-11)."
+ "note": "Scheduled run: no new allowlisted posts. Non-allowlisted hits were user commentary only (Codex Day 7 scorecards, banked reset chatter), not announcements; nothing pending. No open scheduled entries. Non-X sources skipped (audited 2026-10-11)."
 }
