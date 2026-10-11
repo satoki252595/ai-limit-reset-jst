@@ -11,3 +11,7 @@ section{background:#fff;border-radius:10px;padding:14px 16px;margin:16px 0;box-s
 .badge{display:inline-block;font-size:.7rem;background:#eef;color:#336;padding:0 6px;border-radius:8px;vertical-align:middle}
 @media (max-width:480px){header h1{font-size:1.15rem}section{padding:12px}.nextbox{margin:8px}}
 body{overflow-wrap:anywhere}
+.views,.range{max-width:860px;margin:8px auto;padding:0 16px}.range{font-size:.8rem;color:#666}
+.views button{font:inherit;padding:6px 12px;margin-right:6px;border:1px solid #ccc;background:#fff;border-radius:16px;cursor:pointer}
+.views button.on{background:#0057b8;color:#fff;border-color:#0057b8}
+.svc{display:inline-block;margin-top:10px;font-size:.75rem;background:#333;color:#fff;padding:1px 8px;border-radius:8px}

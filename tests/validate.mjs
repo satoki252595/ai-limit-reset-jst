@@ -1,5 +1,7 @@
 // node tests/validate.mjs — no dependencies
 import { readFileSync } from 'node:fs';
+import vm from 'node:vm';
+const ctx = {}; vm.runInNewContext(readFileSync(new URL('../filter.js', import.meta.url),'utf8'), ctx); const { isVisible, newestFirst } = ctx.LimitFilter;
 const d = JSON.parse(readFileSync(new URL('../data.json', import.meta.url), 'utf8'));
 let fail = 0; const err = (m) => { fail++; console.error('FAIL:', m); };
 const ISO_Z = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/, ISO_J = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+09:00$/;
@@ -46,4 +48,18 @@ for (const s of d.services) {
     if (/[\uFFFD]|ã|â€/.test(JSON.stringify(it))) err(`${tag}: mojibake`);
   }
 }
+// retention: stored data must be within retention_days of updated_jst, unless a future scheduled reset remains
+const DAYS = Number(d.retention_days) || 30, upd = Date.parse(d.updated_jst);
+if (Number.isNaN(upd)) err('updated_jst');
+for (const s of d.services) for (const it of s.items) if (!isVisible(it, upd, DAYS)) err(`${s.id}/${it.id}: older than ${DAYS} days at updated_jst`);
+// display filter spec
+const NOW = Date.parse('2026-10-11T00:00:00Z');
+const mk = (u, e) => ({ announced_utc: u, effective_jst_iso: e ?? null });
+if (!isVisible(mk('2026-10-01T00:00:00Z'), NOW, 30)) err('filter: recent hidden');
+if (isVisible(mk('2026-09-10T23:59:59Z'), NOW, 30)) err('filter: old shown');
+if (!isVisible(mk('2026-08-01T00:00:00Z','2026-10-20T10:00:00+09:00'), NOW, 30)) err('filter: old post with future reset hidden');
+if (isVisible(mk('2026-08-01T00:00:00Z','2026-10-01T10:00:00+09:00'), NOW, 30)) err('filter: old post with past reset shown');
+if (isVisible(mk('bad'), NOW, 30) || isVisible(null, NOW, 30)) err('filter: invalid shown');
+const arr = [mk('2026-09-20T00:00:00Z'), mk('2026-10-05T00:00:00Z'), mk('2026-09-30T00:00:00Z')].sort(newestFirst);
+if (arr[0].announced_utc !== '2026-10-05T00:00:00Z' || arr[2].announced_utc !== '2026-09-20T00:00:00Z') err('newestFirst');
 console.log(fail ? `${fail} failure(s)` : `OK: ${seenId.size} entries`); process.exit(fail?1:0);

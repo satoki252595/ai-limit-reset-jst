@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-      - run: mkdir _site && cp index.html 404.html app.js style.css data.json _site/
+      - run: mkdir _site && cp index.html 404.html app.js filter.js style.css data.json _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
