@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-11T01:30:00Z",
- "last_run_jst": "2026-10-11T10:30:00+09:00",
- "searched_since_utc": "2026-10-10T20:00:00Z",
- "newest_seen_id": "2109091159784198475",
- "x_calls_this_run": 7,
- "note": "Trial run. 3 of 7 calls hit HTTP 429 (shared X access throttled) and returned nothing; 1 user lookup also failed."
+ "last_run_utc": "2026-10-11T01:44:00Z",
+ "last_run_jst": "2026-10-11T10:44:00+09:00",
+ "searched_since_utc": "2026-10-11T01:30:00Z",
+ "newest_seen_id": "2109096789047431319",
+ "x_calls_this_run": 2,
+ "note": "Hourly run. 2 searches (allowlist + general); no qualifying announcements, no new pending."
 }
