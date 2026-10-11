@@ -62,4 +62,17 @@ if (isVisible(mk('2026-08-01T00:00:00Z','2026-10-01T10:00:00+09:00'), NOW, 30)) 
 if (isVisible(mk('bad'), NOW, 30) || isVisible(null, NOW, 30)) err('filter: invalid shown');
 const arr = [mk('2026-09-20T00:00:00Z'), mk('2026-10-05T00:00:00Z'), mk('2026-09-30T00:00:00Z')].sort(newestFirst);
 if (arr[0].announced_utc !== '2026-10-05T00:00:00Z' || arr[2].announced_utc !== '2026-09-20T00:00:00Z') err('newestFirst');
+// allowlist: every entry's author must be on the allowlist for that service
+const AL = JSON.parse(readFileSync(new URL('../ingest/allowlist.json', import.meta.url), 'utf8'));
+const allowed = Object.fromEntries(Object.entries(AL.services).map(([k, v]) => [k, new Set(v.map(a => a.username.toLowerCase()))]));
+const excluded = new Set((AL.excluded || []).map(a => a.username.toLowerCase()));
+for (const [k, v] of Object.entries(AL.services)) for (const a of v) if (!a.role || !a.source) err(`allowlist ${k}/${a.username}: role/source missing`);
+for (const s of d.services) for (const it of s.items) { const u = it.url.split('/')[3].toLowerCase();
+  if (!allowed[s.id] || !allowed[s.id].has(u)) err(`${s.id}/${it.id}: author @${u} not on allowlist`);
+  if (excluded.has(u)) err(`${s.id}/${it.id}: author @${u} is excluded`); }
+// pending candidates must never be published
+const PEND = JSON.parse(readFileSync(new URL('../ingest/pending.json', import.meta.url), 'utf8'));
+for (const c of PEND.candidates || []) { if (seenId.has(c.id)) err(`pending ${c.id} is published`); if (!c.reason) err(`pending ${c.id}: reason missing`); }
+const ST = JSON.parse(readFileSync(new URL('../ingest/state.json', import.meta.url), 'utf8'));
+if (!ISO_Z.test(ST.last_run_utc)) err('state.last_run_utc');
 console.log(fail ? `${fail} failure(s)` : `OK: ${seenId.size} entries`); process.exit(fail?1:0);
