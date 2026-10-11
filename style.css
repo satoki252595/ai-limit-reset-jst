@@ -146,7 +146,7 @@ dl.meta .strong .muted{font-weight:400}
 .filters .zero{color:var(--ink-2)}
 .filters .more{color:var(--ink-2);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;border-bottom:0}
 .pref select,.pref-btn{min-height:44px}
-.e-note a{word-break:break-all}
+.e-note a{white-space:nowrap;display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}
 :lang(ja) .e-sum,:lang(zh-Hans) .e-sum,:lang(zh-Hant) .e-sum,:lang(ko) .e-sum{line-height:1.75}
 :lang(ja) .e-note,:lang(zh-Hans) .e-note,:lang(zh-Hant) .e-note,:lang(ko) .e-note{line-height:1.8}
 @media (max-width:760px){
