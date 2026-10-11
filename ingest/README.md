@@ -7,5 +7,8 @@
    - `summary` (Japanese, source of truth, short — never the full post text, no images)
    - `summary_i18n.en` (required) and other locales where reasonable (`zh-Hans`, `zh-Hant`, `ko`, `es`, `fr`, `de`, `pt-BR`, `hi`, `id`) — translations of the Japanese summary only, no new facts
    - `effective` (ja) and `effective_i18n.en`; `scope` / `scope_i18n.en`; if `note` is set, `note_i18n.en`
+   - For `type: "scheduled"`: `time_precision` (required) — `exact` (a specific clock time, e.g. "10am PST"; needs `source_local_datetime`), `deadline` (an upper bound such as "by EOD", "by midnight"; the reset may come earlier, and `source_time_text` must keep the original wording), or `approximate` (no time / vague timing). Leave `time_precision: null` for `immediate` / `banked`.
+   - `source_tz_assumed` (boolean, required whenever `source_tz` is set): `true` if the post does not state the zone and it was inferred (e.g. "by EOD" read as Pacific), `false` if the post states it.
+4b. Confirmation: on every run, also look for completion posts (e.g. "reset done / propagated / landed") by allowlisted authors for entries still `status: "scheduled"`. When one exists, set `status: "done"`, `confirmed_url` (the post URL) and `confirmed_utc` (its timestamp, `YYYY-MM-DDTHH:MM:SSZ`, must match the post ID's snowflake time), and update `effective` / `effective_i18n.en`. This applies even before the scheduled/deadline time; the page then shows "Reset done at HH:MM" and stops the countdown.
 5. Anything borderline (time zone missing, unclear scope, unverified author) goes to `pending.json` with a `reason` and is never published.
 6. Keep the 30-day pruning, run `node tests/validate.mjs`, and push only if it passes. Update `state.json`.
