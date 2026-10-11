@@ -80,6 +80,10 @@ for (const s of d.services) for (const it of s.items) { const u = it.url.split('
 // pending candidates must never be published
 const PEND = JSON.parse(readFileSync(new URL('../ingest/pending.json', import.meta.url), 'utf8'));
 for (const c of PEND.candidates || []) { if (seenId.has(c.id)) err(`pending ${c.id} is published`); if (!c.reason) err(`pending ${c.id}: reason missing`); }
+const SRC = JSON.parse(readFileSync(new URL('../ingest/sources.json', import.meta.url), 'utf8'));
+for (const x of SRC.sources || []) { if (!/^https:\/\//.test(x.url) || !x.type || !x.fetch || typeof x.official !== 'boolean' || !x.service) err(`sources: bad entry ${x.url}`); }
+if (!(SRC.sources||[]).some(x=>x.official)) err('sources: no official sources');
+for (const c of PEND.candidates || []) if (!c.channel) err(`pending ${c.id}: channel missing`);
 const ST = JSON.parse(readFileSync(new URL('../ingest/state.json', import.meta.url), 'utf8'));
 if (!ISO_Z.test(ST.last_run_utc)) err('state.last_run_utc');
 // ---- i18n / core ----

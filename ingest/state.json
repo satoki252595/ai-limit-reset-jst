@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-11T01:44:00Z",
- "last_run_jst": "2026-10-11T10:44:00+09:00",
- "searched_since_utc": "2026-10-11T01:30:00Z",
- "newest_seen_id": "2109096789047431319",
- "x_calls_this_run": 2,
- "note": "Hourly run. 2 searches (allowlist + general); no qualifying announcements, no new pending."
+ "last_run_utc": "2026-10-11T07:30:00Z",
+ "last_run_jst": "2026-10-11T16:30:00+09:00",
+ "searched_since_utc": "2026-09-10T00:00:00Z",
+ "newest_seen_id": "2109142061014466866",
+ "x_calls_this_run": 14,
+ "note": "Manual backfill/audit run: 30-day re-scan of official accounts + non-X sources. Added grok/2106083136002310193 (@bot) and meta/2100088481586479411 (@alexandr_wang). 2 candidates to pending (Codex DevDay banked reset via livestream; Grok Bot email reset). Repo synced to origin/main before commit (fixes stale state from uncommitted local changes)."
 }

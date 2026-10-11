@@ -1,6 +1,14 @@
-# Auto-ingest routine (hourly at :37)
+# Auto-ingest routine (every 2 hours)
 
-1. Search X newest-first since `state.json.newest_seen_id` for posts from accounts in `allowlist.json` (add `-from:grok -is:retweet`). Also read self-replies and quote posts by allowlisted accounts.
+0. Start from a clean, synced repo: `git fetch && git status` must show no local changes and HEAD == origin/main. If there are uncommitted changes, do NOT run on top of them: stash or discard them (they belong to a separate design task) and re-sync, so `state.json` is always committed by this run.
+1. Search X newest-first since `state.json.newest_seen_id` for posts from accounts in `allowlist.json` (add `-from:grok -is:retweet`). Also read self-replies and quote posts by allowlisted accounts. For accounts with a `rule` field (e.g. `@bot`: top-level posts only), apply it.
+   Search terms (OR-combined, case-insensitive), run as `(from:A OR from:B ...) (TERMS) -from:grok -is:retweet`:
+   `reset OR resets OR reseted OR resetting OR "rate limits" OR "usage limits" OR "usage limit" OR "weekly limits" OR "5-hour" OR "banked reset" OR "reset bank" OR "reset available" OR "reset token" OR "reset card" OR "starts fresh" OR "hit refresh" OR "fresh usage" OR "brand new usage" OR "full reset" OR propagated OR "on the house" OR quotas OR "Day" (catches "Day N/ Reset")`
+   Completion phrases to match against open `scheduled` entries: `propagated OR "all reset" OR "it is done" OR landed OR "in the bag" OR "is live"`.
+   A second, author-free query catches leaders not yet allowlisted: `("reset usage" OR "reset rate limits" OR "reset everyone" OR "reset weekly limits" OR "banked reset") (codex OR claude OR cursor OR grok OR gemini OR antigravity OR muse) -from:grok -is:retweet`; any non-allowlisted author found here goes to `pending.json` (and a proposed allowlist entry), never straight to the site.
+1b. Non-X sources: WebFetch every entry in `sources.json` with `official: true` (help articles, status RSS, changelogs, blogs, GitHub release feeds, forum announcement RSS). Look for resets announced only there (e.g. help-center notes listing global/banked reset dates, model-launch blog posts carrying a banked reset, emails quoted on official pages). Official-page resets may be published with `url` set to an X post only if an allowlisted X post exists; otherwise add them to `pending.json` with the page URL (the site's URL schema is X-only).
+   Entries with `official: false` (third-party trackers) are discovery only: use them to find candidates, then verify on the official source. Never publish from a tracker alone.
+1c. Unannounced / observed resets (users notice limits refilled; Reddit/X user reports; tracker "observed" rows; email or in-app banner reports by users): publish ONLY when an allowlisted account or official page acknowledges it; otherwise add to `pending.json` with `channel` (e.g. `observed`, `email`, `in-app banner`, `livestream`) and a `reason`.
 2. Open the full text (note_tweet). Publish only clear usage-limit resets by allowlisted authors.
 3. Record the stated time verbatim in `source_time_text`; if a time is stated, set `source_tz` (IANA, e.g. `America/Los_Angeles`; "PST" written during US daylight time = PDT) and `source_local_datetime`, and derive `effective_jst_iso`.
 4. Each new entry MUST include:
