@@ -45,7 +45,7 @@ for (const s of d.services) {
     if (it.confirmed_url && !/^https:\/\/x\.com\/[A-Za-z0-9_]+\/status\/\d+$/.test(it.confirmed_url)) err(`${tag}: confirmed_url`);
     if (it.confirmed_utc) { const cid=it.confirmed_url.split('/').pop(); const cms=Number((BigInt(cid)>>22n)+1288834974657n); if (Math.floor(cms/1000)*1000!==Date.parse(it.confirmed_utc)) err(`${tag}: confirmed snowflake`); }
     if (it.status==='done' && it.effective_jst_iso && Date.parse(it.effective_jst_iso) > Date.now() && !it.confirmed_url) err(`${tag}: future time but status done`);
-    if (/[\uFFFD]|ã|â€/.test(JSON.stringify(it))) err(`${tag}: mojibake`);
+    if (/\uFFFD|Ã.|â€/.test(JSON.stringify(it))) err(`${tag}: mojibake`);
   }
 }
 // retention: stored data must be within retention_days of updated_jst, unless a future scheduled reset remains
@@ -75,4 +75,38 @@ const PEND = JSON.parse(readFileSync(new URL('../ingest/pending.json', import.me
 for (const c of PEND.candidates || []) { if (seenId.has(c.id)) err(`pending ${c.id} is published`); if (!c.reason) err(`pending ${c.id}: reason missing`); }
 const ST = JSON.parse(readFileSync(new URL('../ingest/state.json', import.meta.url), 'utf8'));
 if (!ISO_Z.test(ST.last_run_utc)) err('state.last_run_utc');
+// ---- i18n / core ----
+const g2 = { }; vm.runInNewContext(readFileSync(new URL('../i18n.js', import.meta.url),'utf8')+';'+readFileSync(new URL('../core.js', import.meta.url),'utf8'), g2);
+const { S: UI, LOCALES, NAMES, pick } = g2.I18N; const Core = g2.Core;
+const REQUIRED_LOCALES = ['ja','en','zh-Hans','zh-Hant','ko','es','fr','de','pt-BR','hi','id'];
+for (const l of REQUIRED_LOCALES) { if (!UI[l]) { err(`locale ${l} missing`); continue; } if (!NAMES[l]) err(`locale name ${l}`);
+  for (const k of Object.keys(UI.ja)) if (typeof UI[l][k] !== 'string' || !UI[l][k].trim()) err(`i18n ${l}.${k} missing`);
+  for (const k of Object.keys(UI[l])) if (!(k in UI.ja)) err(`i18n ${l}.${k} extra key`); }
+const pk = [['ja-JP','ja'],['en-GB','en'],['zh-CN','zh-Hans'],['zh-TW','zh-Hant'],['zh-HK','zh-Hant'],['pt-PT','pt-BR'],['ko','ko'],['xx','ja']];
+for (const [a,b] of pk) if (pick([a]) !== b) err(`pick ${a} -> ${pick([a])}`);
+// every entry needs ja + en summary (source of truth ja; en required)
+for (const s of d.services) for (const it of s.items) {
+  if (!it.summary_i18n || !it.summary_i18n.en) err(`${s.id}/${it.id}: summary_i18n.en missing`);
+  if (!it.effective_i18n || !it.effective_i18n.en) err(`${s.id}/${it.id}: effective_i18n.en missing`);
+  if (it.note && !(it.note_i18n||{}).en) err(`${s.id}/${it.id}: note_i18n.en missing`);
+  for (const l of Object.keys(it.summary_i18n||{})) if (!REQUIRED_LOCALES.includes(l)) err(`${s.id}/${it.id}: unknown locale ${l}`);
+  if (Core.localized(it,'summary','xx') !== it.summary_i18n.en) err('fallback to en');
+}
+if (Core.localized({summary:'ja'},'summary','fr') !== 'ja') err('fallback to ja');
+// timezone rendering for several zones (same instant)
+const inst = Date.parse('2026-10-11T16:00:00+09:00');
+const tzCases = {'Asia/Tokyo':'16:00','America/New_York':'03:00','Europe/London':'08:00','Asia/Kolkata':'12:30','America/Los_Angeles':'00:00','UTC':'07:00','Asia/Shanghai':'15:00'};
+for (const [z, hm] of Object.entries(tzCases)) { const out = Core.fmtDate(inst, 'en', z); if (!out.includes(hm)) err(`tz ${z}: ${out}`); }
+// after DST end (Nov 1 2026) LA is UTC-8
+if (!Core.fmtDate(Date.parse('2026-11-02T18:00:00Z'),'en','America/Los_Angeles').includes('10:00')) err('tz LA after DST end');
+for (const z of Core.ZONES) { try { new Intl.DateTimeFormat('en',{timeZone:z}); } catch(e) { err(`bad zone ${z}`); } }
+const pp = Core.parts(90061000); if (pp.d!==1||pp.h!==1||pp.m!==1||pp.s!==1) err('parts'); const pn = Core.parts(-5000); if (pn.d||pn.h||pn.m||pn.s) err('parts negative');
+// ics generation
+const ics = Core.buildIcs({id:'123',url:'https://x.com/a/status/123',effective_jst_iso:'2026-10-11T16:00:00+09:00',summary:'ja',summary_i18n:{en:'Reset; a, b'}}, 'OpenAI Codex', Date.parse('2026-10-11T04:00:00Z'));
+for (const line of ['BEGIN:VCALENDAR','END:VCALENDAR','DTSTART:20261011T070000Z','DTEND:20261011T071500Z','UID:123@ai-limit-reset-jst','SUMMARY:OpenAI Codex usage-limit reset','DESCRIPTION:Reset\\; a\\, b\\nhttps://x.com/a/status/123']) if (!ics.includes(line+'\r\n')) err('ics missing '+line);
+if (Core.buildIcs({id:'1',effective_jst_iso:null},'x',0) !== null) err('ics null');
+const NOWB = Date.parse('2026-10-11T08:00:00Z');
+if (Core.badge({type:'scheduled',status:'scheduled',effective_jst_iso:'2026-10-11T16:00:00+09:00'}, Date.parse('2026-10-11T06:00:00Z')) !== 'scheduled') err('badge scheduled');
+if (Core.badge({type:'scheduled',status:'scheduled',effective_jst_iso:'2026-10-11T16:00:00+09:00'}, NOWB) !== 'done') err('badge passed');
+if (Core.badge({type:'immediate',status:'done'}, NOWB) !== 'immediate') err('badge immediate');
 console.log(fail ? `${fail} failure(s)` : `OK: ${seenId.size} entries`); process.exit(fail?1:0);
