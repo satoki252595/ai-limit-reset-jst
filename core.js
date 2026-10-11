@@ -21,7 +21,19 @@ function buildIcs(it, serviceName, nowMs){
     'BEGIN:VALARM','TRIGGER:-PT15M','ACTION:DISPLAY','DESCRIPTION:'+icsEscape(summary),'END:VALARM','END:VEVENT','END:VCALENDAR'];
   return lines.join('\r\n')+'\r\n';
 }
-function badge(it, now){ if (it.type==='banked') return 'banked'; if (it.status==='scheduled'){ const t=Date.parse(it.effective_jst_iso); return (!Number.isNaN(t)&&t<=now)?'done':'scheduled'; } return it.type==='immediate'?'immediate':'done'; }
+const PRECISIONS=['exact','deadline','approximate'];
+function precision(it){ if (PRECISIONS.includes(it&&it.time_precision)) return it.time_precision; return (it&&it.source_local_datetime)?'exact':'approximate'; }
+function isConfirmed(it){ return !!(it&&it.confirmed_utc) && !Number.isNaN(Date.parse(it.confirmed_utc)); }
+// Hero choice: next unconfirmed upcoming reset; else a scheduled reset confirmed in the last 24h (shown as done, no countdown).
+function heroPick(list, now){
+  const up=list.map(x=>({...x,t:Date.parse(x.it.effective_jst_iso)})).filter(x=>x.it.status==='scheduled'&&!isConfirmed(x.it)&&x.t>now).sort((a,b)=>a.t-b.t);
+  if (up.length) return {mode:'upcoming',x:up[0],precision:precision(up[0].it)};
+  const dn=list.map(x=>({...x,c:Date.parse(x.it.confirmed_utc)})).filter(x=>x.it.type==='scheduled'&&isConfirmed(x.it)&&x.c<=now&&now-x.c<86400000).sort((a,b)=>b.c-a.c);
+  if (dn.length) return {mode:'done',x:dn[0],precision:precision(dn[0].it)};
+  return null;
+}
+function fmtTime(ms, lang, tz){ return new Intl.DateTimeFormat(INTL_LOCALE[lang]||lang,{timeZone:tz,hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(ms)); }
+function badge(it, now){ if (it.type==='banked') return 'banked'; if (isConfirmed(it)) return 'done'; if (it.status==='scheduled'){ const t=Date.parse(it.effective_jst_iso); return (!Number.isNaN(t)&&t<=now)?'done':'scheduled'; } return it.type==='immediate'?'immediate':'done'; }
 const CITY={
  en:{'Asia/Tokyo':'Tokyo','Asia/Seoul':'Seoul','Asia/Shanghai':'Shanghai','Asia/Singapore':'Singapore','Asia/Kolkata':'Kolkata','Asia/Dubai':'Dubai','Europe/London':'London','Europe/Paris':'Paris','Europe/Berlin':'Berlin','America/Sao_Paulo':'São Paulo','America/New_York':'New York','America/Chicago':'Chicago','America/Los_Angeles':'Los Angeles','UTC':'UTC'},
  ja:{'Asia/Tokyo':'東京','Asia/Seoul':'ソウル','Asia/Shanghai':'上海','Asia/Singapore':'シンガポール','Asia/Kolkata':'コルカタ','Asia/Dubai':'ドバイ','Europe/London':'ロンドン','Europe/Paris':'パリ','Europe/Berlin':'ベルリン','America/Sao_Paulo':'サンパウロ','America/New_York':'ニューヨーク','America/Chicago':'シカゴ','America/Los_Angeles':'ロサンゼルス','UTC':'UTC'},
@@ -31,5 +43,5 @@ const CITY={
 function offset(tz, ms){ try{ const p=new Intl.DateTimeFormat('en-US',{timeZone:tz,timeZoneName:'shortOffset'}).formatToParts(new Date(ms)).find(x=>x.type==='timeZoneName'); return p?p.value.replace('GMT','UTC').replace(/^UTC$/,'UTC±0'):''; }catch(e){ return ''; } }
 function tzLabel(tz, lang, ms){ const c=(CITY[lang]||CITY.en)[tz]||CITY.en[tz]||tz.split('/').pop().replace(/_/g,' '); return c+' '+offset(tz, ms); }
 function fmtShort(ms, lang, tz){ return new Intl.DateTimeFormat(INTL_LOCALE[lang]||lang,{timeZone:tz,month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(ms)); }
-g.Core={tzLabel,offset,fmtShort,ZONES,INTL_LOCALE,fmtDate,relTime,parts,localized,buildIcs,badge};
+g.Core={precision,isConfirmed,heroPick,fmtTime,PRECISIONS,tzLabel,offset,fmtShort,ZONES,INTL_LOCALE,fmtDate,relTime,parts,localized,buildIcs,badge};
 })(typeof globalThis!=='undefined'?globalThis:window);

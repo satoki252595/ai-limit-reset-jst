@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T13:30:00+09:00",
+ "updated_jst": "2026-10-11T13:50:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -42,21 +42,23 @@
      "announced_utc": "2026-10-10T22:15:39Z",
      "announced_jst": "2026-10-11T07:15:39+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「by EOD」（太平洋時間10月10日の終わり）までに実施と予告。反映完了は未確認",
+     "effective": "「by EOD」（タイムゾーン未明記）までに実施と予告され、期限より前に「All propagated」と反映完了が告知された",
      "effective_jst_iso": "2026-10-11T16:00:00+09:00",
      "summary": "「28日間チャレンジ」6日目はリセット。続く自己返信で本日中（by EOD）のグローバルリセットを予告。",
      "url": "https://x.com/thsottiaux/status/2109045220411351517",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "予告の自己返信：https://x.com/thsottiaux/status/2109045392684032299 。投稿にタイムゾーンの明記はなく、ユーザー承認のもと太平洋時間（America/Los_Angeles）の当日終わりとして換算。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2109045392684032299 。投稿にタイムゾーンの明記はなく、ユーザー承認のもと太平洋時間（America/Los_Angeles）の当日終わりとして換算。反映完了の投稿：https://x.com/thsottiaux/status/2109132167112782291 。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
      "id": "2109045220411351517",
      "scope": "全体（グローバルリセット、対象プランは未明記）",
      "type": "scheduled",
-     "status": "scheduled",
+     "status": "done",
      "source_time_text": "Global reset by EOD",
      "source_tz": "America/Los_Angeles",
      "source_local_datetime": "2026-10-11T00:00",
-     "confirmed_url": null,
-     "confirmed_utc": null,
+     "time_precision": "deadline",
+     "source_tz_assumed": true,
+     "confirmed_url": "https://x.com/thsottiaux/status/2109132167112782291",
+     "confirmed_utc": "2026-10-11T04:01:09Z",
      "summary_i18n": {
       "en": "Day 6 of the \"28-day challenge\" is a reset. A follow-up self-reply announced a global reset \"by EOD\".",
       "zh-Hans": "“28天挑战”第6天为重置。随后的自我回复预告“今天结束前（by EOD）”进行全局重置。",
@@ -70,13 +72,13 @@
       "id": "Hari ke-6 \"tantangan 28 hari\" adalah reset. Balasan lanjutan mengumumkan reset global \"by EOD\" (sebelum akhir hari)."
      },
      "effective_i18n": {
-      "en": "Scheduled \"by EOD\" (end of Oct 10, Pacific time). Not yet confirmed as applied."
+      "en": "Announced \"by EOD\" (no time zone stated); completion (\"All propagated\") was announced before the assumed deadline."
      },
      "scope_i18n": {
       "en": "Global reset (plans not specified)"
      },
      "note_i18n": {
-      "en": "Announcement self-reply: https://x.com/thsottiaux/status/2109045392684032299 . The post does not state a time zone; with the site owner's approval it is read as end of day in Pacific time (America/Los_Angeles). 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+      "en": "Announcement self-reply: https://x.com/thsottiaux/status/2109045392684032299 . The post does not state a time zone; with the site owner's approval it is read as end of day in Pacific time (America/Los_Angeles). Completion post: https://x.com/thsottiaux/status/2109132167112782291 . 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
      },
      "poster_i18n": {
       "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
@@ -99,6 +101,8 @@
      "source_time_text": null,
      "source_tz": null,
      "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
      "confirmed_url": "https://x.com/thsottiaux/status/2108040921044639779",
      "confirmed_utc": "2026-10-08T03:44:55Z",
      "summary_i18n": {
@@ -143,6 +147,8 @@
      "source_time_text": null,
      "source_tz": null,
      "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
      "confirmed_url": null,
      "confirmed_utc": null,
      "summary_i18n": {
@@ -185,6 +191,8 @@
      "source_time_text": "tomorrow 10am PST",
      "source_tz": "America/Los_Angeles",
      "source_local_datetime": "2026-10-02T10:00",
+     "time_precision": "exact",
+     "source_tz_assumed": false,
      "confirmed_url": "https://x.com/thsottiaux/status/2106131810921136451",
      "confirmed_utc": "2026-10-02T21:18:48Z",
      "summary_i18n": {
@@ -229,6 +237,8 @@
      "source_time_text": null,
      "source_tz": null,
      "source_local_datetime": null,
+     "time_precision": "approximate",
+     "source_tz_assumed": null,
      "confirmed_url": "https://x.com/thsottiaux/status/2103911959544610829",
      "confirmed_utc": "2026-09-26T18:17:54Z",
      "summary_i18n": {
@@ -273,6 +283,8 @@
      "source_time_text": null,
      "source_tz": null,
      "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
      "confirmed_url": null,
      "confirmed_utc": null,
      "summary_i18n": {
@@ -315,6 +327,8 @@
      "source_time_text": null,
      "source_tz": null,
      "source_local_datetime": null,
+     "time_precision": "deadline",
+     "source_tz_assumed": null,
      "confirmed_url": "https://x.com/thsottiaux/status/2098685367058612394",
      "confirmed_utc": "2026-09-12T08:09:17Z",
      "summary_i18n": {
@@ -367,6 +381,8 @@
      "source_time_text": null,
      "source_tz": null,
      "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
      "confirmed_url": null,
      "confirmed_utc": null,
      "summary_i18n": {
