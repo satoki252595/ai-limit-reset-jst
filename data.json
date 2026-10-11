@@ -1,22 +1,20 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T13:00:00+09:00",
+ "updated_jst": "2026-10-11T13:30:00+09:00",
  "services": [
   {
    "id": "cursor",
    "name": "Cursor",
    "official_name": "Cursor (Anysphere)",
    "items": [],
-   "name_en": "Cursor",
-   "icon": "🖱️"
+   "name_en": "Cursor"
   },
   {
    "id": "grok",
    "name": "Grok（xAI）",
    "official_name": "Grok / xAI",
    "items": [],
-   "name_en": "Grok (xAI)",
-   "icon": "𝕏"
+   "name_en": "Grok (xAI)"
   },
   {
    "id": "meta",
@@ -26,16 +24,14 @@
    "official_name_i18n": {
     "en": "Muse (Meta's personal AI agent, launched Sep 8, 2026; underlying model: Muse Spark; app: Meta AI)"
    },
-   "name_en": "Meta Muse",
-   "icon": "🎨"
+   "name_en": "Meta Muse"
   },
   {
    "id": "gemini",
    "name": "Google Gemini",
    "official_name": "Google Gemini / Antigravity",
    "items": [],
-   "name_en": "Google Gemini",
-   "icon": "✨"
+   "name_en": "Google Gemini"
   },
   {
    "id": "codex",
@@ -46,7 +42,7 @@
      "announced_utc": "2026-10-10T22:15:39Z",
      "announced_jst": "2026-10-11T07:15:39+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「by EOD」＝2026年10月11日 16時（日本時間）まで（太平洋時間10月10日の終わり）。反映完了は未確認",
+     "effective": "「by EOD」（太平洋時間10月10日の終わり）までに実施と予告。反映完了は未確認",
      "effective_jst_iso": "2026-10-11T16:00:00+09:00",
      "summary": "「28日間チャレンジ」6日目はリセット。続く自己返信で本日中（by EOD）のグローバルリセットを予告。",
      "url": "https://x.com/thsottiaux/status/2109045220411351517",
@@ -74,20 +70,23 @@
       "id": "Hari ke-6 \"tantangan 28 hari\" adalah reset. Balasan lanjutan mengumumkan reset global \"by EOD\" (sebelum akhir hari)."
      },
      "effective_i18n": {
-      "en": "Scheduled: \"by EOD\" (end of Oct 10, Pacific time). Not yet confirmed as applied."
+      "en": "Scheduled \"by EOD\" (end of Oct 10, Pacific time). Not yet confirmed as applied."
      },
      "scope_i18n": {
       "en": "Global reset (plans not specified)"
      },
      "note_i18n": {
       "en": "Announcement self-reply: https://x.com/thsottiaux/status/2109045392684032299 . The post does not state a time zone; with the site owner's approval it is read as end of day in Pacific time (America/Los_Angeles). 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
     },
     {
      "announced_utc": "2026-10-07T19:19:17Z",
      "announced_jst": "2026-10-08T04:19:17+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "保存型リセット。全アカウントへの反映完了を2026年10月8日 12:44（日本時間）に告知",
+     "effective": "保存型リセット。全アカウントへの反映完了が後に告知された",
      "effective_jst_iso": null,
      "summary": "28日間チャレンジ3日目。Codex/ChatGPT Workの利用者4,000万人突破を記念し、全有料アカウントに保存型（banked）リセットを付与。",
      "url": "https://x.com/thsottiaux/status/2107913674593644711",
@@ -115,13 +114,16 @@
       "id": "Hari ke-3 tantangan 28 hari. Merayakan 40 juta pengguna Codex/ChatGPT Work, reset tersimpan (banked) diberikan ke semua akun berbayar."
      },
      "effective_i18n": {
-      "en": "Banked reset. Delivery to all accounts was confirmed later (see link)."
+      "en": "Banked reset. Delivery to all accounts was confirmed later."
      },
      "scope_i18n": {
       "en": "All paid accounts"
      },
      "note_i18n": {
       "en": "Confirmation post: https://x.com/thsottiaux/status/2108040921044639779"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
     },
     {
@@ -161,13 +163,16 @@
      "scope_i18n": {
       "en": "Not specified"
      },
-     "note_i18n": {}
+     "note_i18n": {},
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
     },
     {
      "announced_utc": "2026-10-02T02:14:51Z",
      "announced_jst": "2026-10-02T11:14:51+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "予告日時：「tomorrow 10am PST」＝2026年10月3日 2時（日本時間）。10月3日 6時18分（日本時間）に反映完了を告知",
+     "effective": "「tomorrow 10am PST」に実施と予告。反映完了が後に告知された",
      "effective_jst_iso": "2026-10-03T02:00:00+09:00",
      "summary": "GPT-6.1 Solの立ち上がりの遅さを謝罪し、翌日午前10時（PST）に全有料ChatGPTアカウント向けのグローバルリセットを予告。",
      "url": "https://x.com/thsottiaux/status/2105843926221660585",
@@ -195,20 +200,23 @@
       "id": "Meminta maaf atas awal yang lambat GPT-6.1 Sol, mengumumkan reset global untuk semua akun ChatGPT berbayar pukul 10 pagi (PST) keesokan harinya."
      },
      "effective_i18n": {
-      "en": "Scheduled: \"tomorrow 10am PST\". Propagation was confirmed later (see link)."
+      "en": "Scheduled for \"tomorrow 10am PST\". Propagation was confirmed later."
      },
      "scope_i18n": {
       "en": "All paid ChatGPT accounts"
      },
      "note_i18n": {
       "en": "The post said \"PST\" during daylight saving time, so it is converted as Pacific Daylight Time (PDT, UTC-7). Confirmation: https://x.com/thsottiaux/status/2106131810921136451"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
     },
     {
      "announced_utc": "2026-09-26T00:07:13Z",
      "announced_jst": "2026-09-26T09:07:13+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「we’ll reset」と予告（時刻未明記）。2026年9月27日 3時17分（日本時間）に反映完了を告知",
+     "effective": "「we’ll reset」と予告（時刻未明記）。反映完了が後に告知された",
      "effective_jst_iso": null,
      "summary": "短時間の障害から復旧し、CodexとChatGPT Workの全有料ユーザーの使用上限をリセットすると発表。",
      "url": "https://x.com/thsottiaux/status/2103637477760311522",
@@ -236,13 +244,16 @@
       "id": "Setelah pulih dari gangguan singkat, mengumumkan reset batas penggunaan untuk semua pengguna berbayar Codex dan ChatGPT Work."
      },
      "effective_i18n": {
-      "en": "Announced as \"we'll reset\" (no time given). Propagation was confirmed later (see link)."
+      "en": "Announced as \"we'll reset\" (no time given). Propagation was confirmed later."
      },
      "scope_i18n": {
       "en": "All paid users of Codex and ChatGPT Work"
      },
      "note_i18n": {
       "en": "Confirmation: https://x.com/thsottiaux/status/2103911959544610829"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
     },
     {
@@ -282,13 +293,16 @@
      "scope_i18n": {
       "en": "Plus/Pro/Business"
      },
-     "note_i18n": {}
+     "note_i18n": {},
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
     },
     {
      "announced_utc": "2026-09-12T03:20:36Z",
      "announced_jst": "2026-09-12T12:20:36+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「当日深夜（midnight today）までに」実施と予告（タイムゾーン未明記）。2026年9月12日 17:09（日本時間）に反映完了を告知",
+     "effective": "「当日深夜（midnight today）までに」実施と予告（タイムゾーン未明記）。反映完了が後に告知された",
      "effective_jst_iso": null,
      "summary": "Astraの品質問題の修正報告とともに、当日深夜までにリセットを実施すると予告。",
      "url": "https://x.com/thsottiaux/status/2098612714704891959",
@@ -316,18 +330,20 @@
       "id": "Bersama laporan perbaikan masalah kualitas Astra, mengumumkan reset paling lambat tengah malam hari itu."
      },
      "effective_i18n": {
-      "en": "Scheduled \"by midnight today\" (time zone not stated). Propagation was confirmed later (see link)."
+      "en": "Scheduled \"by midnight today\" (time zone not stated). Propagation was confirmed later."
      },
      "scope_i18n": {
       "en": "Not specified (post addressed to Astra users)"
      },
      "note_i18n": {
       "en": "Confirmation: https://x.com/thsottiaux/status/2098685367058612394"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
     }
    ],
-   "name_en": "OpenAI Codex",
-   "icon": "⌨️"
+   "name_en": "OpenAI Codex"
   },
   {
    "id": "claude",
@@ -371,11 +387,13 @@
      "scope_i18n": {
       "en": "Subscribers (limit increase applies to Pro/Max/Team)"
      },
-     "note_i18n": {}
+     "note_i18n": {},
+     "poster_i18n": {
+      "en": "Claude official (@claudeai)"
+     }
     }
    ],
-   "name_en": "Claude (Anthropic)",
-   "icon": "✳️"
+   "name_en": "Claude (Anthropic)"
   }
  ],
  "schema_version": 2,

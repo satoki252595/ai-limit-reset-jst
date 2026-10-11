@@ -13,67 +13,72 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const safe=u=>/^https:\/\//.test(u||'')?u:null;
 const $=id=>document.getElementById(id);
 const svcName=s=>(lang==='ja'?s.name:(s.name_en||s.name));
-function syncUrl(){ const p=new URLSearchParams(); if(lang!=='ja')p.set('lang',lang); if(view!=='timeline')p.set('view',view); if(svcFilter!=='all')p.set('svc',svcFilter); const q=p.toString(); history.replaceState(null,'',location.pathname+(q?'?'+q:'')); }
+function syncUrl(){ const p=new URLSearchParams(); if(lang!=='ja')p.set('lang',lang); if(view!=='timeline')p.set('view',view); if(svcFilter!=='all')p.set('svc',svcFilter); if(qs.get('tz')||tz!==sysTz)p.set('tz',tz); const q=p.toString(); history.replaceState(null,'',location.pathname+(q?'?'+q:'')); }
 function applyStatic(){
   document.documentElement.lang=lang; document.title=t('title');
   document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=t(el.dataset.i18n)});
   $('lang').innerHTML=LOCALES.map(l=>`<option value="${l}"${l===lang?' selected':''} lang="${l}">${esc(NAMES[l])}</option>`).join('');
-  const zones=[...new Set([sysTz,...C.ZONES,tz])];
-  $('tz').innerHTML=zones.map(z=>`<option value="${esc(z)}"${z===tz?' selected':''}>${esc(z.replace(/_/g,' '))}${z===sysTz?' ★':''}</option>`).join('');
-  const th=store.get('theme')||'auto'; const ic={auto:'🌗',light:'☀️',dark:'🌙'}[th];
-  $('theme').textContent=ic+' '+t('th_'+th); $('theme').setAttribute('aria-label',t('theme')+': '+t('th_'+th));
+  const now=Date.now(); const zones=[...new Set([...C.ZONES,sysTz,tz])];
+  $('tz').innerHTML=zones.map(z=>`<option value="${esc(z)}"${z===tz?' selected':''}>${esc(C.tzLabel(z,lang,now))}</option>`).join('');
+  const th=store.get('theme')||'auto';
+  $('theme').textContent=t('th_'+th); $('theme').setAttribute('aria-label',t('theme')+': '+t('th_'+th));
   $('chips').setAttribute('aria-label',t('filter')); $('viewsel').setAttribute('aria-label',t('view'));
   document.querySelectorAll('#viewsel button').forEach(b=>b.setAttribute('aria-checked',String(b.dataset.v===view)));
 }
 function services(){ const days=Number(DATA.retention_days)||LimitFilter.DAYS, now=Date.now();
   return (DATA.services||[]).map(s=>({...s,items:(Array.isArray(s.items)?s.items:[]).filter(it=>LimitFilter.isVisible(it,now,days)).sort(LimitFilter.newestFirst)})); }
-function countHtml(ms){ const p=C.parts(ms); return ['d','h','m','s'].map(k=>`<div><b>${p[k]}</b><span>${esc(t(k))}</span></div>`).join(''); }
+function countHtml(ms){ const p=C.parts(ms); return ['d','h','m','s'].map(k=>`<div><b>${k==='d'?p[k]:String(p[k]).padStart(2,'0')}</b><span>${esc(t(k))}</span></div>`).join(''); }
 function card(it,s,now){
-  const b=C.badge(it,now), eff=Date.parse(it.effective_jst_iso), url=safe(it.url), curl=safe(it.confirmed_url);
+  const b=C.badge(it,now), eff=Date.parse(it.effective_jst_iso), conf=Date.parse(it.confirmed_utc), url=safe(it.url), curl=safe(it.confirmed_url);
   const sum=C.localized(it,'summary',lang), translated=lang!=='ja'&&(it.summary_i18n||{})[lang];
-  const effTxt=lang==='ja'?it.effective:C.localized(it,'effective',lang), scope=lang==='ja'?it.scope:C.localized(it,'scope',lang), note=lang==='ja'?it.note:C.localized(it,'note',lang);
+  const effTxt=C.localized(it,'effective',lang), scope=C.localized(it,'scope',lang), note=C.localized(it,'note',lang);
   const posted=Date.parse(it.announced_utc);
-  return `<article class="card" aria-label="${esc(svcName(s))}">
-  <div class="head"><span aria-hidden="true">${esc(s.icon||'')}</span><span class="svcname">${esc(svcName(s))}</span><span class="badge b-${b}">${esc(t('st_'+b))}</span><time class="rel" datetime="${esc(it.announced_utc)}" title="${esc(C.fmtDate(posted,lang,tz))}">${esc(C.relTime(posted,now,lang))}</time></div>
-  <p class="sum"${translated?` title="${esc(t('translated_note'))}"`:''}>${esc(sum)}</p>
-  <dl class="meta">
-   <dt>${esc(t('announced'))}</dt><dd>${esc(C.fmtDate(posted,lang,tz))}</dd>
-   ${tz!=='UTC'?`<dt>${esc(t('original'))}</dt><dd>${esc(C.fmtDate(posted,lang,'UTC'))}</dd>`:''}
-   <dt>${esc(t('effective'))}</dt><dd>${Number.isNaN(eff)?'':`<strong>${esc(C.fmtDate(eff,lang,tz))}</strong>${it.source_time_text?` <span class="muted">(“${esc(it.source_time_text)}”, ${esc(it.source_tz||'')})</span>`:''}<br>`}${esc(effTxt)}</dd>
-   ${scope?`<dt>${esc(t('scope'))}</dt><dd>${esc(scope)}</dd>`:''}
-   <dt>${esc(t('poster'))}</dt><dd>${esc(it.poster||'')}</dd>
-  </dl>
-  ${note?`<p class="note">※ ${esc(note)}</p>`:''}
-  <div class="links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a>`:''}${curl?`<a href="${esc(curl)}" target="_blank" rel="noopener">${esc(t('confirmed'))} ↗</a>`:''}${(!Number.isNaN(eff)&&eff>now)?`<button type="button" class="btn" data-ics="${esc(it.id)}">📅 ${esc(t('ics'))}</button>`:''}</div>
+  return `<article class="entry" aria-label="${esc(svcName(s))}">
+  <div class="e-date"><time datetime="${esc(it.announced_utc)}">${esc(C.fmtShort(posted,lang,tz))}</time><span class="rel">${esc(C.relTime(posted,now,lang))}</span></div>
+  <div class="e-main">
+   <div class="e-kicker"><span class="e-svc">${esc(svcName(s))}</span><span class="status ${b}">${esc(t('st_'+b))}</span></div>
+   <p class="e-sum"${translated?` title="${esc(t('translated_note'))}"`:''}>${esc(sum)}</p>
+   <dl class="meta">
+    <dt>${esc(t('announced'))}</dt><dd>${esc(C.fmtDate(posted,lang,tz))}${tz!=='UTC'?` <span class="muted">· ${esc(C.fmtDate(posted,lang,'UTC'))}</span>`:''}</dd>
+    ${Number.isNaN(eff)?'':`<dt>${esc(t('scheduled_for'))}</dt><dd class="strong">${esc(C.fmtDate(eff,lang,tz))}${it.source_time_text?` <span class="muted">“${esc(it.source_time_text)}” · ${esc(it.source_tz||'')}</span>`:''}</dd>`}
+    <dt>${esc(t('effective'))}</dt><dd>${esc(effTxt)}</dd>
+    ${Number.isNaN(conf)?'':`<dt>${esc(t('confirmed_at'))}</dt><dd>${esc(C.fmtDate(conf,lang,tz))}</dd>`}
+    ${scope?`<dt>${esc(t('scope'))}</dt><dd>${esc(scope)}</dd>`:''}
+    <dt>${esc(t('poster'))}</dt><dd>${esc(C.localized(it,'poster',lang))}</dd>
+   </dl>
+   ${note?`<p class="e-note">${esc(note)}</p>`:''}
+   <div class="e-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a>`:''}${curl?`<a href="${esc(curl)}" target="_blank" rel="noopener">${esc(t('confirmed'))} ↗</a>`:''}${(!Number.isNaN(eff)&&eff>now)?`<button type="button" class="link" data-ics="${esc(it.id)}">${esc(t('ics'))}</button>`:''}</div>
+  </div>
   </article>`;
 }
 function renderHero(svcs,now){
   const fut=svcs.flatMap(s=>s.items.map(it=>({s,it,t:Date.parse(it.effective_jst_iso)}))).filter(x=>x.t>now).sort((a,b)=>a.t-b.t);
   const body=$('hero-body'); timers=[];
-  if(!fut.length){ body.innerHTML=`<p class="muted">${esc(t('none_next'))}</p>`; return; }
+  if(!fut.length){ body.innerHTML=`<p class="h-none">${esc(t('none_next'))}</p>`; return; }
   const n=fut[0];
-  body.innerHTML=`<div class="svc"><span aria-hidden="true">${esc(n.s.icon||'')}</span> ${esc(svcName(n.s))} <span class="badge b-scheduled">${esc(t('st_scheduled'))}</span></div>
-   <div class="when"><time datetime="${esc(n.it.effective_jst_iso)}">${esc(C.fmtDate(n.t,lang,tz))}</time> · <span class="muted">${esc(C.localized(n.it,'summary',lang))}</span></div>
+  body.innerHTML=`<p class="h-svc">${esc(svcName(n.s))}</p>
+   <p class="h-when"><time datetime="${esc(n.it.effective_jst_iso)}">${esc(C.fmtDate(n.t,lang,tz))}</time></p>
    <div class="count" id="count" role="timer" aria-label="${esc(t('until'))}">${countHtml(n.t-now)}</div>
-   <div class="actions"><button type="button" class="btn primary" data-ics="${esc(n.it.id)}">📅 ${esc(t('ics'))}</button><button type="button" class="btn" id="share">🔗 ${esc(t('share'))}</button><a class="btn" href="${esc(n.it.url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a></div>`;
+   <p class="h-sum">${esc(C.localized(n.it,'summary',lang))}</p>
+   <div class="actions"><button type="button" class="link primary" data-ics="${esc(n.it.id)}">${esc(t('ics'))}</button><button type="button" class="link" id="share">${esc(t('share'))}</button><a href="${esc(n.it.url)}" target="_blank" rel="noopener">${esc(t('source'))} ↗</a></div>`;
   timers.push(n);
 }
 function render(){
   if(!DATA) return; applyStatic(); const now=Date.now(); const svcs=services();
   renderHero(svcs,now);
   const total=svcs.reduce((a,s)=>a+s.items.length,0);
-  $('chips').innerHTML=[`<button type="button" class="chip" aria-pressed="${svcFilter==='all'}" data-svc="all">${esc(t('all'))}<span class="n">${total}</span></button>`]
-    .concat(svcs.map(s=>`<button type="button" class="chip" aria-pressed="${svcFilter===s.id}" data-svc="${esc(s.id)}"><span aria-hidden="true">${esc(s.icon||'')}</span> ${esc(svcName(s))}<span class="n">${s.items.length}</span></button>`)).join('');
+  $('chips').innerHTML=[`<button type="button" aria-pressed="${svcFilter==='all'}" data-svc="all">${esc(t('all'))}<span class="n">${total}</span></button>`]
+    .concat(svcs.map(s=>`<button type="button" aria-pressed="${svcFilter===s.id}" data-svc="${esc(s.id)}">${esc(svcName(s))}<span class="n">${s.items.length}</span></button>`)).join('');
   const shown=svcs.filter(s=>svcFilter==='all'||s.id===svcFilter); let html='';
   if(view==='timeline'){ const all=shown.flatMap(s=>s.items.map(it=>({s,it}))).sort((a,b)=>LimitFilter.newestFirst(a.it,b.it));
     html=all.length?all.map(x=>card(x.it,x.s,now)).join(''):`<p class="empty">${esc(t(svcFilter==='all'?'empty':'empty_filter'))}</p>`;
-  } else html=shown.map(s=>`<section class="group" aria-labelledby="g-${esc(s.id)}"><h2 id="g-${esc(s.id)}"><span aria-hidden="true">${esc(s.icon||'')}</span> ${esc(svcName(s))}</h2>${s.items.length?s.items.map(it=>card(it,s,now)).join(''):`<p class="empty">${esc(t('empty_filter'))}</p>`}</section>`).join('');
+  } else html=shown.map(s=>`<section aria-labelledby="g-${esc(s.id)}"><h2 class="group-h" id="g-${esc(s.id)}">${esc(svcName(s))}</h2>${s.items.length?s.items.map(it=>card(it,s,now)).join(''):`<p class="empty">${esc(t('empty_filter'))}</p>`}</section>`).join('');
   $('list').innerHTML=html;
   $('updated').textContent=t('updated')+': '+(Date.parse(DATA.updated_jst)?C.fmtDate(Date.parse(DATA.updated_jst),lang,tz):'');
   syncUrl();
 }
 function tick(){ const now=Date.now(); for(const n of timers){ const el=$('count'); if(!el) continue; const left=n.t-now;
-  if(left<=0){ el.innerHTML=`<p>${esc(t('passed'))}</p>`; $('live').textContent=t('passed'); timers=[]; setTimeout(render,1500); return; }
+  if(left<=0){ el.innerHTML=`<p class="passed">${esc(t('passed'))}</p>`; $('live').textContent=t('passed'); timers=[]; setTimeout(render,1500); return; }
   el.innerHTML=countHtml(left);
   if(now-lastAnnounce>60000){ lastAnnounce=now; const p=C.parts(left); $('live').textContent=`${t('until')} ${p.d}${t('d')} ${p.h}${t('h')} ${p.m}${t('m')}`; } } }
 function toast(msg){ const el=$('toast'); el.textContent=msg; el.hidden=false; clearTimeout(toast.t); toast.t=setTimeout(()=>el.hidden=true,1800); }

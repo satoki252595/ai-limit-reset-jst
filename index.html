@@ -6,8 +6,8 @@
 <title>AI使用上限リセット・トラッカー | AI Usage-Limit Reset Tracker</title>
 <meta name="description" content="主要AIサービス（OpenAI Codex、Claude、Grok、Gemini、Cursor、Meta Muse）の使用上限一斉リセットの公式発表と次回リセットのカウントダウン。Official AI usage-limit reset announcements with a countdown, in your time zone.">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://satoki252595.github.io/ai-limit-reset-jst/">
 <link rel="alternate" hreflang="ja" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=ja">
 <link rel="alternate" hreflang="en" href="https://satoki252595.github.io/ai-limit-reset-jst/?lang=en">
@@ -32,40 +32,39 @@
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="skip">本文へスキップ</a>
-<header class="top">
- <div class="wrap bar">
-  <h1 class="brand"><span aria-hidden="true">⏱️</span> <span data-i18n="title">AI使用上限リセット・トラッカー</span></h1>
-  <div class="controls">
-   <label><span class="sr" data-i18n="lang">言語</span><span aria-hidden="true">🌐</span><select id="lang"></select></label>
-   <label><span class="sr" data-i18n="tz">タイムゾーン</span><span aria-hidden="true">🕒</span><select id="tz"></select></label>
-   <button id="theme" type="button" class="iconbtn"></button>
-  </div>
+<header class="masthead">
+ <div class="grid row">
+  <p class="wordmark"><a href="./" data-i18n="title">AI使用上限リセット・トラッカー</a></p>
+  <nav class="prefs" aria-label="Preferences">
+   <label class="pref"><span class="pref-k" data-i18n="lang">言語</span><select id="lang"></select></label>
+   <label class="pref"><span class="pref-k" data-i18n="tz">タイムゾーン</span><select id="tz"></select></label>
+   <button id="theme" type="button" class="pref-btn"></button>
+  </nav>
  </div>
 </header>
-<main id="main" class="wrap">
- <p class="tagline" data-i18n="tagline"></p>
- <section id="hero" class="hero" aria-labelledby="hero-h">
-  <h2 id="hero-h" data-i18n="next">次のリセット予定</h2>
-  <div id="hero-body"></div>
+<main id="main">
+ <section id="hero" class="hero grid" aria-labelledby="hero-h">
+  <h1 id="hero-h" class="eyebrow" data-i18n="next">次のリセット予定</h1>
+  <div id="hero-body" class="hero-body"></div>
   <p id="live" class="sr" aria-live="polite" aria-atomic="true"></p>
  </section>
- <div class="toolbar">
-  <div class="seg" role="radiogroup" id="viewsel" aria-label="view">
-   <button type="button" role="radio" data-v="timeline" data-i18n="timeline">タイムライン</button>
-   <button type="button" role="radio" data-v="service" data-i18n="by_service">サービス別</button>
+ <section class="index grid" aria-label="list">
+  <div class="index-head">
+   <div class="tabs" role="radiogroup" id="viewsel" aria-label="view">
+    <button type="button" role="radio" data-v="timeline" data-i18n="timeline">タイムライン</button>
+    <button type="button" role="radio" data-v="service" data-i18n="by_service">サービス別</button>
+   </div>
+   <div class="filters" id="chips" role="group"></div>
   </div>
-  <div class="chips" id="chips" role="group"></div>
- </div>
- <div id="list" aria-live="off"></div>
- <section class="about" aria-labelledby="about-h">
-  <h2 id="about-h" data-i18n="about_title">データについて</h2>
-  <p data-i18n="about"></p>
-  <p id="updated" class="muted"></p>
+  <div id="list"></div>
+ </section>
+ <section class="about grid" aria-labelledby="about-h">
+  <h2 id="about-h" class="eyebrow" data-i18n="about_title">データについて</h2>
+  <div class="about-body"><p data-i18n="about"></p><p id="updated" class="muted"></p><p class="muted"><a href="https://github.com/satoki252595/ai-limit-reset-jst">GitHub</a> · <a href="data.json">data.json</a></p></div>
  </section>
 </main>
-<footer class="wrap muted small"><a href="https://github.com/satoki252595/ai-limit-reset-jst">GitHub</a> · data.json</footer>
 <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
-<noscript><p class="wrap">JavaScript is required. Data: <a href="data.json">data.json</a></p></noscript>
+<noscript><p class="grid">JavaScript is required. Data: <a href="data.json">data.json</a></p></noscript>
 <script src="filter.js"></script><script src="i18n.js"></script><script src="core.js"></script><script src="app.js"></script>
 </body>
 </html>
