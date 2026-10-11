@@ -29,7 +29,7 @@ function itemHtml(it){
   ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">原文を見る</a>` : ''}${curl ? ` ／ <a href="${esc(curl)}" target="_blank" rel="noopener">反映完了の投稿</a>` : ''}
   </div>`;
 }
-let DATA = null, VIEW = 'all';
+let DATA = null, VIEW = location.hash === '#svc' ? 'svc' : 'all';
 function render(d){
   DATA = d;
   const days = (d && Number(d.retention_days)) || LimitFilter.DAYS;
@@ -62,6 +62,6 @@ function render(d){
   tick();
 }
 setInterval(tick, 1000); tick();
-document.getElementById('views').addEventListener('click', e => { const v = e.target.dataset && e.target.dataset.v; if (v && DATA) { VIEW = v; render(DATA); } });
+document.getElementById('views').addEventListener('click', e => { const v = e.target.dataset && e.target.dataset.v; if (v && DATA) { VIEW = v; history.replaceState(null, '', v === 'svc' ? '#svc' : location.pathname); render(DATA); } });
 fetch('data.json?v=' + Date.now(), {cache:'no-store'}).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(render).catch(e => { document.getElementById('app').textContent = 'data.jsonの読み込みに失敗しました（' + e.message + '）。'; });
