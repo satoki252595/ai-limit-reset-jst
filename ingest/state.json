@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-12T03:42:00Z",
- "last_run_jst": "2026-10-12T12:42:00+09:00",
+ "last_run_utc": "2026-10-12T16:02:00Z",
+ "last_run_jst": "2026-10-13T01:02:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2109485252335079534",
- "x_calls_this_run": 2,
- "note": "Scheduled run: no new allowlisted reset posts (only @bot auto-replies). Non-allowlisted hits were user requests/commentary (Codex Day 7 waiting for reset), not resets. Official sources (status RSS, changelogs, blogs): nothing new. Nothing published or pending. No open scheduled entries."
+ "newest_seen_id": "2109673422162624648",
+ "x_calls_this_run": 6,
+ "note": "Scheduled run (12h): no new allowlisted reset posts. Allowlisted hits were an @elonmusk reply about raising usage limits (not a reset) and an @bot auto-reply. Extra check of @thsottiaux timeline since last run: only replies, no Day 7/8 reset. Non-allowlisted hits were user commentary/reminders (Claude banked reset expiring Oct 22 = existing entry, Codex 28-day recap), not new resets. Official sources (status RSS, changelogs, blogs, help articles): nothing new; trackers show nothing after 2026-10-11 04:01Z. Nothing published or pending. No open scheduled entries. 30-day pruning removed codex 2098612714704891959 (announced 2026-09-12T03:20:36Z). No X rate-limit errors."
 }

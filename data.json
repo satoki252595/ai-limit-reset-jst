@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-11T17:05:00+09:00",
+ "updated_jst": "2026-10-13T01:02:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -444,52 +444,6 @@
       "en": "Plus/Pro/Business"
      },
      "note_i18n": {},
-     "poster_i18n": {
-      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
-     }
-    },
-    {
-     "announced_utc": "2026-09-12T03:20:36Z",
-     "announced_jst": "2026-09-12T12:20:36+09:00",
-     "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「当日深夜（midnight today）までに」実施と予告（タイムゾーン未明記）。反映完了が後に告知された",
-     "effective_jst_iso": null,
-     "summary": "Astraの品質問題の修正報告とともに、当日深夜までにリセットを実施すると予告。",
-     "url": "https://x.com/thsottiaux/status/2098612714704891959",
-     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "反映完了：https://x.com/thsottiaux/status/2098685367058612394",
-     "id": "2098612714704891959",
-     "scope": "未明記（Astra利用者向け投稿）",
-     "type": "scheduled",
-     "status": "done",
-     "source_time_text": null,
-     "source_tz": null,
-     "source_local_datetime": null,
-     "time_precision": "deadline",
-     "source_tz_assumed": null,
-     "confirmed_url": "https://x.com/thsottiaux/status/2098685367058612394",
-     "confirmed_utc": "2026-09-12T08:09:17Z",
-     "summary_i18n": {
-      "en": "Along with a report on fixes for Astra quality issues, announced a reset landing by midnight that day.",
-      "zh-Hans": "在报告Astra质量问题修复的同时，预告当天午夜前进行重置。",
-      "zh-Hant": "在報告Astra品質問題修復的同時，預告當天午夜前進行重置。",
-      "ko": "Astra 품질 문제 수정 보고와 함께, 당일 자정까지 리셋을 실시한다고 예고.",
-      "es": "Junto con un informe sobre correcciones de calidad de Astra, anunció un reinicio antes de la medianoche de ese día.",
-      "fr": "Avec un point sur les correctifs de qualité d'Astra, il a annoncé une réinitialisation d'ici minuit le jour même.",
-      "de": "Zusammen mit einem Bericht über Qualitätskorrekturen bei Astra wurde ein Reset bis Mitternacht desselben Tages angekündigt.",
-      "pt-BR": "Junto com um relatório sobre correções de qualidade do Astra, anunciou um reset até a meia-noite daquele dia.",
-      "hi": "Astra की गुणवत्ता समस्याओं के सुधार की रिपोर्ट के साथ, उसी दिन आधी रात तक रीसेट की घोषणा की।",
-      "id": "Bersama laporan perbaikan masalah kualitas Astra, mengumumkan reset paling lambat tengah malam hari itu."
-     },
-     "effective_i18n": {
-      "en": "Scheduled \"by midnight today\" (time zone not stated). Propagation was confirmed later."
-     },
-     "scope_i18n": {
-      "en": "Not specified (post addressed to Astra users)"
-     },
-     "note_i18n": {
-      "en": "Confirmation: https://x.com/thsottiaux/status/2098685367058612394"
-     },
      "poster_i18n": {
       "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
