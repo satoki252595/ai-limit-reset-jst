@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-11T23:41:00Z",
- "last_run_jst": "2026-10-12T08:41:00+09:00",
+ "last_run_utc": "2026-10-12T01:47:00Z",
+ "last_run_jst": "2026-10-12T10:47:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2109386959462531399",
- "x_calls_this_run": 2,
- "note": "Scheduled run: no new allowlisted or non-allowlisted posts since newest_seen_id. Nothing published or pending. No open scheduled entries."
+ "newest_seen_id": "2109460090252300345",
+ "x_calls_this_run": 3,
+ "note": "Scheduled run: no new allowlisted reset posts (thsottiaux Day 7 = context length, not a reset). Non-allowlisted hits were user requests/commentary, not resets. Official sources: nothing new. Nothing published or pending. No open scheduled entries."
 }
