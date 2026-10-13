@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-13T01:02:00+09:00",
+ "updated_jst": "2026-10-13T12:50:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -89,6 +89,52 @@
    "official_name": "Muse（Metaのパーソナル AIエージェント、2026年9月8日公開。基盤モデル名は「Muse Spark」、アプリ名は「Meta AI」）",
    "items": [
     {
+     "announced_utc": "2026-10-12T22:31:38Z",
+     "announced_jst": "2026-10-13T07:31:38+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "不具合の修正報告と同時に「muse code reset!!」とリセット実施を告知",
+     "effective_jst_iso": null,
+     "summary": "Muse Wonder／Muse Wonder Fullの使用量が異常に速く減る不具合を修正したと報告し、予告どおりMuse Codeの使用量リセットを実施。",
+     "url": "https://x.com/alexandr_wang/status/2109774017574113780",
+     "poster": "Alexandr Wang（@alexandr_wang / Meta Chief AI Officer）",
+     "note": "不具合の報告とリセット予告：https://x.com/alexandr_wang/status/2109714291062620560 。この投稿は編集後の版（編集前：https://x.com/alexandr_wang/status/2109773794395267502 ）。",
+     "id": "2109774017574113780",
+     "scope": "Muse Codeのサブスクライバー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Reported a fix for a bug that made Muse Wonder / Muse Wonder Full use up quota unusually fast, and, as promised, reset Muse Code usage.",
+      "zh-Hans": "报告已修复导致 Muse Wonder／Muse Wonder Full 配额消耗异常快的问题，并按承诺重置了 Muse Code 的用量。",
+      "zh-Hant": "報告已修復導致 Muse Wonder／Muse Wonder Full 額度消耗異常快的問題，並依承諾重置了 Muse Code 的用量。",
+      "ko": "Muse Wonder／Muse Wonder Full의 사용량이 비정상적으로 빨리 소모되던 버그를 수정했다고 알리고, 약속대로 Muse Code 사용량을 리셋.",
+      "es": "Informó de la corrección de un error que hacía que Muse Wonder / Muse Wonder Full consumieran la cuota demasiado rápido y, como prometió, reinició el uso de Muse Code.",
+      "fr": "Annonce la correction d'un bug qui faisait consommer le quota trop vite à Muse Wonder / Muse Wonder Full et, comme promis, réinitialise l'usage de Muse Code.",
+      "de": "Meldete die Behebung eines Fehlers, durch den Muse Wonder / Muse Wonder Full das Kontingent ungewöhnlich schnell verbrauchten, und setzte wie versprochen die Muse-Code-Nutzung zurück.",
+      "pt-BR": "Informou a correção de um bug que fazia o Muse Wonder / Muse Wonder Full consumir a cota rápido demais e, como prometido, resetou o uso do Muse Code.",
+      "hi": "Muse Wonder／Muse Wonder Full का कोटा असामान्य रूप से तेज़ी से खत्म होने वाले बग के ठीक होने की जानकारी दी और वादे के अनुसार Muse Code का उपयोग रीसेट किया।",
+      "id": "Melaporkan perbaikan bug yang membuat kuota Muse Wonder / Muse Wonder Full terpakai terlalu cepat, dan sesuai janji mereset penggunaan Muse Code."
+     },
+     "effective_i18n": {
+      "en": "Announced the reset (\"muse code reset!!\") together with the bug-fix report."
+     },
+     "scope_i18n": {
+      "en": "Muse Code subscribers"
+     },
+     "note_i18n": {
+      "en": "Bug report and reset promise: https://x.com/alexandr_wang/status/2109714291062620560 . This is the edited version of the post (original: https://x.com/alexandr_wang/status/2109773794395267502 )."
+     },
+     "poster_i18n": {
+      "en": "Alexandr Wang (@alexandr_wang, Meta Chief AI Officer)"
+     }
+    },
+    {
      "announced_utc": "2026-09-16T05:04:46Z",
      "announced_jst": "2026-09-16T14:04:46+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
@@ -176,6 +222,52 @@
    "name": "OpenAI Codex",
    "official_name": "OpenAI Codex",
    "items": [
+    {
+     "announced_utc": "2026-10-13T01:03:25Z",
+     "announced_jst": "2026-10-13T10:03:25+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "「by EOD PST time」（太平洋時間の当日中）までに反映と予告。反映完了の投稿はまだない",
+     "effective_jst_iso": "2026-10-13T16:00:00+09:00",
+     "summary": "「28日間チャレンジ」8日目はリセット。続く自己返信で太平洋時間の本日中（by EOD PST）のグローバルリセットを予告。",
+     "url": "https://x.com/thsottiaux/status/2109812216212099456",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2109812360596865224 。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。期限の目安で、これより早く反映される場合がある。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
+     "id": "2109812216212099456",
+     "scope": "全体（グローバルリセット、対象プランは未明記）",
+     "type": "scheduled",
+     "status": "scheduled",
+     "source_time_text": "Global reset landing by EOD PST time",
+     "source_tz": "America/Los_Angeles",
+     "source_local_datetime": "2026-10-13T00:00",
+     "time_precision": "deadline",
+     "source_tz_assumed": false,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Day 8 of the \"28-day challenge\" is a reset. A follow-up self-reply announced a global reset landing \"by EOD PST\" (end of day, Pacific time).",
+      "zh-Hans": "“28天挑战”第8天为重置。随后的自我回复预告在太平洋时间今天结束前（by EOD PST）进行全局重置。",
+      "zh-Hant": "「28天挑戰」第8天為重置。隨後的自我回覆預告在太平洋時間今天結束前（by EOD PST）進行全域重置。",
+      "ko": "'28일 챌린지' 8일차는 리셋. 이어진 본인 답글에서 태평양 시간 오늘 중(by EOD PST) 글로벌 리셋을 예고.",
+      "es": "El día 8 del \"reto de 28 días\" es un reinicio. En una autorrespuesta anunció un reinicio global \"by EOD PST\" (antes del fin del día, hora del Pacífico).",
+      "fr": "Le jour 8 du « défi de 28 jours » est une réinitialisation. Une auto-réponse a annoncé une réinitialisation globale « by EOD PST » (d'ici la fin de la journée, heure du Pacifique).",
+      "de": "Tag 8 der „28-Tage-Challenge“ ist ein Reset. In einer Selbstantwort wurde ein globaler Reset „by EOD PST“ (bis Tagesende, pazifische Zeit) angekündigt.",
+      "pt-BR": "O dia 8 do \"desafio de 28 dias\" é um reset. Em uma autorresposta, anunciou um reset global \"by EOD PST\" (até o fim do dia, horário do Pacífico).",
+      "hi": "\"28-दिन चैलेंज\" का दिन 8 रीसेट है। बाद के स्व-उत्तर में प्रशांत समय के अनुसार दिन के अंत तक (by EOD PST) ग्लोबल रीसेट की घोषणा की गई।",
+      "id": "Hari ke-8 \"tantangan 28 hari\" adalah reset. Balasan lanjutan mengumumkan reset global \"by EOD PST\" (sebelum akhir hari, waktu Pasifik)."
+     },
+     "effective_i18n": {
+      "en": "Announced to land \"by EOD PST time\" (end of day, Pacific time); no completion post yet."
+     },
+     "scope_i18n": {
+      "en": "Global reset (plans not specified)"
+     },
+     "note_i18n": {
+      "en": "Announcement self-reply: https://x.com/thsottiaux/status/2109812360596865224 . The post says \"PST\", but Pacific time in October is daylight time (PDT, UTC−7), so it is converted with America/Los_Angeles. This is a deadline; the reset may land earlier. 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
     {
      "announced_utc": "2026-10-10T22:15:39Z",
      "announced_jst": "2026-10-11T07:15:39+09:00",

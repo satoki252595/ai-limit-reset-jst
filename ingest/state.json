@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-12T16:02:00Z",
- "last_run_jst": "2026-10-13T01:02:00+09:00",
+ "last_run_utc": "2026-10-13T03:50:00Z",
+ "last_run_jst": "2026-10-13T12:50:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2109673422162624648",
- "x_calls_this_run": 6,
- "note": "Scheduled run (12h): no new allowlisted reset posts. Allowlisted hits were an @elonmusk reply about raising usage limits (not a reset) and an @bot auto-reply. Extra check of @thsottiaux timeline since last run: only replies, no Day 7/8 reset. Non-allowlisted hits were user commentary/reminders (Claude banked reset expiring Oct 22 = existing entry, Codex 28-day recap), not new resets. Official sources (status RSS, changelogs, blogs, help articles): nothing new; trackers show nothing after 2026-10-11 04:01Z. Nothing published or pending. No open scheduled entries. 30-day pruning removed codex 2098612714704891959 (announced 2026-09-12T03:20:36Z). No X rate-limit errors."
+ "newest_seen_id": "2109847678112633105",
+ "x_calls_this_run": 5,
+ "note": "Scheduled run (12h): published 2 entries. (1) codex 2109812216212099456: @thsottiaux 'Day 8/ Reset' + self-reply 'Global reset landing by EOD PST time' (2109812360596865224) -> scheduled, deadline, America/Los_Angeles 2026-10-13T00:00 (PDT; 'PST' stated, so source_tz_assumed=false) = 2026-10-13T16:00 JST; no completion post yet, check next run. (2) meta 2109774017574113780: @alexandr_wang 'muse code reset!!' after fixing Muse Wonder quota bug (edited post; original 2109773794395267502; promise post 2109714291062620560) -> immediate/done. Non-allowlisted hits were user commentary on these two resets and banked-reset chatter (incl. a Claude 'banked reset + $250 credits' user post; no matching official Claude post since Oct 12), nothing new for pending. Non-X sources: nothing new beyond trackers corroborating Codex Day 8; help.openai.com returned 403 and dev.meta.ai blog 500 this run. No pruning needed. No X rate-limit errors."
 }
