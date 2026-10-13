@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-13T12:50:00+09:00",
+ "updated_jst": "2026-10-13T19:02:28+09:00",
  "services": [
   {
    "id": "cursor",
@@ -226,23 +226,23 @@
      "announced_utc": "2026-10-13T01:03:25Z",
      "announced_jst": "2026-10-13T10:03:25+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「by EOD PST time」（太平洋時間の当日中）までに反映と予告。反映完了の投稿はまだない",
+     "effective": "「by EOD PST time」（太平洋時間の当日中）までに反映と予告され、期限より前に「It's done.」と反映完了が告知された",
      "effective_jst_iso": "2026-10-13T16:00:00+09:00",
      "summary": "「28日間チャレンジ」8日目はリセット。続く自己返信で太平洋時間の本日中（by EOD PST）のグローバルリセットを予告。",
      "url": "https://x.com/thsottiaux/status/2109812216212099456",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "予告の自己返信：https://x.com/thsottiaux/status/2109812360596865224 。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。期限の目安で、これより早く反映される場合がある。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2109812360596865224 。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。反映完了の投稿：https://x.com/thsottiaux/status/2109873287853707513 。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
      "id": "2109812216212099456",
      "scope": "全体（グローバルリセット、対象プランは未明記）",
      "type": "scheduled",
-     "status": "scheduled",
+     "status": "done",
      "source_time_text": "Global reset landing by EOD PST time",
      "source_tz": "America/Los_Angeles",
      "source_local_datetime": "2026-10-13T00:00",
      "time_precision": "deadline",
      "source_tz_assumed": false,
-     "confirmed_url": null,
-     "confirmed_utc": null,
+     "confirmed_url": "https://x.com/thsottiaux/status/2109873287853707513",
+     "confirmed_utc": "2026-10-13T05:06:06Z",
      "summary_i18n": {
       "en": "Day 8 of the \"28-day challenge\" is a reset. A follow-up self-reply announced a global reset landing \"by EOD PST\" (end of day, Pacific time).",
       "zh-Hans": "“28天挑战”第8天为重置。随后的自我回复预告在太平洋时间今天结束前（by EOD PST）进行全局重置。",
@@ -256,13 +256,13 @@
       "id": "Hari ke-8 \"tantangan 28 hari\" adalah reset. Balasan lanjutan mengumumkan reset global \"by EOD PST\" (sebelum akhir hari, waktu Pasifik)."
      },
      "effective_i18n": {
-      "en": "Announced to land \"by EOD PST time\" (end of day, Pacific time); no completion post yet."
+      "en": "Announced to land \"by EOD PST time\"; completion (\"It's done.\") was announced before the deadline."
      },
      "scope_i18n": {
       "en": "Global reset (plans not specified)"
      },
      "note_i18n": {
-      "en": "Announcement self-reply: https://x.com/thsottiaux/status/2109812360596865224 . The post says \"PST\", but Pacific time in October is daylight time (PDT, UTC−7), so it is converted with America/Los_Angeles. This is a deadline; the reset may land earlier. 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+      "en": "Announcement self-reply: https://x.com/thsottiaux/status/2109812360596865224 . The post says \"PST\", but Pacific time in October is PDT (UTC-7), so it is converted with America/Los_Angeles. Completion post: https://x.com/thsottiaux/status/2109873287853707513 . 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
      },
      "poster_i18n": {
       "en": "Tibo (@thsottiaux / OpenAI Codex lead)"

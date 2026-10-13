@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-13T03:50:00Z",
- "last_run_jst": "2026-10-13T12:50:00+09:00",
+ "last_run_utc": "2026-10-13T16:03:14Z",
+ "last_run_jst": "2026-10-14T01:03:14+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2109847678112633105",
- "x_calls_this_run": 5,
- "note": "Scheduled run (12h): published 2 entries. (1) codex 2109812216212099456: @thsottiaux 'Day 8/ Reset' + self-reply 'Global reset landing by EOD PST time' (2109812360596865224) -> scheduled, deadline, America/Los_Angeles 2026-10-13T00:00 (PDT; 'PST' stated, so source_tz_assumed=false) = 2026-10-13T16:00 JST; no completion post yet, check next run. (2) meta 2109774017574113780: @alexandr_wang 'muse code reset!!' after fixing Muse Wonder quota bug (edited post; original 2109773794395267502; promise post 2109714291062620560) -> immediate/done. Non-allowlisted hits were user commentary on these two resets and banked-reset chatter (incl. a Claude 'banked reset + $250 credits' user post; no matching official Claude post since Oct 12), nothing new for pending. Non-X sources: nothing new beyond trackers corroborating Codex Day 8; help.openai.com returned 403 and dev.meta.ai blog 500 this run. No pruning needed. No X rate-limit errors."
+ "newest_seen_id": "2110031295413997961",
+ "x_calls_this_run": 6,
+ "note": "Scheduled run (12h): no new allowlisted reset posts. Allowlisted hits since 2109873287853707513: only @thsottiaux self-reply 'Mashed @poteto on the house.' (2109873307722121591, joke under the Day 8 'It's done.' post) and a @bot auto-reply; @thsottiaux 'significantly more usage for everyone... hope to get it done soon' (2109892247580000595) is a teaser, not a reset. No Day 9 post yet. Non-allowlisted hits were user commentary on the Codex Day 8 reset (already published), not new resets; nothing added to pending. Official sources: nothing new (dev.meta.ai blog returned HTTP 500; help.openai via WebFetch, notes unchanged). Trackers show nothing beyond published entries. Includes the unpushed proactive confirmation of Codex Day 8 (2109812216212099456 done via https://x.com/thsottiaux/status/2109873287853707513, 14:06 JST). No open scheduled entries."
 }
