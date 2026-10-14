@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-14T03:49:08Z",
- "last_run_jst": "2026-10-14T12:49:08+09:00",
+ "last_run_utc": "2026-10-14T15:43:27Z",
+ "last_run_jst": "2026-10-15T00:43:27+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2110151780478927344",
+ "newest_seen_id": "2110242242426449989",
  "x_calls_this_run": 4,
- "note": "Scheduled run (12h): no new allowlisted reset posts. Allowlisted hits since 2110031295413997961: @thsottiaux Day 9 disk-storage optimization (2110151780478927344) — not a usage reset (no self-replies); @alexandr_wang Muse review quote; @GoogleAIStudio Gemini 4 Argon link; @AnthropicAI engineering blog. Completion-phrase search: 0 hits. Non-allowlisted: user asks for banked resets (Codex/Antigravity), not announcements — nothing added to pending. Official: help.openai banked-reset Notes unchanged (Sep 3/4/7); OpenAI/Anthropic/Cursor status RSS and Anthropic news/Codex changelog have no new resets. Trackers (didreset/whenaireset) still show Codex last reset as Day 8 (already published). No open scheduled. Existing pending unchanged."
+ "note": "Scheduled run (12h): no new allowlisted reset posts. Allowlisted hits since 2110151780478927344: @alexandr_wang Muse Wonder Full 15 PRs/day quote (2110242242426449989) — not a usage reset. Completion-phrase search: 0 hits. Non-allowlisted: user asks/discussion about banked resets (Codex/Claude), not announcements — nothing added to pending. Official: help.openai banked-reset Notes unchanged (Sep 3/4/7); OpenAI/Anthropic/Cursor status RSS have no new resets (incidents only). Trackers (didreset/whenaireset) still show Codex last reset as Day 8 (already published). No open scheduled. Existing pending unchanged."
 }
