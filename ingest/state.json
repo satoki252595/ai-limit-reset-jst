@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-15T03:44:38Z",
- "last_run_jst": "2026-10-15T12:44:38+09:00",
+ "last_run_utc": "2026-10-15T16:08:27Z",
+ "last_run_jst": "2026-10-16T01:08:27+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2110574855410315575",
+ "newest_seen_id": "2110750421367287996",
  "x_calls_this_run": 6,
- "note": "Scheduled run (12h): no new allowlisted reset posts. Allowlisted hits since 2110242242426449989: @bot replies (2110457519705391327, 2110442163909558770) — discarded (top-level only); @boltdotnew Builders Week free weekend promo (2110415341998191027 / reply 2110505631647924707) — not a usage-limit reset; @github star-history API article (2110490847905272314) — not a reset. Completion-phrase search: 0 hits. Non-allowlisted: user wishes/discussion about banked resets (Codex/Claude/Antigravity), not announcements — nothing added to pending. Official: help.openai banked-reset Notes unchanged (Sep 3/4/7); OpenAI/Anthropic/Cursor status RSS incidents only (no resets); Codex/Cursor changelogs no reset mentions. Trackers: Codex last still Oct 13 (already published). No open scheduled. Existing pending unchanged."
+ "note": "Scheduled run (12h): published Codex Day 10 reset by @thsottiaux (2110595484180214059, 2026-10-15 13:55 JST) as scheduled/deadline ('Landing within the next 2 hours' self-reply 2110595554036400151 -> 2026-10-15 15:56 JST), status done via 'Done and dusted' quote post 2110618732666257557 (06:28:13Z). Other allowlisted hits: @thsottiaux Day 11 capacity fix (2110750421367287996) - not a reset; @bot reply (2110641748422557718) - discarded (top-level only); @alexandr_wang 'well done' quote (2110585705189769476) - not a reset. Non-allowlisted query: 25 results (page 1 only, back to 2110615403693212153), all user chatter about Day 10 / banked resets - nothing to pending. Official: help.openai banked-reset notes unchanged (403, checked via WebSearch); status RSS/changelogs no new resets; dev.meta.ai blog returned 500. Trackers (didreset/whenaireset) list Codex 2026-10-15 reset, matching the published entry. No open scheduled entries. Pending unchanged."
 }

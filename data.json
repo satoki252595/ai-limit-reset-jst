@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-13T19:02:28+09:00",
+ "updated_jst": "2026-10-16T01:08:05+09:00",
  "services": [
   {
    "id": "cursor",
@@ -222,6 +222,52 @@
    "name": "OpenAI Codex",
    "official_name": "OpenAI Codex",
    "items": [
+    {
+     "announced_utc": "2026-10-15T04:55:51Z",
+     "announced_jst": "2026-10-15T13:55:51+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "自己返信で「2時間以内に反映」と予告され、期限より前に「Done and dusted」と反映完了が告知された",
+     "effective_jst_iso": "2026-10-15T15:56:00+09:00",
+     "summary": "「28日間チャレンジ」10日目はリセット。続く自己返信で2時間以内の反映を予告。",
+     "url": "https://x.com/thsottiaux/status/2110595484180214059",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2110595554036400151 （期限はこの返信の投稿から2時間後として換算）。反映完了の投稿：https://x.com/thsottiaux/status/2110618732666257557 。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
+     "id": "2110595484180214059",
+     "scope": "未明記",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": "Landing within the next 2 hours",
+     "source_tz": "UTC",
+     "source_local_datetime": "2026-10-15T06:56",
+     "time_precision": "deadline",
+     "source_tz_assumed": false,
+     "confirmed_url": "https://x.com/thsottiaux/status/2110618732666257557",
+     "confirmed_utc": "2026-10-15T06:28:13Z",
+     "summary_i18n": {
+      "en": "Day 10 of the \"28-day challenge\" is a reset. A follow-up self-reply said it would land within the next 2 hours.",
+      "zh-Hans": "“28天挑战”第10天为重置。随后的自我回复预告将在2小时内生效。",
+      "zh-Hant": "「28天挑戰」第10天為重置。隨後的自我回覆預告將在2小時內生效。",
+      "ko": "'28일 챌린지' 10일차는 리셋. 이어진 본인 답글에서 2시간 이내 반영을 예고.",
+      "es": "El día 10 del \"reto de 28 días\" es un reinicio. En una autorrespuesta indicó que llegaría en las próximas 2 horas.",
+      "fr": "Le jour 10 du « défi de 28 jours » est une réinitialisation. Une auto-réponse a indiqué qu'elle arriverait dans les 2 heures.",
+      "de": "Tag 10 der „28-Tage-Challenge“ ist ein Reset. In einer Selbstantwort hieß es, er komme innerhalb der nächsten 2 Stunden.",
+      "pt-BR": "O dia 10 do \"desafio de 28 dias\" é um reset. Em uma autorresposta, disse que chegaria nas próximas 2 horas.",
+      "hi": "\"28-दिन चैलेंज\" का दिन 10 रीसेट है। बाद के स्व-उत्तर में कहा गया कि यह अगले 2 घंटों में लागू होगा।",
+      "id": "Hari ke-10 \"tantangan 28 hari\" adalah reset. Balasan lanjutan menyebut reset akan berlaku dalam 2 jam ke depan."
+     },
+     "effective_i18n": {
+      "en": "A self-reply said it would land \"within the next 2 hours\"; completion (\"Done and dusted\") was announced before that deadline."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {
+      "en": "Announcement self-reply: https://x.com/thsottiaux/status/2110595554036400151 (deadline taken as 2 hours after this reply was posted). Completion post: https://x.com/thsottiaux/status/2110618732666257557 . 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
     {
      "announced_utc": "2026-10-13T01:03:25Z",
      "announced_jst": "2026-10-13T10:03:25+09:00",
