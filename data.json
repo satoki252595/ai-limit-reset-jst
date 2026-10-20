@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-20T12:43:03+09:00",
+ "updated_jst": "2026-10-21T00:41:03+09:00",
  "services": [
   {
    "id": "cursor",
@@ -222,6 +222,52 @@
    "name": "OpenAI Codex",
    "official_name": "OpenAI Codex",
    "items": [
+    {
+     "announced_utc": "2026-10-20T06:33:48Z",
+     "announced_jst": "2026-10-20T15:33:48+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "発表時点で即時リセット（発表文より）",
+     "effective_jst_iso": null,
+     "summary": "「28日間チャレンジ」15日目。前日の「We're cooked」を撤回し、リセットを実施したと発表。",
+     "url": "https://x.com/thsottiaux/status/2112432076767289678",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "前日の投稿（引用元）：https://x.com/thsottiaux/status/2112268918681485431 。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
+     "id": "2112432076767289678",
+     "scope": "未明記",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Day 15 of the \"28-day challenge\". Reversing the previous day's \"We're cooked\", a reset was announced as done.",
+      "zh-Hans": "“28天挑战”第15天。收回前一天的“We're cooked”，宣布已完成重置。",
+      "zh-Hant": "「28天挑戰」第15天。收回前一天的「We're cooked」，宣布已完成重置。",
+      "ko": "'28일 챌린지' 15일차. 전날의 'We're cooked'를 번복하고 리셋을 실시했다고 발표.",
+      "es": "Día 15 del \"reto de 28 días\". Revirtiendo el \"We're cooked\" del día anterior, anunció que el reinicio ya se aplicó.",
+      "fr": "Jour 15 du « défi de 28 jours ». Revenant sur le « We're cooked » de la veille, la réinitialisation a été annoncée comme effectuée.",
+      "de": "Tag 15 der „28-Tage-Challenge“. Entgegen dem „We're cooked“ vom Vortag wurde ein durchgeführter Reset gemeldet.",
+      "pt-BR": "Dia 15 do \"desafio de 28 dias\". Revertendo o \"We're cooked\" do dia anterior, anunciou que o reset foi feito.",
+      "hi": "\"28-दिन चैलेंज\" का दिन 15। पिछले दिन के \"We're cooked\" को पलटते हुए रीसेट पूरा होने की घोषणा की गई।",
+      "id": "Hari ke-15 \"tantangan 28 hari\". Membatalkan \"We're cooked\" hari sebelumnya, reset diumumkan telah dilakukan."
+     },
+     "effective_i18n": {
+      "en": "Immediate reset at the time of the announcement (per the post)."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {
+      "en": "Previous day's post (quoted): https://x.com/thsottiaux/status/2112268918681485431 . 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
     {
      "announced_utc": "2026-10-17T16:20:57Z",
      "announced_jst": "2026-10-18T01:20:57+09:00",
