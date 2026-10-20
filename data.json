@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-16T01:08:05+09:00",
+ "updated_jst": "2026-10-20T12:43:03+09:00",
  "services": [
   {
    "id": "cursor",
@@ -89,6 +89,52 @@
    "official_name": "Muse（Metaのパーソナル AIエージェント、2026年9月8日公開。基盤モデル名は「Muse Spark」、アプリ名は「Meta AI」）",
    "items": [
     {
+     "announced_utc": "2026-10-15T18:41:14Z",
+     "announced_jst": "2026-10-16T03:41:14+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "引用元の投稿で「effective now」（即時）と告知されたリセット",
+     "effective_jst_iso": null,
+     "summary": "Muse Code 1.4.8でトークン効率が改善したことを受けて実施された、全員の使用量リセットを「MUSE CODE RESET ALERT」と引用で告知。",
+     "url": "https://x.com/alexandr_wang/status/2110803201893232663",
+     "poster": "Alexandr Wang（@alexandr_wang / Meta Chief AI Officer）",
+     "note": "引用元のリセット告知（Muse Code担当 @mjdouglas、allowlist外）：https://x.com/mjdouglas/status/2110798276932853945 。1.4.8のリリース告知：https://x.com/mjdouglas/status/2110466975474319865",
+     "id": "2110803201893232663",
+     "scope": "Muse Codeの全ユーザー",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Quote-posted \"MUSE CODE RESET ALERT\" about a reset of everyone's usage, made after Muse Code 1.4.8 improved token efficiency.",
+      "zh-Hans": "以引用方式发布“MUSE CODE RESET ALERT”，告知在 Muse Code 1.4.8 提升 Token 效率后为所有人重置了用量。",
+      "zh-Hant": "以引用方式發布「MUSE CODE RESET ALERT」，告知在 Muse Code 1.4.8 提升 Token 效率後為所有人重置了用量。",
+      "ko": "Muse Code 1.4.8에서 토큰 효율이 개선된 데 따라 모든 사용자의 사용량을 리셋했다는 소식을 'MUSE CODE RESET ALERT'라며 인용으로 알림.",
+      "es": "Citó con \"MUSE CODE RESET ALERT\" el reinicio del uso de todos, hecho tras la mejora de eficiencia de tokens de Muse Code 1.4.8.",
+      "fr": "A cité avec « MUSE CODE RESET ALERT » la réinitialisation de l'utilisation de tous, faite après l'amélioration de l'efficacité des jetons de Muse Code 1.4.8.",
+      "de": "Zitierte mit „MUSE CODE RESET ALERT“ den Reset der Nutzung aller, der nach der verbesserten Token-Effizienz von Muse Code 1.4.8 erfolgte.",
+      "pt-BR": "Citou com \"MUSE CODE RESET ALERT\" o reset do uso de todos, feito após a melhoria de eficiência de tokens do Muse Code 1.4.8.",
+      "hi": "Muse Code 1.4.8 में टोकन दक्षता सुधरने के बाद सभी का उपयोग रीसेट किए जाने की सूचना \"MUSE CODE RESET ALERT\" लिखकर कोट की।",
+      "id": "Mengutip dengan \"MUSE CODE RESET ALERT\" reset penggunaan semua orang, dilakukan setelah Muse Code 1.4.8 meningkatkan efisiensi token."
+     },
+     "effective_i18n": {
+      "en": "Reset announced as \"effective now\" (immediate) in the quoted post."
+     },
+     "scope_i18n": {
+      "en": "All Muse Code users"
+     },
+     "note_i18n": {
+      "en": "Quoted reset announcement (by Muse Code team member @mjdouglas, not on the allowlist): https://x.com/mjdouglas/status/2110798276932853945 . Release post for 1.4.8: https://x.com/mjdouglas/status/2110466975474319865"
+     },
+     "poster_i18n": {
+      "en": "Alexandr Wang (@alexandr_wang, Meta Chief AI Officer)"
+     }
+    },
+    {
      "announced_utc": "2026-10-12T22:31:38Z",
      "announced_jst": "2026-10-13T07:31:38+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
@@ -129,52 +175,6 @@
      },
      "note_i18n": {
       "en": "Bug report and reset promise: https://x.com/alexandr_wang/status/2109714291062620560 . This is the edited version of the post (original: https://x.com/alexandr_wang/status/2109773794395267502 )."
-     },
-     "poster_i18n": {
-      "en": "Alexandr Wang (@alexandr_wang, Meta Chief AI Officer)"
-     }
-    },
-    {
-     "announced_utc": "2026-09-16T05:04:46Z",
-     "announced_jst": "2026-09-16T14:04:46+09:00",
-     "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「本日中に全サブスクの使用量をリセット」とするMuse Code側の告知を引用し、リセット実施を告知",
-     "effective_jst_iso": null,
-     "summary": "Muse Codeのサブスク更新（コントリビューター枠の上限を大幅拡大）に合わせ、全サブスクの使用量リセットを告知。",
-     "url": "https://x.com/alexandr_wang/status/2100088481586479411",
-     "poster": "Alexandr Wang（@alexandr_wang / Meta Chief AI Officer）",
-     "note": "引用元（Muse Code担当 Cosmo Du）：https://x.com/Answeror/status/2099981484291690773",
-     "id": "2100088481586479411",
-     "scope": "Muse Codeの全サブスクリプション",
-     "type": "immediate",
-     "status": "done",
-     "source_time_text": null,
-     "source_tz": null,
-     "source_local_datetime": null,
-     "time_precision": null,
-     "source_tz_assumed": null,
-     "confirmed_url": null,
-     "confirmed_utc": null,
-     "summary_i18n": {
-      "en": "Alongside a Muse Code subscription update (much larger contributor-tier limits), announced a usage reset for all subscriptions.",
-      "zh-Hans": "随 Muse Code 订阅更新（贡献者档位上限大幅提高），宣布重置所有订阅的用量。",
-      "zh-Hant": "隨 Muse Code 訂閱更新（貢獻者方案上限大幅提高），宣布重置所有訂閱的用量。",
-      "ko": "Muse Code 구독 업데이트(기여자 티어 한도 대폭 확대)와 함께 모든 구독의 사용량 리셋을 발표.",
-      "es": "Junto con una actualización de suscripciones de Muse Code (límites del nivel contributor mucho mayores), anunció un reinicio de uso para todas las suscripciones.",
-      "fr": "Avec une mise à jour des abonnements Muse Code (limites du niveau contributor bien plus élevées), annonce d'une réinitialisation de l'usage pour tous les abonnements.",
-      "de": "Zusammen mit einem Muse-Code-Abo-Update (deutlich höhere Limits für die Contributor-Stufe) wurde ein Nutzungs-Reset für alle Abos angekündigt.",
-      "pt-BR": "Junto com uma atualização das assinaturas do Muse Code (limites do nível contributor bem maiores), anunciou um reset de uso para todas as assinaturas.",
-      "hi": "Muse Code सदस्यता अपडेट (contributor टियर की सीमा काफी बढ़ी) के साथ सभी सदस्यताओं के उपयोग रीसेट की घोषणा।",
-      "id": "Bersamaan dengan pembaruan langganan Muse Code (batas tier contributor jauh lebih besar), mengumumkan reset penggunaan untuk semua langganan."
-     },
-     "effective_i18n": {
-      "en": "Quoted the Muse Code team's note that usage would be reset for all subscriptions that day, and announced the reset."
-     },
-     "scope_i18n": {
-      "en": "All Muse Code subscriptions"
-     },
-     "note_i18n": {
-      "en": "Quoted post (Cosmo Du, Muse Code): https://x.com/Answeror/status/2099981484291690773"
      },
      "poster_i18n": {
       "en": "Alexandr Wang (@alexandr_wang, Meta Chief AI Officer)"
@@ -222,6 +222,52 @@
    "name": "OpenAI Codex",
    "official_name": "OpenAI Codex",
    "items": [
+    {
+     "announced_utc": "2026-10-17T16:20:57Z",
+     "announced_jst": "2026-10-18T01:20:57+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "自己返信で「太平洋時間の当日中（by EOD PST）」の反映を予告され、期限より前に「Done」と反映完了が投稿された",
+     "effective_jst_iso": "2026-10-18T16:00:00+09:00",
+     "summary": "「28日間チャレンジ」13日目はリセット（「Le limit reset」）。続く自己返信で太平洋時間の当日中の反映を予告。",
+     "url": "https://x.com/thsottiaux/status/2111492673890824348",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2111492738025959922 。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。反映完了の投稿（単独の「Done」）：https://x.com/thsottiaux/status/2111566005684289735 。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
+     "id": "2111492673890824348",
+     "scope": "未明記",
+     "type": "scheduled",
+     "status": "done",
+     "source_time_text": "Landing sometime today by EOD PST",
+     "source_tz": "America/Los_Angeles",
+     "source_local_datetime": "2026-10-18T00:00",
+     "time_precision": "deadline",
+     "source_tz_assumed": false,
+     "confirmed_url": "https://x.com/thsottiaux/status/2111566005684289735",
+     "confirmed_utc": "2026-10-17T21:12:21Z",
+     "summary_i18n": {
+      "en": "Day 13 of the \"28-day challenge\" is a reset (\"Le limit reset\"). A follow-up self-reply said it would land by end of day Pacific time.",
+      "zh-Hans": "“28天挑战”第13天为重置（“Le limit reset”）。随后的自我回复预告将在太平洋时间当天内生效。",
+      "zh-Hant": "「28天挑戰」第13天為重置（「Le limit reset」）。隨後的自我回覆預告將在太平洋時間當天內生效。",
+      "ko": "'28일 챌린지' 13일차는 리셋('Le limit reset'). 이어진 본인 답글에서 태평양 시간 당일 중 반영을 예고.",
+      "es": "El día 13 del \"reto de 28 días\" es un reinicio (\"Le limit reset\"). En una autorrespuesta indicó que llegaría antes del fin del día, hora del Pacífico.",
+      "fr": "Le jour 13 du « défi de 28 jours » est une réinitialisation (« Le limit reset »). Une auto-réponse a indiqué qu'elle arriverait d'ici la fin de la journée, heure du Pacifique.",
+      "de": "Tag 13 der „28-Tage-Challenge“ ist ein Reset („Le limit reset“). In einer Selbstantwort hieß es, er komme bis Tagesende pazifischer Zeit.",
+      "pt-BR": "O dia 13 do \"desafio de 28 dias\" é um reset (\"Le limit reset\"). Em uma autorresposta, disse que chegaria até o fim do dia no horário do Pacífico.",
+      "hi": "\"28-दिन चैलेंज\" का दिन 13 रीसेट है (\"Le limit reset\")। बाद के स्व-उत्तर में कहा गया कि यह पैसिफिक समय के अनुसार दिन के अंत तक लागू होगा।",
+      "id": "Hari ke-13 \"tantangan 28 hari\" adalah reset (\"Le limit reset\"). Balasan lanjutan menyebut reset berlaku paling lambat akhir hari waktu Pasifik."
+     },
+     "effective_i18n": {
+      "en": "A self-reply said it would land \"sometime today by EOD PST\"; completion (\"Done\") was posted before that deadline."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {
+      "en": "Announcement self-reply: https://x.com/thsottiaux/status/2111492738025959922 . The post says \"PST\", but Pacific time in October is PDT (UTC-7), so it is converted with America/Los_Angeles. Completion post (a standalone \"Done\"): https://x.com/thsottiaux/status/2111566005684289735 . 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
     {
      "announced_utc": "2026-10-15T04:55:51Z",
      "announced_jst": "2026-10-15T13:55:51+09:00",
