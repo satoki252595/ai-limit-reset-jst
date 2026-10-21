@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-20T15:41:03Z",
- "last_run_jst": "2026-10-21T00:41:03+09:00",
+ "last_run_utc": "2026-10-21T03:42:38Z",
+ "last_run_jst": "2026-10-21T12:42:38+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2112566006812188956",
- "x_calls_this_run": 7,
- "note": "Scheduled run (12h) from newest_seen_id 2112373713937084809. Published: Codex Day 15 reset by @thsottiaux 'Day 15/ Nevermind, we're still cooking... and reset. Enjoy.' (2112432076767289678, 2026-10-20T06:33:48Z) quoting his 'Day 15/ We're cooked' (2112268918681485431) -> immediate/done; no self-replies; user reports and quotaresets (full reset 20 Oct 06:33 UTC) consistent. Only other allowlisted hit: none (page 2 empty); @thsottiaux @theo reply unrelated. Extra check of Anthropic accounts (limits/usage/credits/banked/refresh): 0. Non-allowlisted query: 22 results (page 2 empty), all user chatter (Codex Day 15 reset, Claude banked reset expiring ~Oct 22, hopes for a banked reset with a Claude model launch) - nothing to pending. Official sources: help.openai 403 (Cloudflare); dev.meta.ai blog 500; anthropic news newest limits item is 2026-05-06 (old); windsurf changelog quota-reset note is v1.9600.41 2026-04-08 (old, bug-affected users only); others no new resets. No pruning needed (oldest item 2026-09-23 JST). Pending unchanged."
+ "newest_seen_id": "2112748754600345808",
+ "x_calls_this_run": 5,
+ "note": "Scheduled run (12h) from newest_seen_id 2112566006812188956. No new resets. Allowlisted query: 6 hits - @thsottiaux 'Day 16/' (2112712984644784534) is 12h API prompt caching / Codex cache, not a reset (no self-replies); @thsottiaux 2112592264686149749 (2026-10-20T17:10:20Z): ~40,000 accounts metered against wrong plan, corrected, affected users get credits - account-specific credit compensation, not a usage-limit reset (quotaresets lists it as 'usage credit'), not published/pending; @OpenAIDevs 12h caching; @boltdotnew Builders Week Day 2 (not a reset); @bot auto-reply (rule: ignored). No completion posts needed (no open scheduled entries). Non-allowlisted query: 16 results, all user chatter (Codex reset card wasted by site-wide reset, Claude banked reset expiring ~Oct 22, requests for resets) - nothing to pending. Extra check from:spacexai: 0. Official sources: help.openai 403 (Cloudflare); others fetched OK, no new reset mentions (trackers show last Codex reset 2026-10-20 06:33Z, already published). No pruning needed yet (oldest items 2102435538120691886/2102463847714247142 posted 2026-09-23 JST, due ~Oct 23). Pending unchanged."
 }
