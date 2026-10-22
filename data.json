@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-21T00:41:03+09:00",
+ "updated_jst": "2026-10-22T12:48:36+09:00",
  "services": [
   {
    "id": "cursor",
@@ -707,7 +707,7 @@
      "summary": "Pro/Max/Teamの5時間上限を引き上げ、サブスク利用者に好きな時に使える「保存型」リセットを付与。",
      "url": "https://x.com/claudeai/status/2102435538120691886",
      "poster": "Claude 公式（@claudeai）",
-     "note": null,
+     "note": "使用期限の告知（Claude Code チームの @lydiahallie、10月22日投稿）：https://x.com/lydiahallie/status/2113007239476977744",
      "id": "2102435538120691886",
      "scope": "サブスク利用者（上限引き上げはPro/Max/Team）",
      "type": "banked",
@@ -737,7 +737,9 @@
      "scope_i18n": {
       "en": "Subscribers (limit increase applies to Pro/Max/Team)"
      },
-     "note_i18n": {},
+     "note_i18n": {
+      "en": "Expiry reminder (by Claude Code team member @lydiahallie, posted Oct 22): https://x.com/lydiahallie/status/2113007239476977744"
+     },
      "poster_i18n": {
       "en": "Claude official (@claudeai)"
      }

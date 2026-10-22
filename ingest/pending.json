@@ -16,6 +16,14 @@
    "channel": "email to Grok Bot users (relayed on X by @blankspeaker)",
    "url": "https://x.com/blankspeaker/status/2100684433074634953",
    "reason": "Only evidence is a non-official relay of an email; no @bot/@xai post. Needs an official acknowledgement."
+  },
+  {
+   "id": "relay-2026-10-22-glm-reset-cards",
+   "service": "glm",
+   "announced_utc": "2026-10-22T03:30:52Z",
+   "channel": "community moderator (relayed on X by @yangyang_2048, screenshot from @leo114119)",
+   "url": "https://x.com/yangyang_2048/status/2113110813301252328",
+   "reason": "Unofficial relay of a moderator saying reset cards will be handed out to GLM Coding Plan users, plus another when the next model ships. No @Zai_org post or official page found; no date or time. Publish only if Z.ai announces it officially."
   }
  ]
 }
