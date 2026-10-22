@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-22T03:48:36Z",
- "last_run_jst": "2026-10-22T12:48:36+09:00",
+ "last_run_utc": "2026-10-22T15:40:12Z",
+ "last_run_jst": "2026-10-23T00:40:12+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2113110813301252328",
- "x_calls_this_run": 6,
- "note": "Scheduled run (12h) from newest_seen_id 2112881648056287436. No new resets published. Allowlisted query: 3 hits - @lydiahallie 2113007239476977744 reminder that last month's free limit reset (Claude banked reset of Sep 22) expires Oct 22 9am PT; added as a note on the existing Claude banked entry. @github / @boltdotnew Builders Week posts not resets. Checked Claude official accounts since 2026-10-21 18:00Z: Claude Duet research preview (2112984664256241837 thread) has no reset; user chatter claiming 'Duet with a banked reset' conflates it with the expiring Sep reset - not pending. Non-allowlisted query: 22 results, mostly chatter (Claude/Codex banked resets expiring); one new pending: GLM reset-card rumor relayed by @yangyang_2048. No open scheduled entries. Official sources: help.openai 403 (Cloudflare), claude-code CHANGELOG via raw.githubusercontent (github.com 429); no new reset mentions. Trackers show nothing new (quotaresets Oct 20 17:10Z item is a usage credit, already reviewed). No pruning needed yet (Sep 22 entries leave the 30-day window after ~Oct 22 16:31Z)."
+ "newest_seen_id": "2113292907377537398",
+ "x_calls_this_run": 4,
+ "note": "Scheduled run (12h) from newest_seen_id 2113110813301252328. Published Codex Day 17 reset by @thsottiaux (2113162277688070445, 2026-10-22 06:55Z) as scheduled/deadline: self-reply 2113162413008884099 'Lands tomorrow before 10am PST' read as 2026-10-22 10:00 America/Los_Angeles = 2026-10-23 02:00 JST; no completion post yet (open scheduled entry, check next run). Non-allowlisted query: 25 results, all chatter (Claude Sep banked reset expiring Oct 22, Codex Day 17 relays, Claude Duet 'full reset card' user reports already reviewed last run); no new pending. Official sources: help.openai 403 (Cloudflare); claude-code CHANGELOG via raw.githubusercontent; no new reset mentions. Trackers show nothing new. No pruning yet: Sep 22 entries (Claude 16:31Z, Codex 18:23Z) leave the 30-day window after this run; next run prunes them."
 }
