@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-23T00:40:12+09:00",
+ "updated_jst": "2026-10-23T12:48:08+09:00",
  "services": [
   {
    "id": "cursor",
@@ -679,50 +679,6 @@
      "poster_i18n": {
       "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
-    },
-    {
-     "announced_utc": "2026-09-22T18:23:37Z",
-     "announced_jst": "2026-09-23T03:23:37+09:00",
-     "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "保存型リセット（各自が任意のタイミングで使用）",
-     "effective_jst_iso": null,
-     "summary": "GPT-6 Sol/Lunaの公開とAPI半額化に合わせ、Plus/Pro/Business全アカウントに保存型リセットを付与。",
-     "url": "https://x.com/thsottiaux/status/2102463847714247142",
-     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": null,
-     "id": "2102463847714247142",
-     "scope": "Plus/Pro/Business",
-     "type": "banked",
-     "status": "done",
-     "source_time_text": null,
-     "source_tz": null,
-     "source_local_datetime": null,
-     "time_precision": null,
-     "source_tz_assumed": null,
-     "confirmed_url": null,
-     "confirmed_utc": null,
-     "summary_i18n": {
-      "en": "Alongside the GPT-6 Sol/Luna launch and a 50% API price cut, a banked reset was given to all Plus/Pro/Business accounts.",
-      "zh-Hans": "配合GPT-6 Sol/Luna发布及API降价50%，向所有Plus/Pro/Business账户发放可保存的重置。",
-      "zh-Hant": "配合GPT-6 Sol/Luna發布及API降價50%，向所有Plus/Pro/Business帳戶發放可保存的重置。",
-      "ko": "GPT-6 Sol/Luna 출시와 API 50% 인하에 맞춰 모든 Plus/Pro/Business 계정에 저장형 리셋을 지급.",
-      "es": "Junto con el lanzamiento de GPT-6 Sol/Luna y una rebaja del 50% en la API, se dio un reinicio guardable a todas las cuentas Plus/Pro/Business.",
-      "fr": "Avec le lancement de GPT-6 Sol/Luna et une baisse de 50 % du prix de l'API, une réinitialisation à conserver a été offerte à tous les comptes Plus/Pro/Business.",
-      "de": "Zum Start von GPT-6 Sol/Luna und einer API-Preissenkung um 50 % erhielten alle Plus/Pro/Business-Konten einen gespeicherten Reset.",
-      "pt-BR": "Com o lançamento do GPT-6 Sol/Luna e o corte de 50% no preço da API, um reset guardável foi dado a todas as contas Plus/Pro/Business.",
-      "hi": "GPT-6 Sol/Luna लॉन्च और API की 50% कीमत कटौती के साथ, सभी Plus/Pro/Business खातों को सहेजने योग्य रीसेट दिया गया।",
-      "id": "Bersamaan dengan peluncuran GPT-6 Sol/Luna dan pemotongan harga API 50%, reset tersimpan diberikan ke semua akun Plus/Pro/Business."
-     },
-     "effective_i18n": {
-      "en": "Banked reset (each user applies it whenever they choose)."
-     },
-     "scope_i18n": {
-      "en": "Plus/Pro/Business"
-     },
-     "note_i18n": {},
-     "poster_i18n": {
-      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
-     }
     }
    ],
    "name_en": "OpenAI Codex",
@@ -743,54 +699,7 @@
    "id": "claude",
    "name": "Claude（Anthropic）",
    "official_name": "Claude / Claude Code",
-   "items": [
-    {
-     "announced_utc": "2026-09-22T16:31:08Z",
-     "announced_jst": "2026-09-23T01:31:08+09:00",
-     "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "保存型リセット：各ユーザーが任意のタイミングで使用",
-     "effective_jst_iso": null,
-     "summary": "Pro/Max/Teamの5時間上限を引き上げ、サブスク利用者に好きな時に使える「保存型」リセットを付与。",
-     "url": "https://x.com/claudeai/status/2102435538120691886",
-     "poster": "Claude 公式（@claudeai）",
-     "note": "使用期限の告知（Claude Code チームの @lydiahallie、10月22日投稿）：https://x.com/lydiahallie/status/2113007239476977744",
-     "id": "2102435538120691886",
-     "scope": "サブスク利用者（上限引き上げはPro/Max/Team）",
-     "type": "banked",
-     "status": "done",
-     "source_time_text": null,
-     "source_tz": null,
-     "source_local_datetime": null,
-     "time_precision": null,
-     "source_tz_assumed": null,
-     "confirmed_url": null,
-     "confirmed_utc": null,
-     "summary_i18n": {
-      "en": "Raised five-hour limits on Pro/Max/Team and gave subscribers a banked reset they can use whenever they choose.",
-      "zh-Hans": "提高Pro/Max/Team的5小时上限，并向订阅用户发放可随时使用的可保存重置。",
-      "zh-Hant": "提高Pro/Max/Team的5小時上限，並向訂閱用戶發放可隨時使用的可保存重置。",
-      "ko": "Pro/Max/Team의 5시간 한도를 상향하고, 구독자에게 원할 때 쓸 수 있는 저장형 리셋을 지급.",
-      "es": "Aumentó los límites de cinco horas en Pro/Max/Team y dio a los suscriptores un reinicio guardable que pueden usar cuando quieran.",
-      "fr": "Hausse des limites sur cinq heures pour Pro/Max/Team et réinitialisation à conserver, utilisable à tout moment, offerte aux abonnés.",
-      "de": "Die Fünf-Stunden-Limits für Pro/Max/Team wurden erhöht, und Abonnenten erhielten einen gespeicherten Reset, den sie jederzeit nutzen können.",
-      "pt-BR": "Aumentou os limites de cinco horas no Pro/Max/Team e deu aos assinantes um reset guardável para usar quando quiserem.",
-      "hi": "Pro/Max/Team की पाँच-घंटे की सीमा बढ़ाई और सब्सक्राइबरों को कभी भी इस्तेमाल करने योग्य सहेजा जाने वाला रीसेट दिया।",
-      "id": "Menaikkan batas lima jam di Pro/Max/Team dan memberi pelanggan reset tersimpan yang bisa dipakai kapan saja."
-     },
-     "effective_i18n": {
-      "en": "Banked reset: each user applies it whenever they choose."
-     },
-     "scope_i18n": {
-      "en": "Subscribers (limit increase applies to Pro/Max/Team)"
-     },
-     "note_i18n": {
-      "en": "Expiry reminder (by Claude Code team member @lydiahallie, posted Oct 22): https://x.com/lydiahallie/status/2113007239476977744"
-     },
-     "poster_i18n": {
-      "en": "Claude official (@claudeai)"
-     }
-    }
-   ],
+   "items": [],
    "name_en": "Claude (Anthropic)",
    "name_i18n": {
     "en": "Claude (Anthropic)",
