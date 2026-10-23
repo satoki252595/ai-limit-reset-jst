@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-23T12:48:08+09:00",
+ "updated_jst": "2026-10-24T00:50:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -222,6 +222,52 @@
    "name": "OpenAI Codex",
    "official_name": "OpenAI Codex",
    "items": [
+    {
+     "announced_utc": "2026-10-23T04:46:19Z",
+     "announced_jst": "2026-10-23T13:46:19+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "自己返信で「翌日の太平洋時間午前10時まで（before 10am PST）」の反映を予告",
+     "effective_jst_iso": "2026-10-24T02:00:00+09:00",
+     "summary": "「28日間チャレンジ」18日目もリセット。続く自己返信で「明日の太平洋時間午前10時までに、小さなリリースと一緒に」反映と予告。",
+     "url": "https://x.com/thsottiaux/status/2113492187770175603",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2113492502355562875 。返信は太平洋時間で10月22日の夜に投稿されたため「tomorrow」を太平洋時間の10月23日と解釈。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。",
+     "id": "2113492187770175603",
+     "scope": "未明記",
+     "type": "scheduled",
+     "status": "scheduled",
+     "source_time_text": "Landing tomorrow before 10am PST together with a small ship.",
+     "source_tz": "America/Los_Angeles",
+     "source_local_datetime": "2026-10-23T10:00",
+     "time_precision": "deadline",
+     "source_tz_assumed": false,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Day 18 of the \"28-day challenge\" is another reset. A self-reply said it lands \"tomorrow before 10am PST\" together with a small ship.",
+      "zh-Hans": "“28天挑战”第18天再次重置。随后的自我回复称将于“明天太平洋时间上午10点前”随一次小更新一起生效。",
+      "zh-Hant": "「28天挑戰」第18天再次重置。隨後的自我回覆稱將於「明天太平洋時間上午10點前」隨一次小更新一起生效。",
+      "ko": "'28일 챌린지' 18일차도 리셋. 이어진 자기 답글에서 '내일 태평양시간 오전 10시 전' 작은 업데이트와 함께 반영을 예고.",
+      "es": "El día 18 del \"reto de 28 días\" es otro reinicio. Una autorrespuesta indicó que se aplicará \"mañana antes de las 10 a. m. PST\" junto con un pequeño lanzamiento.",
+      "fr": "Le jour 18 du « défi de 28 jours » est une nouvelle réinitialisation. Une auto-réponse indique qu'elle arrivera « demain avant 10 h PST » avec une petite mise à jour.",
+      "de": "Tag 18 der „28-Tage-Challenge“ ist erneut ein Reset. Eine Selbstantwort kündigte ihn für „morgen vor 10 Uhr PST“ zusammen mit einem kleinen Release an.",
+      "pt-BR": "O dia 18 do \"desafio de 28 dias\" é mais um reset. Uma autorresposta disse que ele chega \"amanhã antes das 10h PST\" junto com um pequeno lançamento.",
+      "hi": "\"28-दिन चैलेंज\" का दिन 18 फिर से रीसेट है। एक स्व-उत्तर में कहा गया कि यह एक छोटे अपडेट के साथ \"कल सुबह 10 बजे PST से पहले\" लागू होगा।",
+      "id": "Hari ke-18 \"tantangan 28 hari\" kembali reset. Balasan lanjutan menyebut reset berlaku \"besok sebelum pukul 10 pagi PST\" bersama rilis kecil."
+     },
+     "effective_i18n": {
+      "en": "A self-reply said it lands \"tomorrow before 10am PST\" (deadline)."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {
+      "en": "Self-reply with the timing: https://x.com/thsottiaux/status/2113492502355562875 . The reply was posted on the evening of Oct 22 Pacific time, so \"tomorrow\" is read as Oct 23 Pacific. The post says \"PST\", but Pacific time in October is daylight time (PDT, UTC-7), so it is converted via America/Los_Angeles."
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
     {
      "announced_utc": "2026-10-22T06:55:22Z",
      "announced_jst": "2026-10-22T15:55:22+09:00",
