@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-25T03:50:00Z",
- "last_run_jst": "2026-10-25T12:50:00+09:00",
+ "last_run_utc": "2026-10-25T15:50:00Z",
+ "last_run_jst": "2026-10-26T00:50:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2114200291319124163",
- "x_calls_this_run": 4,
- "note": "Scheduled run (12h) from newest_seen_id 2113993116755669090. Allowlisted query (incl. completion phrases): 4 hits; published Codex Day 20 'Rest and reset' by @thsottiaux (https://x.com/thsottiaux/status/2114200152701575656) with self-reply 'By midnight PST' (https://x.com/thsottiaux/status/2114200291319124163) as scheduled/deadline 2026-10-25 00:00 America/Los_Angeles = 2026-10-25 16:00 JST. Other hits not resets: @bot auto-reply (ignored per rule), @thsottiaux 'One day' reply, @boltdotnew Builders Week Day 6. No completion post for Codex Day 17, Day 18 (third-party recaps count both as resets), both stay scheduled. Non-allowlisted query: 10 results (complaints, banked-reset requests, Day 19 recaps); nothing new to pend. Official sources via curl: help.openai 403 (Cloudflare), dev.meta.ai/resources/blog 500; others 200, no new reset announcements. Nothing pruned (oldest entry 2026-09-26, within 30 days)."
+ "newest_seen_id": "2114237083652882932",
+ "x_calls_this_run": 3,
+ "note": "Scheduled run from newest_seen_id 2114200291319124163. Allowlisted query (incl. completion phrases): 2 hits, both @thsottiaux: 'It is all propagated' quoting the Day 20 'By midnight PST' self-reply (https://x.com/thsottiaux/status/2114237083652882932, 2026-10-25T06:06:16Z) -> Codex Day 20 entry marked done; '@theo ... put the reset in the bag' reply (not a new reset). Extra check from:thsottiaux since 2026-10-22: no completion post for Codex Day 17 or Day 18, both stay scheduled. Non-allowlisted query: 17 results (banked-reset requests, Day 20 recaps, Claude Agent SDK 5-hour metering-bug complaints, help.openai banked-reset doc update recaps); nothing new to pend. Official sources via curl: help.openai 403 (Cloudflare), dev.meta.ai/resources/blog 500; others 200, no new reset announcements. Nothing pruned (oldest entry 2026-09-26, within 30 days)."
 }
