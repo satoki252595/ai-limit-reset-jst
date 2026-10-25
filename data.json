@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-24T00:50:00+09:00",
+ "updated_jst": "2026-10-25T12:50:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -222,6 +222,52 @@
    "name": "OpenAI Codex",
    "official_name": "OpenAI Codex",
    "items": [
+    {
+     "announced_utc": "2026-10-25T03:39:31Z",
+     "announced_jst": "2026-10-25T12:39:31+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "自己返信で「太平洋時間の深夜0時まで（by midnight PST）」の反映を予告",
+     "effective_jst_iso": "2026-10-25T16:00:00+09:00",
+     "summary": "「28日間チャレンジ」20日目は「休息とリセット」。続く自己返信で「太平洋時間の深夜0時まで」に反映と予告。",
+     "url": "https://x.com/thsottiaux/status/2114200152701575656",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2114200291319124163 。投稿は太平洋時間10月24日（土）の夜のため「midnight」を同日の終わり（日付が10月25日に変わる時点）と解釈。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。",
+     "id": "2114200152701575656",
+     "scope": "未明記",
+     "type": "scheduled",
+     "status": "scheduled",
+     "source_time_text": "Day 20/ Rest and reset — By midnight PST",
+     "source_tz": "America/Los_Angeles",
+     "source_local_datetime": "2026-10-25T00:00",
+     "time_precision": "deadline",
+     "source_tz_assumed": false,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Day 20 of the \"28-day challenge\" is \"Rest and reset\". A self-reply said it lands \"by midnight PST\".",
+      "zh-Hans": "“28天挑战”第20天为“休息与重置”。随后的自我回复称将于“太平洋时间午夜前”生效。",
+      "zh-Hant": "「28天挑戰」第20天為「休息與重置」。隨後的自我回覆稱將於「太平洋時間午夜前」生效。",
+      "ko": "'28일 챌린지' 20일차는 '휴식과 리셋'. 이어진 자기 답글에서 '태평양시간 자정까지' 반영을 예고.",
+      "es": "El día 20 del \"reto de 28 días\" es \"descanso y reinicio\". Una autorrespuesta indicó que se aplicará \"antes de la medianoche PST\".",
+      "fr": "Le jour 20 du « défi de 28 jours » est « repos et réinitialisation ». Une auto-réponse indique qu'elle arrivera « d'ici minuit PST ».",
+      "de": "Tag 20 der „28-Tage-Challenge“ heißt „Ruhe und Reset“. Eine Selbstantwort kündigte ihn „bis Mitternacht PST“ an.",
+      "pt-BR": "O dia 20 do \"desafio de 28 dias\" é \"descanso e reset\". Uma autorresposta disse que ele chega \"até a meia-noite PST\".",
+      "hi": "\"28-दिन चैलेंज\" का दिन 20 \"आराम और रीसेट\" है। एक स्व-उत्तर में कहा गया कि यह \"आधी रात PST तक\" लागू होगा।",
+      "id": "Hari ke-20 \"tantangan 28 hari\" adalah \"istirahat dan reset\". Balasan lanjutan menyebut reset berlaku \"paling lambat tengah malam PST\"."
+     },
+     "effective_i18n": {
+      "en": "A self-reply said it lands \"by midnight PST\" (deadline)."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {
+      "en": "Self-reply with the timing: https://x.com/thsottiaux/status/2114200291319124163 . The post was made on the evening of Sat Oct 24 Pacific time, so \"midnight\" is read as the end of that day (when Oct 25 begins, Pacific). The post says \"PST\", but Pacific time in October is daylight time (PDT, UTC-7), so it is converted via America/Los_Angeles."
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
     {
      "announced_utc": "2026-10-23T04:46:19Z",
      "announced_jst": "2026-10-23T13:46:19+09:00",

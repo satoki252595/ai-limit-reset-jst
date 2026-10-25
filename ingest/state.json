@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-24T15:50:00Z",
- "last_run_jst": "2026-10-25T00:50:00+09:00",
+ "last_run_utc": "2026-10-25T03:50:00Z",
+ "last_run_jst": "2026-10-25T12:50:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2113993116755669090",
- "x_calls_this_run": 2,
- "note": "Scheduled run (12h) from newest_seen_id 2113838156193894447. Allowlisted query (incl. completion phrases): 1 hit, @bot auto-reply (https://x.com/bot/status/2113862824376082515, reply, ignored per rule); no completion post for Codex Day 17 or Day 18, both stay status scheduled. Non-allowlisted query: 6 results (user complaints/requests for banked resets, a parody game, a Day 19 recap by @alwayspriyesh, a Chinese article on Tibo resets); nothing new to pend. Official sources fetched via curl: help.openai 403 (Cloudflare), dev.meta.ai/resources/blog 500; others 200, no new reset announcements (whenaireset last Codex reset 2026-10-23 = Day 18, already listed). Nothing pruned (oldest entry within 30 days)."
+ "newest_seen_id": "2114200291319124163",
+ "x_calls_this_run": 4,
+ "note": "Scheduled run (12h) from newest_seen_id 2113993116755669090. Allowlisted query (incl. completion phrases): 4 hits; published Codex Day 20 'Rest and reset' by @thsottiaux (https://x.com/thsottiaux/status/2114200152701575656) with self-reply 'By midnight PST' (https://x.com/thsottiaux/status/2114200291319124163) as scheduled/deadline 2026-10-25 00:00 America/Los_Angeles = 2026-10-25 16:00 JST. Other hits not resets: @bot auto-reply (ignored per rule), @thsottiaux 'One day' reply, @boltdotnew Builders Week Day 6. No completion post for Codex Day 17, Day 18 (third-party recaps count both as resets), both stay scheduled. Non-allowlisted query: 10 results (complaints, banked-reset requests, Day 19 recaps); nothing new to pend. Official sources via curl: help.openai 403 (Cloudflare), dev.meta.ai/resources/blog 500; others 200, no new reset announcements. Nothing pruned (oldest entry 2026-09-26, within 30 days)."
 }
