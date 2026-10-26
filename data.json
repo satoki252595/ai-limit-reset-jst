@@ -202,7 +202,54 @@
    "id": "gemini",
    "name": "Google Gemini",
    "official_name": "Google Gemini / Antigravity",
-   "items": [],
+   "items": [
+    {
+     "announced_utc": "2026-10-16T22:18:52Z",
+     "announced_jst": "2026-10-17T07:18:52+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "発表時点で即時リセット（発表文「Resetting … quotas for everyone」より）",
+     "effective_jst_iso": null,
+     "summary": "AntigravityでArgon（Gemini 4 Argon）とGeminiモデルのクォータを全員分リセットすると告知。「週末も作り続けて」とのこと。",
+     "url": "https://x.com/_mohansolo/status/2111220356178751860",
+     "poster": "Varun Mohan（@_mohansolo / Google DeepMind・Antigravityチーム責任者）",
+     "note": "週次の自己監査（2026-10-26）で見つけた取りこぼしの追加。投稿時点では投稿者がallowlist外だったため自動取り込みの対象外でした。役職の出典：https://google-i-o-2026-press-site.prezly.com/io-2026-google-speakers",
+     "id": "2111220356178751860",
+     "scope": "Antigravityの全ユーザー（ArgonとGeminiモデルのクォータ）",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Announced a reset of Argon (Gemini 4 Argon) and Gemini model quotas for everyone on Antigravity, adding \"Keep building through the weekend!\"",
+      "zh-Hans": "宣布为 Antigravity 上的所有人重置 Argon（Gemini 4 Argon）和 Gemini 模型的配额，并表示“周末也继续构建吧！”",
+      "zh-Hant": "宣布為 Antigravity 上的所有人重置 Argon（Gemini 4 Argon）和 Gemini 模型的配額，並表示「週末也繼續打造吧！」",
+      "ko": "Antigravity에서 모든 사용자의 Argon(Gemini 4 Argon) 및 Gemini 모델 쿼터를 리셋한다고 알림. \"주말에도 계속 만들어 보세요!\"",
+      "es": "Anunció el reinicio de las cuotas de los modelos Argon (Gemini 4 Argon) y Gemini para todos en Antigravity: \"¡Sigan construyendo el fin de semana!\"",
+      "fr": "A annoncé la réinitialisation des quotas des modèles Argon (Gemini 4 Argon) et Gemini pour tous sur Antigravity : « Continuez à construire ce week-end ! »",
+      "de": "Kündigte einen Reset der Kontingente für Argon (Gemini 4 Argon) und Gemini-Modelle für alle in Antigravity an: „Baut übers Wochenende weiter!“",
+      "pt-BR": "Anunciou o reset das cotas dos modelos Argon (Gemini 4 Argon) e Gemini para todos no Antigravity: \"Continuem construindo no fim de semana!\"",
+      "hi": "Antigravity पर सभी के लिए Argon (Gemini 4 Argon) और Gemini मॉडल कोटा रीसेट करने की घोषणा की: \"सप्ताहांत में भी बनाते रहें!\"",
+      "id": "Mengumumkan reset kuota model Argon (Gemini 4 Argon) dan Gemini untuk semua orang di Antigravity: \"Terus berkarya sepanjang akhir pekan!\""
+     },
+     "effective_i18n": {
+      "en": "Immediate reset at the time of the announcement (\"Resetting … quotas for everyone\")."
+     },
+     "scope_i18n": {
+      "en": "All Antigravity users (Argon and Gemini model quotas)"
+     },
+     "note_i18n": {
+      "en": "Added by the weekly self-audit (2026-10-26) as a missed entry; the poster was not on the allowlist at the time, so auto-ingest skipped it. Role source: https://google-i-o-2026-press-site.prezly.com/io-2026-google-speakers"
+     },
+     "poster_i18n": {
+      "en": "Varun Mohan (@_mohansolo, Google DeepMind, leads the Antigravity team)"
+     }
+    }
+   ],
    "name_en": "Google Gemini",
    "name_i18n": {
     "en": "Google Gemini",

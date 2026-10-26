@@ -46,7 +46,7 @@ function lastPerService(svcs){
   withItems.sort((a,b)=>b.t-a.t); return {withItems,empty};
 }
 function shortUrl(u){ return String(u).replace(/^https:\/\/(www\.)?/,'').replace(/\/status\/(\d+)$/,(m,id)=>'/status/…'+id.slice(-4)); }
-function badge(it, now){ if (it.type==='banked') return 'banked'; if (isConfirmed(it)) return 'done'; if (it.status==='scheduled'){ const t=Date.parse(it.effective_jst_iso); return (!Number.isNaN(t)&&t<=now)?'done':'scheduled'; } return it.type==='immediate'?'immediate':'done'; }
+function badge(it, now){ if (it.type==='banked') return 'banked'; if (isConfirmed(it)) return 'done'; if (it.status==='scheduled'){ const t=Date.parse(it.effective_jst_iso); if (Number.isNaN(t)||t>now) return 'scheduled'; return precision(it)==='deadline'?'unconfirmed':'done'; } return it.type==='immediate'?'immediate':'done'; }
 const CITY={
  en:{'Asia/Tokyo':'Tokyo','Asia/Seoul':'Seoul','Asia/Shanghai':'Shanghai','Asia/Singapore':'Singapore','Asia/Kolkata':'Kolkata','Asia/Dubai':'Dubai','Europe/London':'London','Europe/Paris':'Paris','Europe/Berlin':'Berlin','America/Sao_Paulo':'São Paulo','America/New_York':'New York','America/Chicago':'Chicago','America/Los_Angeles':'Los Angeles','UTC':'UTC'},
  ja:{'Asia/Tokyo':'東京','Asia/Seoul':'ソウル','Asia/Shanghai':'上海','Asia/Singapore':'シンガポール','Asia/Kolkata':'コルカタ','Asia/Dubai':'ドバイ','Europe/London':'ロンドン','Europe/Paris':'パリ','Europe/Berlin':'ベルリン','America/Sao_Paulo':'サンパウロ','America/New_York':'ニューヨーク','America/Chicago':'シカゴ','America/Los_Angeles':'ロサンゼルス','UTC':'UTC'},

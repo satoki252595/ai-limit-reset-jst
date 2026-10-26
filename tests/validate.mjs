@@ -139,6 +139,9 @@ const dn={...dl,status:'done',confirmed_utc:'2026-10-11T04:01:09Z',confirmed_url
 hp=Core.heroPick([H(dn)], Date.parse('2026-10-11T04:45:00Z')); if(!hp||hp.mode!=='done') err('hero confirmed must show done, not countdown');
 if (Core.heroPick([H(dn)], Date.parse('2026-10-12T05:00:00Z'))!==null) err('hero done expires after 24h');
 if (Core.badge(dn, Date.parse('2026-10-11T04:45:00Z'))!=='done') err('badge confirmed before deadline');
+if (Core.badge(dl, Date.parse('2026-10-11T08:00:00Z'))!=='unconfirmed') err('badge: deadline passed without completion post must be unconfirmed, not done');
+if (Core.badge(dn, Date.parse('2026-10-11T08:00:00Z'))!=='done') err('badge confirmed after deadline');
+for (const l of REQUIRED_LOCALES) for (const k of ['st_done','st_scheduled','st_unconfirmed']) if (!UI[l][k]) err(`i18n ${l}.${k} missing`);
 if (Core.fmtTime(Date.parse('2026-10-11T04:01:09Z'),'ja','Asia/Tokyo')!=='13:01') err('fmtTime');
 for (const l of REQUIRED_LOCALES) for (const k of ['hero_deadline','hero_approx','done_at']) if (!UI[l][k].includes('{t}')) err(`i18n ${l}.${k} needs {t}`);
 for (const l of REQUIRED_LOCALES) if (!UI[l].tz_assumed.includes('{z}')) err(`i18n ${l}.tz_assumed needs {z}`);
