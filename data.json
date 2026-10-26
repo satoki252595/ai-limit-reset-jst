@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-26T12:40:00+09:00",
+ "updated_jst": "2026-10-27T00:55:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -269,6 +269,52 @@
    "name": "OpenAI Codex",
    "official_name": "OpenAI Codex",
    "items": [
+    {
+     "announced_utc": "2026-10-26T05:21:22Z",
+     "announced_jst": "2026-10-26T14:21:22+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "発表時点で「今日はリセット」と告知（反映時刻の明記なし）",
+     "effective_jst_iso": null,
+     "summary": "「28日間チャレンジ」21日目。「残り7日に何が起こるか」と予告しつつ、今日はリセットと発表。",
+     "url": "https://x.com/thsottiaux/status/2114588174249071102",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "自己返信に反映時刻の追記はなし。28日間チャレンジの告知：https://x.com/thsottiaux/status/2106845241357824205",
+     "id": "2114588174249071102",
+     "scope": "未明記",
+     "type": "immediate",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Day 21 of the \"28-day challenge\". Teasing what comes in the remaining seven days, it announced that today is a reset.",
+      "zh-Hans": "“28天挑战”第21天。预告“剩下7天会发生什么”，并宣布今天是重置。",
+      "zh-Hant": "「28天挑戰」第21天。預告「剩下7天會發生什麼」，並宣布今天是重置。",
+      "ko": "'28일 챌린지' 21일차. '남은 7일에 무슨 일이 있을지' 예고하며 오늘은 리셋이라고 발표.",
+      "es": "Día 21 del \"reto de 28 días\". Adelantando lo que vendrá en los siete días restantes, anunció que hoy hay reinicio.",
+      "fr": "Jour 21 du « défi de 28 jours ». En évoquant les sept jours restants, il a annoncé qu'aujourd'hui est un jour de réinitialisation.",
+      "de": "Tag 21 der „28-Tage-Challenge“. Mit Blick auf die verbleibenden sieben Tage kündigte er an, dass heute ein Reset ist.",
+      "pt-BR": "Dia 21 do \"desafio de 28 dias\". Insinuando o que vem nos sete dias restantes, anunciou que hoje tem reset.",
+      "hi": "\"28-दिन चैलेंज\" का दिन 21। बाकी सात दिनों के बारे में संकेत देते हुए घोषणा की कि आज रीसेट है।",
+      "id": "Hari ke-21 \"tantangan 28 hari\". Sambil menyinggung tujuh hari tersisa, diumumkan bahwa hari ini ada reset."
+     },
+     "effective_i18n": {
+      "en": "Announced as \"today is a reset\" at the time of posting (no time stated)."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {
+      "en": "No self-reply added a time. 28-day challenge announcement: https://x.com/thsottiaux/status/2106845241357824205"
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
     {
      "announced_utc": "2026-10-25T03:39:31Z",
      "announced_jst": "2026-10-25T12:39:31+09:00",
