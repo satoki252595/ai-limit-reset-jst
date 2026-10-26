@@ -25,6 +25,14 @@
    "url": "https://x.com/yangyang_2048/status/2113110813301252328",
    "reason": "Unofficial relay of a moderator saying reset cards will be handed out to GLM Coding Plan users, plus another when the next model ships. No @Zai_org post or official page found; no date or time. Publish only if Z.ai announces it officially. DECLINED by user on 2026-10-22 16:51 JST: do not ask again or publish from this relay; only a new official Z.ai announcement may be considered as a new candidate.",
    "status": "declined"
+  },
+  {
+   "id": "observed-2026-10-25-claude-duet-banked",
+   "service": "claude",
+   "announced_utc": "2026-10-25T23:45:06Z",
+   "channel": "observed (user reports of a new banked reset in Claude) + reply by a non-allowlisted Anthropic staffer",
+   "url": "https://x.com/gabemulley/status/2114503551762436379",
+   "reason": "Users reported receiving a banked reset in Claude after getting Claude Duet access (e.g. https://x.com/thenoblesimian/status/2114502692819329435 ; https://x.com/NookWire/status/2114490272558305606 says it expires Nov 30 9pm PST). @gabemulley (says 'I work on Claude Duet') replied 'access comes with a banked reset'. Not on the allowlist and no @claudeai/@ClaudeDevs/@AnthropicAI post or official page found. Scope looks limited to Duet waitlist admits, not everyone. Publish only if an allowlisted account or official page confirms it."
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-26T00:50:00+09:00",
+ "updated_jst": "2026-10-26T12:40:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -772,52 +772,6 @@
      "poster_i18n": {
       "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
-    },
-    {
-     "announced_utc": "2026-09-26T00:07:13Z",
-     "announced_jst": "2026-09-26T09:07:13+09:00",
-     "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「we’ll reset」と予告（時刻未明記）。反映完了が後に告知された",
-     "effective_jst_iso": null,
-     "summary": "短時間の障害から復旧し、CodexとChatGPT Workの全有料ユーザーの使用上限をリセットすると発表。",
-     "url": "https://x.com/thsottiaux/status/2103637477760311522",
-     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "反映完了：https://x.com/thsottiaux/status/2103911959544610829",
-     "id": "2103637477760311522",
-     "scope": "CodexとChatGPT Workの全有料ユーザー",
-     "type": "scheduled",
-     "status": "done",
-     "source_time_text": null,
-     "source_tz": null,
-     "source_local_datetime": null,
-     "time_precision": "approximate",
-     "source_tz_assumed": null,
-     "confirmed_url": "https://x.com/thsottiaux/status/2103911959544610829",
-     "confirmed_utc": "2026-09-26T18:17:54Z",
-     "summary_i18n": {
-      "en": "After recovering from a brief outage, announced a usage-limit reset for all paid users of Codex and ChatGPT Work.",
-      "zh-Hans": "短暂故障恢复后，宣布为Codex和ChatGPT Work的所有付费用户重置使用上限。",
-      "zh-Hant": "短暫故障恢復後，宣布為Codex和ChatGPT Work的所有付費用戶重置使用上限。",
-      "ko": "짧은 장애에서 복구한 뒤, Codex와 ChatGPT Work의 모든 유료 사용자 사용 한도를 리셋한다고 발표.",
-      "es": "Tras recuperarse de una breve caída, anunció un reinicio de los límites de uso para todos los usuarios de pago de Codex y ChatGPT Work.",
-      "fr": "Après le rétablissement d'une brève panne, il a annoncé la réinitialisation des limites d'utilisation pour tous les utilisateurs payants de Codex et ChatGPT Work.",
-      "de": "Nach der Behebung eines kurzen Ausfalls wurde ein Reset der Nutzungslimits für alle zahlenden Nutzer von Codex und ChatGPT Work angekündigt.",
-      "pt-BR": "Após se recuperar de uma breve interrupção, anunciou o reset dos limites de uso para todos os usuários pagos do Codex e ChatGPT Work.",
-      "hi": "एक छोटी रुकावट से उबरने के बाद, Codex और ChatGPT Work के सभी पेड उपयोगकर्ताओं की उपयोग सीमा रीसेट करने की घोषणा की।",
-      "id": "Setelah pulih dari gangguan singkat, mengumumkan reset batas penggunaan untuk semua pengguna berbayar Codex dan ChatGPT Work."
-     },
-     "effective_i18n": {
-      "en": "Announced as \"we'll reset\" (no time given). Propagation was confirmed later."
-     },
-     "scope_i18n": {
-      "en": "All paid users of Codex and ChatGPT Work"
-     },
-     "note_i18n": {
-      "en": "Confirmation: https://x.com/thsottiaux/status/2103911959544610829"
-     },
-     "poster_i18n": {
-      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
-     }
     }
    ],
    "name_en": "OpenAI Codex",
@@ -938,7 +892,54 @@
    "id": "kimi",
    "name": "Kimi Code",
    "official_name": "Kimi Code (Moonshot AI)",
-   "items": [],
+   "items": [
+    {
+     "announced_utc": "2026-10-25T20:14:44Z",
+     "announced_jst": "2026-10-26T05:14:44+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "「太平洋時間の当日中（by end of day PST）」に使用量バーへ反映と予告",
+     "effective_jst_iso": "2026-10-26T16:00:00+09:00",
+     "summary": "K3.1 Proプランでのレート制限と不要なクォータ消費を謝罪し、全プランの全加入者に1回限りの使用量リセット（月間クォータの25%分を回復）を実施と発表。",
+     "url": "https://x.com/Kimi_Moonshot/status/2114450610724708492",
+     "poster": "Kimi.ai（@Kimi_Moonshot / 公式アカウント）",
+     "note": "投稿は太平洋時間10月25日（日）の午後のため「end of day」を同日の終わり（日付が10月26日に変わる時点）と解釈。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。回復量は月間クォータの25%（使用量が25%未満なら0に戻る、約1週間分）。",
+     "id": "2114450610724708492",
+     "scope": "全プランの全加入者（月間クォータの25%分を回復）",
+     "type": "scheduled",
+     "status": "scheduled",
+     "source_time_text": "Your usage bar will reflect this adjustment by end of day PST.",
+     "source_tz": "America/Los_Angeles",
+     "source_local_datetime": "2026-10-26T00:00",
+     "time_precision": "deadline",
+     "source_tz_assumed": false,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Apologized for rate limits and unnecessary quota consumption on the K3.1 Pro plan, and announced a one-time usage reset for every subscriber on every plan, restoring 25% of the monthly quota.",
+      "zh-Hans": "就 K3.1 Pro 套餐的速率限制和不必要的额度消耗致歉，并宣布为所有套餐的全部订阅用户进行一次性用量重置（恢复月度额度的25%）。",
+      "zh-Hant": "就 K3.1 Pro 方案的速率限制與不必要的額度消耗致歉，並宣布為所有方案的全部訂閱用戶進行一次性用量重置（恢復每月額度的25%）。",
+      "ko": "K3.1 Pro 플랜의 속도 제한과 불필요한 쿼터 소모를 사과하고, 모든 플랜의 모든 구독자에게 1회성 사용량 리셋(월간 쿼터의 25% 회복)을 실시한다고 발표.",
+      "es": "Se disculpó por los límites de uso y el consumo innecesario de cuota en el plan K3.1 Pro, y anunció un reinicio de uso único para todos los suscriptores de todos los planes, que restaura el 25% de la cuota mensual.",
+      "fr": "S'est excusé pour les limites de débit et la consommation inutile de quota sur l'offre K3.1 Pro, et a annoncé une réinitialisation unique de l'usage pour tous les abonnés de toutes les offres, rétablissant 25 % du quota mensuel.",
+      "de": "Entschuldigte sich für Ratenlimits und unnötigen Kontingentverbrauch im K3.1-Pro-Tarif und kündigte einen einmaligen Nutzungs-Reset für alle Abonnenten aller Tarife an, der 25 % des Monatskontingents zurückgibt.",
+      "pt-BR": "Pediu desculpas pelos limites de taxa e pelo consumo desnecessário de cota no plano K3.1 Pro e anunciou um reset único de uso para todos os assinantes de todos os planos, restaurando 25% da cota mensal.",
+      "hi": "K3.1 Pro प्लान पर रेट लिमिट और अनावश्यक कोटा खपत के लिए माफ़ी मांगी, और सभी प्लान के सभी सब्सक्राइबर के लिए एक बार का उपयोग रीसेट (मासिक कोटा का 25% वापस) घोषित किया।",
+      "id": "Meminta maaf atas batas laju dan konsumsi kuota yang tidak perlu pada paket K3.1 Pro, serta mengumumkan reset penggunaan satu kali untuk semua pelanggan di semua paket, memulihkan 25% kuota bulanan."
+     },
+     "effective_i18n": {
+      "en": "Announced to show in the usage bar \"by end of day PST\" (deadline)."
+     },
+     "scope_i18n": {
+      "en": "Every subscriber on every plan (restores 25% of the monthly quota)"
+     },
+     "note_i18n": {
+      "en": "The post was made on the afternoon of Sun Oct 25 Pacific time, so \"end of day\" is read as the end of that day (when Oct 26 begins, Pacific). The post says \"PST\", but Pacific time in October is daylight time (PDT, UTC-7), so it is converted via America/Los_Angeles. The reset restores 25% of the monthly quota (usage below 25% goes to zero), about one week of usage."
+     },
+     "poster_i18n": {
+      "en": "Kimi.ai (@Kimi_Moonshot, official account)"
+     }
+    }
+   ],
    "name_en": "Kimi Code",
    "name_i18n": {
     "en": "Kimi Code",
