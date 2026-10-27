@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-26T15:55:00Z",
- "last_run_jst": "2026-10-27T00:55:00+09:00",
+ "last_run_utc": "2026-10-27T03:45:00Z",
+ "last_run_jst": "2026-10-27T12:45:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2114740802190463376",
- "x_calls_this_run": 5,
- "note": "Scheduled run from newest_seen_id 2114538114001551581. Allowlisted query (incl. completion phrases): 3 hits: @thsottiaux 'Day 21/ ... But today is a reset.' (https://x.com/thsottiaux/status/2114588174249071102, 2026-10-26T05:21:22Z) -> published as codex immediate/done (no time stated; conversation and Tibo timeline since last run checked: no self-reply with timing; user reports in the non-allowlisted query say limits were refilled); @thsottiaux reply 'Not enough resets' (not an announcement); 1 @bot auto-reply (rule: ignored). No completion post for Kimi one-time reset (deadline 2026-10-26 16:00 JST passed, stays scheduled/unconfirmed) or Codex Day 17/18 (stay scheduled/unconfirmed). Non-allowlisted query: 25 results (Kimi reset recaps, Day 21 recaps, Codex/Claude Duet banked-reset user reports) -> nothing new for pending (Claude Duet banked reset already pending). Official sources via curl: help.openai 403, dev.meta.ai/resources/blog 500; others 200, no new reset announcements (status.openai 'unexpected usage limit resets' item is from 2026-09-09, already known). No pruning needed. newest_seen_id set to newest allowlisted hit (newest non-allowlisted hit 2114744601462579363)."
+ "newest_seen_id": "2114922374978277786",
+ "x_calls_this_run": 4,
+ "note": "Scheduled run from newest_seen_id 2114740802190463376. Allowlisted query (incl. completion phrases): 3 hits: @thsottiaux 'Day 22/ Terra is back!' (https://x.com/thsottiaux/status/2114800277677092936, GPT-6.1 Terra launch, '2X more usage than 6.1 Sol' - a model/usage-rate claim, not a reset; Tibo posts since last run checked, no reset self-reply); @elonmusk 'Everyday is zero-day' (not a reset); 1 @bot auto-reply (rule: ignored). Kimi/Claude official accounts since last run: no reset or completion post. No completion post for Kimi one-time reset (deadline 2026-10-26 16:00 JST passed, stays scheduled/unconfirmed) or Codex Day 17/18 (stay scheduled/unconfirmed). Non-allowlisted query: 15 results (Claude Duet banked-reset user reports - already pending; Kimi 25% one-time reset recaps; Codex reset recaps) -> nothing new for pending. Official sources via curl: help.openai 403, dev.meta.ai/resources/blog 500; others 200, no new reset announcements. No pruning needed (oldest item 2026-10-02). data.json unchanged. newest_seen_id set to newest allowlisted-author post seen (newest non-allowlisted hit 2114909423097290929)."
 }
