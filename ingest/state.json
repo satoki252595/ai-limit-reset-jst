@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-28T03:45:00Z",
- "last_run_jst": "2026-10-28T12:45:00+09:00",
+ "last_run_utc": "2026-10-28T15:45:00Z",
+ "last_run_jst": "2026-10-29T00:45:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2115273253711409208",
- "x_calls_this_run": 6,
- "note": "Scheduled run from newest_seen_id 2114922374978277786. Allowlisted query (incl. completion phrases) + supplemental terms: 3 hits; published Codex Day 23 'today is a reset' by @thsottiaux (2115273064481218829, 2026-10-28 11:42 JST) as scheduled/deadline: self-reply 2115273253711409208 'Lands by midnight PST.' -> 2026-10-28T00:00 America/Los_Angeles (PDT) = 2026-10-28 16:00 JST. Other hits (@github Universe keynote, @cognition resetHandlers) are not resets. No completion post for Kimi one-time reset or Codex Day 17/18 (stay scheduled/unconfirmed). Non-allowlisted query (since 2115097801717583936): 11 results, user chatter (more Claude Duet banked-reset reports, already pending as observed-2026-10-25-claude-duet-banked; requests for Codex/Grok Bot resets) -> nothing new for pending. Official sources via curl: help.openai 403, dev.meta.ai/resources/blog 500; others 200, no new reset announcements (status.openai: new 'Degraded Performace on ChatGPT Work' 2026-10-28 03:39 UTC). No pruning needed (all entries within 30 days). newest_seen_id -> 2115273253711409208 (newest allowlisted post seen)."
+ "newest_seen_id": "2115466453390405860",
+ "x_calls_this_run": 3,
+ "note": "Scheduled run from newest_seen_id 2115273253711409208. Allowlisted query (incl. completion phrases): 2 hits, no resets: @kirodotdev Claude Haiku 5.5 launch (2115466453390405860); @thsottiaux '<link> has landed' (2115297093879472332, t.co -> poteto.com, a standalone top-level post, not a reply in the Day 23 thread) -> not treated as a reset completion. Codex Day 23 (deadline 2026-10-28 16:00 JST), Kimi one-time reset and Codex Day 17/18 stay scheduled/unconfirmed (no allowlisted completion post; user reports of the Day 23 global reset are not confirmation). Non-allowlisted query: 15 results, user chatter/trackers (more Claude banked-reset sightings already covered by pending observed-2026-10-25-claude-duet-banked; Kimi one-time reset already published) -> nothing new for pending. Official sources via curl: help.openai 403, dev.meta.ai/resources/blog 500, status.windsurf.com timeout; others 200, no new reset announcements. No pruning needed. newest_seen_id -> 2115466453390405860 (newest allowlisted post seen)."
 }
