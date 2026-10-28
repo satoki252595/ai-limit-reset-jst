@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-27T15:55:00Z",
- "last_run_jst": "2026-10-28T00:55:00+09:00",
+ "last_run_utc": "2026-10-28T03:45:00Z",
+ "last_run_jst": "2026-10-28T12:45:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2114922374978277786",
- "x_calls_this_run": 5,
- "note": "Scheduled run from newest_seen_id 2114922374978277786. Allowlisted query (incl. completion phrases): 0 hits. Spot check of all allowlisted accounts since last run: only @bot auto-replies (rule: ignored); no new posts from @thsottiaux/@sama/@claudeai etc. since 2114922374978277786 (checked with start_time 2026-10-26T12:00Z as well). No completion post for Kimi one-time reset (stays scheduled/unconfirmed) or Codex Day 17/18 (stay scheduled/unconfirmed). Non-allowlisted query (since 2114909423097290929): 8 results (user chatter about Codex/Claude banked resets, a Kimi K3.1 Pro apology recap by @YouthChina, a Rantr recap) -> nothing new for pending. Official sources via curl: help.openai 403, dev.meta.ai/resources/blog 500, blog.google developers RSS 500; others 200, no new reset announcements (status.openai has a new '6.1 Sol Degraded Model Performance' incident at 2026-10-27 15:40 UTC; watch for a follow-up reset). No pruning needed. data.json unchanged. newest_seen_id unchanged (no newer allowlisted-author post; newest non-allowlisted hit 2115097801717583936)."
+ "newest_seen_id": "2115273253711409208",
+ "x_calls_this_run": 6,
+ "note": "Scheduled run from newest_seen_id 2114922374978277786. Allowlisted query (incl. completion phrases) + supplemental terms: 3 hits; published Codex Day 23 'today is a reset' by @thsottiaux (2115273064481218829, 2026-10-28 11:42 JST) as scheduled/deadline: self-reply 2115273253711409208 'Lands by midnight PST.' -> 2026-10-28T00:00 America/Los_Angeles (PDT) = 2026-10-28 16:00 JST. Other hits (@github Universe keynote, @cognition resetHandlers) are not resets. No completion post for Kimi one-time reset or Codex Day 17/18 (stay scheduled/unconfirmed). Non-allowlisted query (since 2115097801717583936): 11 results, user chatter (more Claude Duet banked-reset reports, already pending as observed-2026-10-25-claude-duet-banked; requests for Codex/Grok Bot resets) -> nothing new for pending. Official sources via curl: help.openai 403, dev.meta.ai/resources/blog 500; others 200, no new reset announcements (status.openai: new 'Degraded Performace on ChatGPT Work' 2026-10-28 03:39 UTC). No pruning needed (all entries within 30 days). newest_seen_id -> 2115273253711409208 (newest allowlisted post seen)."
 }
