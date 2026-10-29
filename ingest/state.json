@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-10-28T15:45:00Z",
- "last_run_jst": "2026-10-29T00:45:00+09:00",
+ "last_run_utc": "2026-10-29T03:40:00Z",
+ "last_run_jst": "2026-10-29T12:40:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2115466453390405860",
- "x_calls_this_run": 3,
- "note": "Scheduled run from newest_seen_id 2115273253711409208. Allowlisted query (incl. completion phrases): 2 hits, no resets: @kirodotdev Claude Haiku 5.5 launch (2115466453390405860); @thsottiaux '<link> has landed' (2115297093879472332, t.co -> poteto.com, a standalone top-level post, not a reply in the Day 23 thread) -> not treated as a reset completion. Codex Day 23 (deadline 2026-10-28 16:00 JST), Kimi one-time reset and Codex Day 17/18 stay scheduled/unconfirmed (no allowlisted completion post; user reports of the Day 23 global reset are not confirmation). Non-allowlisted query: 15 results, user chatter/trackers (more Claude banked-reset sightings already covered by pending observed-2026-10-25-claude-duet-banked; Kimi one-time reset already published) -> nothing new for pending. Official sources via curl: help.openai 403, dev.meta.ai/resources/blog 500, status.windsurf.com timeout; others 200, no new reset announcements. No pruning needed. newest_seen_id -> 2115466453390405860 (newest allowlisted post seen)."
+ "newest_seen_id": "2115622002581188681",
+ "x_calls_this_run": 5,
+ "note": "Scheduled run from newest_seen_id 2115466453390405860. Allowlisted query (incl. completion phrases): 4 hits, no new resets: @thsottiaux 'Day 24/ Text your dot' (2115622002581188681, product launch, no self-replies); @github Universe posts x2; @bot auto-reply (ignored per rule). Non-allowlisted query: 12 results, user chatter only (a user-relayed 'Day 23 reset complete' quote led to the completion post below; a user claim of a Codex Pro limit cut from Oct 30 is a limit change, not a reset) -> nothing new for pending. CLOSED Codex Day 23 (2115273064481218829): @thsottiaux \"And it's done.\" quoting the 'Lands by midnight PST' self-reply, 2115330127886463244 at 2026-10-28T06:29:38Z (snowflake verified) -> status done, confirmed_url/confirmed_utc set. Missed by earlier runs because the wording is \"it's done\" (not \"it is done\"); a targeted (from:thsottiaux OR from:Kimi_Moonshot) completion query since 2026-10-22 found no completion for Codex Day 17/18 or the Kimi one-time reset, which stay scheduled/unconfirmed. Official sources via curl: help.openai 403, dev.meta.ai/resources/blog 500; status.windsurf 200 this time; others 200, no new reset announcements. No pruning needed. newest_seen_id -> 2115622002581188681."
 }

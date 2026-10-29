@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-28T12:45:00+09:00",
+ "updated_jst": "2026-10-29T12:40:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -273,23 +273,23 @@
      "announced_utc": "2026-10-28T02:42:53Z",
      "announced_jst": "2026-10-28T11:42:53+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "自己返信で「太平洋時間の深夜0時まで（by midnight PST）」の反映を予告",
+     "effective": "自己返信で「太平洋時間の深夜0時まで（by midnight PST）」の反映を予告され、期限より前に「And it's done」と反映完了が投稿された",
      "effective_jst_iso": "2026-10-28T16:00:00+09:00",
      "summary": "「28日間チャレンジ」23日目。新プラグインの話と見せかけて「今日はリセット」と発表。自己返信で「太平洋時間の深夜0時まで」に反映と予告。",
      "url": "https://x.com/thsottiaux/status/2115273064481218829",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "予告の自己返信：https://x.com/thsottiaux/status/2115273253711409208 。投稿は太平洋時間10月27日（火）の夜のため「midnight」を同日の終わり（日付が10月28日に変わる時点）と解釈。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。",
+     "note": "予告の自己返信：https://x.com/thsottiaux/status/2115273253711409208 。投稿は太平洋時間10月27日（火）の夜のため「midnight」を同日の終わり（日付が10月28日に変わる時点）と解釈。投稿は「PST」と表記しているが、10月の太平洋時間は夏時間（PDT、UTC−7）のため America/Los_Angeles で換算。 反映完了の投稿（「And it's done」）：https://x.com/thsottiaux/status/2115330127886463244",
      "id": "2115273064481218829",
      "scope": "未明記",
      "type": "scheduled",
-     "status": "scheduled",
+     "status": "done",
      "source_time_text": "Day 23/ ... today is a reset — Lands by midnight PST.",
      "source_tz": "America/Los_Angeles",
      "source_local_datetime": "2026-10-28T00:00",
      "time_precision": "deadline",
      "source_tz_assumed": false,
-     "confirmed_url": null,
-     "confirmed_utc": null,
+     "confirmed_url": "https://x.com/thsottiaux/status/2115330127886463244",
+     "confirmed_utc": "2026-10-28T06:29:38Z",
      "summary_i18n": {
       "en": "Day 23 of the \"28-day challenge\". After joking about new plugins, it announced that today is a reset; a self-reply said it lands \"by midnight PST\".",
       "zh-Hans": "“28天挑战”第23天。先假装介绍新插件，随后宣布今天是重置；自我回复称将于“太平洋时间午夜前”生效。",
@@ -303,13 +303,13 @@
       "id": "Hari ke-23 \"tantangan 28 hari\". Setelah bercanda soal plugin baru, diumumkan bahwa hari ini ada reset; balasan lanjutan menyebut berlaku \"paling lambat tengah malam PST\"."
      },
      "effective_i18n": {
-      "en": "A self-reply said it lands \"by midnight PST\" (deadline)."
+      "en": "A self-reply said it lands \"by midnight PST\" (deadline); completion (\"And it's done\") was posted before that deadline."
      },
      "scope_i18n": {
       "en": "Not specified"
      },
      "note_i18n": {
-      "en": "Self-reply with the timing: https://x.com/thsottiaux/status/2115273253711409208 . The post was made on the evening of Tue Oct 27 Pacific time, so \"midnight\" is read as the end of that day (when Oct 28 begins, Pacific). The post says \"PST\", but Pacific time in October is daylight time (PDT, UTC-7), so it is converted via America/Los_Angeles."
+      "en": "Self-reply with the timing: https://x.com/thsottiaux/status/2115273253711409208 . The post was made on the evening of Tue Oct 27 Pacific time, so \"midnight\" is read as the end of that day (when Oct 28 begins, Pacific). The post says \"PST\", but Pacific time in October is daylight time (PDT, UTC-7), so it is converted via America/Los_Angeles. Completion post (\"And it's done\"): https://x.com/thsottiaux/status/2115330127886463244"
      },
      "poster_i18n": {
       "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
