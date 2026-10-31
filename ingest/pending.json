@@ -33,6 +33,14 @@
    "channel": "observed (user reports of a new banked reset in Claude) + reply by a non-allowlisted Anthropic staffer",
    "url": "https://x.com/gabemulley/status/2114503551762436379",
    "reason": "Users reported receiving a banked reset in Claude after getting Claude Duet access (e.g. https://x.com/thenoblesimian/status/2114502692819329435 ; https://x.com/NookWire/status/2114490272558305606 says it expires Nov 30 9pm PST). @gabemulley (says 'I work on Claude Duet') replied 'access comes with a banked reset'. Not on the allowlist and no @claudeai/@ClaudeDevs/@AnthropicAI post or official page found. Scope looks limited to Duet waitlist admits, not everyone. Publish only if an allowlisted account or official page confirms it."
+  },
+  {
+   "id": "teaser-2026-10-31-codex-day27-28-banked",
+   "service": "codex",
+   "announced_utc": "2026-10-31T05:42:26Z",
+   "channel": "x (allowlisted @thsottiaux, teaser)",
+   "url": "https://x.com/thsottiaux/status/2116405414921384099",
+   "reason": "Day 26 post (multi-account switching on mobile) says 'Next two days will be resets… banked… do with this what you may'. Allowlisted author, but it is a teaser with no date, time or time zone and no scope; Day 26 itself is not a reset. Not published. Expect Day 27/28 posts (around 2026-11-01/02, previous Day posts ~05:40 UTC) to carry the actual banked resets; publish those as banked entries when they appear. Ask the user once whether to also publish this teaser as a scheduled/approximate entry."
   }
  ]
 }
