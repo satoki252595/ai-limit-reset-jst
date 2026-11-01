@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-10-29T12:40:00+09:00",
+ "updated_jst": "2026-11-01T12:55:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -269,6 +269,52 @@
    "name": "OpenAI Codex",
    "official_name": "OpenAI Codex",
    "items": [
+    {
+     "announced_utc": "2026-11-01T00:43:20Z",
+     "announced_jst": "2026-11-01T09:43:20+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "保存型リセット（1回目／全2回）。発表時点で付与（反映時刻の明記なし）",
+     "effective_jst_iso": null,
+     "summary": "「28日間チャレンジ」27日目。前日の予告どおり、2日連続の保存型（banked）リセットの1回目を付与（「Banked 1/2」）。",
+     "url": "https://x.com/thsottiaux/status/2116692529970311254",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "前日（26日目）の予告：https://x.com/thsottiaux/status/2116405414921384099 。2回目は翌日の投稿で付与予定。",
+     "id": "2116692529970311254",
+     "scope": "未明記",
+     "type": "banked",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Day 27 of the \"28-day challenge\". As teased the day before, the first of two banked resets on consecutive days was granted (\"Banked 1/2\").",
+      "zh-Hans": "“28天挑战”第27天。如前一天预告，发放了连续两天可保存（banked）重置中的第1次（“Banked 1/2”）。",
+      "zh-Hant": "「28天挑戰」第27天。如前一天預告，發放了連續兩天可保存（banked）重置中的第1次（「Banked 1/2」）。",
+      "ko": "'28일 챌린지' 27일차. 전날 예고대로 이틀 연속 저장형(banked) 리셋 중 첫 번째를 지급('Banked 1/2').",
+      "es": "Día 27 del \"reto de 28 días\". Como se adelantó el día anterior, se otorgó el primero de dos reinicios guardables (banked) en días consecutivos (\"Banked 1/2\").",
+      "fr": "Jour 27 du « défi de 28 jours ». Comme annoncé la veille, la première de deux réinitialisations à conserver (banked) sur deux jours consécutifs a été accordée (« Banked 1/2 »).",
+      "de": "Tag 27 der „28-Tage-Challenge“. Wie am Vortag angekündigt, wurde der erste von zwei gespeicherten (banked) Resets an aufeinanderfolgenden Tagen vergeben („Banked 1/2“).",
+      "pt-BR": "Dia 27 do \"desafio de 28 dias\". Como antecipado no dia anterior, foi concedido o primeiro de dois resets guardáveis (banked) em dias seguidos (\"Banked 1/2\").",
+      "hi": "\"28-दिन चैलेंज\" का दिन 27। पिछले दिन के संकेत के अनुसार, लगातार दो दिनों के सहेजने योग्य (banked) रीसेट में से पहला दिया गया (\"Banked 1/2\")।",
+      "id": "Hari ke-27 \"tantangan 28 hari\". Seperti diisyaratkan sehari sebelumnya, reset tersimpan (banked) pertama dari dua hari berturut-turut diberikan (\"Banked 1/2\")."
+     },
+     "effective_i18n": {
+      "en": "Banked reset (1st of 2). Granted at the time of posting (no time stated)."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {
+      "en": "Teaser the day before (Day 26): https://x.com/thsottiaux/status/2116405414921384099 . The second one is expected in the next day's post."
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
     {
      "announced_utc": "2026-10-28T02:42:53Z",
      "announced_jst": "2026-10-28T11:42:53+09:00",
@@ -815,52 +861,6 @@
       "en": "Not specified"
      },
      "note_i18n": {},
-     "poster_i18n": {
-      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
-     }
-    },
-    {
-     "announced_utc": "2026-10-02T02:14:51Z",
-     "announced_jst": "2026-10-02T11:14:51+09:00",
-     "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "「tomorrow 10am PST」に実施と予告。反映完了が後に告知された",
-     "effective_jst_iso": "2026-10-03T02:00:00+09:00",
-     "summary": "GPT-6.1 Solの立ち上がりの遅さを謝罪し、翌日午前10時（PST）に全有料ChatGPTアカウント向けのグローバルリセットを予告。",
-     "url": "https://x.com/thsottiaux/status/2105843926221660585",
-     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "投稿は夏時間期間中に「PST」と表記していたため、太平洋夏時間（PDT, UTC-7）として換算。 反映完了：https://x.com/thsottiaux/status/2106131810921136451",
-     "id": "2105843926221660585",
-     "scope": "全有料ChatGPTアカウント",
-     "type": "scheduled",
-     "status": "done",
-     "source_time_text": "tomorrow 10am PST",
-     "source_tz": "America/Los_Angeles",
-     "source_local_datetime": "2026-10-02T10:00",
-     "time_precision": "exact",
-     "source_tz_assumed": false,
-     "confirmed_url": "https://x.com/thsottiaux/status/2106131810921136451",
-     "confirmed_utc": "2026-10-02T21:18:48Z",
-     "summary_i18n": {
-      "en": "Apologizing for the slow start of GPT-6.1 Sol, announced a global reset for all paid ChatGPT accounts at 10am (PST) the next day.",
-      "zh-Hans": "就GPT-6.1 Sol起步缓慢致歉，预告次日上午10点（PST）对所有付费ChatGPT账户进行全局重置。",
-      "zh-Hant": "就GPT-6.1 Sol起步緩慢致歉，預告次日上午10點（PST）對所有付費ChatGPT帳戶進行全域重置。",
-      "ko": "GPT-6.1 Sol의 느린 출발을 사과하며, 다음 날 오전 10시(PST)에 모든 유료 ChatGPT 계정의 글로벌 리셋을 예고.",
-      "es": "Disculpándose por el lento arranque de GPT-6.1 Sol, anunció un reinicio global para todas las cuentas de pago de ChatGPT a las 10 a. m. (PST) del día siguiente.",
-      "fr": "S'excusant du démarrage lent de GPT-6.1 Sol, il a annoncé une réinitialisation globale pour tous les comptes ChatGPT payants le lendemain à 10 h (PST).",
-      "de": "Mit einer Entschuldigung für den langsamen Start von GPT-6.1 Sol wurde ein globaler Reset für alle zahlenden ChatGPT-Konten am nächsten Tag um 10 Uhr (PST) angekündigt.",
-      "pt-BR": "Pedindo desculpas pelo início lento do GPT-6.1 Sol, anunciou um reset global para todas as contas pagas do ChatGPT às 10h (PST) do dia seguinte.",
-      "hi": "GPT-6.1 Sol की धीमी शुरुआत के लिए माफ़ी मांगते हुए, अगले दिन सुबह 10 बजे (PST) सभी पेड ChatGPT खातों के लिए ग्लोबल रीसेट की घोषणा की।",
-      "id": "Meminta maaf atas awal yang lambat GPT-6.1 Sol, mengumumkan reset global untuk semua akun ChatGPT berbayar pukul 10 pagi (PST) keesokan harinya."
-     },
-     "effective_i18n": {
-      "en": "Scheduled for \"tomorrow 10am PST\". Propagation was confirmed later."
-     },
-     "scope_i18n": {
-      "en": "All paid ChatGPT accounts"
-     },
-     "note_i18n": {
-      "en": "The post said \"PST\" during daylight saving time, so it is converted as Pacific Daylight Time (PDT, UTC-7). Confirmation: https://x.com/thsottiaux/status/2106131810921136451"
-     },
      "poster_i18n": {
       "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
      }
