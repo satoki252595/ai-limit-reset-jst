@@ -1,6 +1,6 @@
 {
  "title": "AI使用上限グローバルリセット発表トラッカー",
- "updated_jst": "2026-11-01T12:55:00+09:00",
+ "updated_jst": "2026-11-02T09:40:00+09:00",
  "services": [
   {
    "id": "cursor",
@@ -25,50 +25,7 @@
    "id": "grok",
    "name": "Grok（xAI）",
    "official_name": "Grok / xAI",
-   "items": [
-    {
-     "announced_utc": "2026-10-02T18:05:23Z",
-     "announced_jst": "2026-10-03T03:05:23+09:00",
-     "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "発表時点で即時リセット（発表文より）",
-     "effective_jst_iso": null,
-     "summary": "Grok Botの全ユーザーの使用上限をリセットしたと発表。",
-     "url": "https://x.com/bot/status/2106083136002310193",
-     "poster": "Grok Bot（@bot / 公式アカウント）",
-     "id": "2106083136002310193",
-     "scope": "Grok Botの全ユーザー（Grok本体のウィークリー枠とは別）",
-     "type": "immediate",
-     "status": "done",
-     "source_time_text": null,
-     "source_tz": null,
-     "source_local_datetime": null,
-     "time_precision": null,
-     "source_tz_assumed": null,
-     "confirmed_url": null,
-     "confirmed_utc": null,
-     "summary_i18n": {
-      "en": "Announced that usage limits were reset for all Grok Bot users.",
-      "zh-Hans": "宣布已重置所有 Grok Bot 用户的使用上限。",
-      "zh-Hant": "宣布已重置所有 Grok Bot 使用者的使用上限。",
-      "ko": "모든 Grok Bot 사용자의 사용 한도를 리셋했다고 발표.",
-      "es": "Anunció que se reiniciaron los límites de uso de todos los usuarios de Grok Bot.",
-      "fr": "Annonce de la réinitialisation des limites d'utilisation de tous les utilisateurs de Grok Bot.",
-      "de": "Kündigte an, dass die Nutzungslimits aller Grok-Bot-Nutzer zurückgesetzt wurden.",
-      "pt-BR": "Anunciou o reset dos limites de uso de todos os usuários do Grok Bot.",
-      "hi": "सभी Grok Bot उपयोगकर्ताओं की उपयोग सीमा रीसेट करने की घोषणा।",
-      "id": "Mengumumkan reset batas penggunaan untuk semua pengguna Grok Bot."
-     },
-     "effective_i18n": {
-      "en": "Immediate reset at the time of the announcement (per the post)."
-     },
-     "scope_i18n": {
-      "en": "All Grok Bot users (separate from the main Grok weekly pool)"
-     },
-     "poster_i18n": {
-      "en": "Grok Bot (@bot, official account)"
-     }
-    }
-   ],
+   "items": [],
    "name_en": "Grok (xAI)",
    "name_i18n": {
     "en": "Grok (xAI)",
@@ -270,6 +227,52 @@
    "official_name": "OpenAI Codex",
    "items": [
     {
+     "announced_utc": "2026-11-01T23:27:20Z",
+     "announced_jst": "2026-11-02T08:27:20+09:00",
+     "original_timezone": "UTC（X投稿のタイムスタンプ）",
+     "effective": "保存型リセット（2回目／全2回）。発表時点で付与（反映時刻の明記なし）",
+     "effective_jst_iso": null,
+     "summary": "「28日間チャレンジ」最終日（28日目）。2日連続の保存型（banked）リセットの2回目を付与（「Banked 2/2」）。",
+     "url": "https://x.com/thsottiaux/status/2117035794678546764",
+     "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
+     "note": "1回目（Banked 1/2）：https://x.com/thsottiaux/status/2116692529970311254 。",
+     "id": "2117035794678546764",
+     "scope": "未明記",
+     "type": "banked",
+     "status": "done",
+     "source_time_text": null,
+     "source_tz": null,
+     "source_local_datetime": null,
+     "time_precision": null,
+     "source_tz_assumed": null,
+     "confirmed_url": null,
+     "confirmed_utc": null,
+     "summary_i18n": {
+      "en": "Final day (Day 28) of the \"28-day challenge\". The second of two banked resets on consecutive days was granted (\"Banked 2/2\").",
+      "zh-Hans": "“28天挑战”最后一天（第28天）。发放了连续两天可保存（banked）重置中的第2次（“Banked 2/2”）。",
+      "zh-Hant": "「28天挑戰」最後一天（第28天）。發放了連續兩天可保存（banked）重置中的第2次（「Banked 2/2」）。",
+      "ko": "'28일 챌린지' 마지막 날(28일차). 이틀 연속 저장형(banked) 리셋 중 두 번째를 지급('Banked 2/2').",
+      "es": "Último día (día 28) del \"reto de 28 días\". Se otorgó el segundo de dos reinicios guardables (banked) en días consecutivos (\"Banked 2/2\").",
+      "fr": "Dernier jour (jour 28) du « défi de 28 jours ». La seconde de deux réinitialisations à conserver (banked) sur deux jours consécutifs a été accordée (« Banked 2/2 »).",
+      "de": "Letzter Tag (Tag 28) der „28-Tage-Challenge“. Der zweite von zwei gespeicherten (banked) Resets an aufeinanderfolgenden Tagen wurde vergeben („Banked 2/2“).",
+      "pt-BR": "Último dia (dia 28) do \"desafio de 28 dias\". Foi concedido o segundo de dois resets guardáveis (banked) em dias seguidos (\"Banked 2/2\").",
+      "hi": "\"28-दिन चैलेंज\" का अंतिम दिन (दिन 28)। लगातार दो दिनों के सहेजने योग्य (banked) रीसेट में से दूसरा दिया गया (\"Banked 2/2\")।",
+      "id": "Hari terakhir (hari ke-28) \"tantangan 28 hari\". Reset tersimpan (banked) kedua dari dua hari berturut-turut diberikan (\"Banked 2/2\")."
+     },
+     "effective_i18n": {
+      "en": "Banked reset (2nd of 2). Granted at the time of posting (no time stated)."
+     },
+     "scope_i18n": {
+      "en": "Not specified"
+     },
+     "note_i18n": {
+      "en": "First one (Banked 1/2): https://x.com/thsottiaux/status/2116692529970311254 ."
+     },
+     "poster_i18n": {
+      "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
+     }
+    },
+    {
      "announced_utc": "2026-11-01T00:43:20Z",
      "announced_jst": "2026-11-01T09:43:20+09:00",
      "original_timezone": "UTC（X投稿のタイムスタンプ）",
@@ -278,7 +281,7 @@
      "summary": "「28日間チャレンジ」27日目。前日の予告どおり、2日連続の保存型（banked）リセットの1回目を付与（「Banked 1/2」）。",
      "url": "https://x.com/thsottiaux/status/2116692529970311254",
      "poster": "Tibo（@thsottiaux / OpenAI Codex責任者）",
-     "note": "前日（26日目）の予告：https://x.com/thsottiaux/status/2116405414921384099 。2回目は翌日の投稿で付与予定。",
+     "note": "前日（26日目）の予告：https://x.com/thsottiaux/status/2116405414921384099 。2回目（Banked 2/2）は翌日に付与：https://x.com/thsottiaux/status/2117035794678546764 。",
      "id": "2116692529970311254",
      "scope": "未明記",
      "type": "banked",
@@ -309,7 +312,7 @@
       "en": "Not specified"
      },
      "note_i18n": {
-      "en": "Teaser the day before (Day 26): https://x.com/thsottiaux/status/2116405414921384099 . The second one is expected in the next day's post."
+      "en": "Teaser the day before (Day 26): https://x.com/thsottiaux/status/2116405414921384099 . The second one (Banked 2/2) was granted the next day: https://x.com/thsottiaux/status/2117035794678546764 ."
      },
      "poster_i18n": {
       "en": "Tibo (@thsottiaux / OpenAI Codex lead)"
@@ -922,50 +925,7 @@
    "id": "bolt",
    "name": "Bolt",
    "official_name": "Bolt (bolt.new / StackBlitz)",
-   "items": [
-    {
-     "announced_utc": "2026-10-02T16:08:03Z",
-     "announced_jst": "2026-10-03T01:08:03+09:00",
-     "original_timezone": "UTC（X投稿のタイムスタンプ）",
-     "effective": "発表時点で即時リセット（発表文より）",
-     "effective_jst_iso": null,
-     "summary": "全BoltユーザーのForgeトークンをリセットしたと発表。あわせてGLM・DeepSeek・Kimiがモデル選択に並んでいると案内。",
-     "url": "https://x.com/boltdotnew/status/2106053610412847520",
-     "poster": "bolt.new（@boltdotnew / 公式アカウント）",
-     "id": "2106053610412847520",
-     "scope": "全BoltユーザーのForgeトークン",
-     "type": "immediate",
-     "status": "done",
-     "source_time_text": null,
-     "source_tz": null,
-     "source_local_datetime": null,
-     "time_precision": null,
-     "source_tz_assumed": null,
-     "confirmed_url": null,
-     "confirmed_utc": null,
-     "summary_i18n": {
-      "en": "Announced that Forge tokens were reset for every Bolt user, noting GLM, DeepSeek and Kimi are available in the model picker.",
-      "zh-Hans": "宣布已为所有 Bolt 用户重置 Forge 代币，并提示模型选择器中已提供 GLM、DeepSeek 和 Kimi。",
-      "zh-Hant": "宣布已為所有 Bolt 使用者重置 Forge 代幣，並提示模型選擇器中已提供 GLM、DeepSeek 與 Kimi。",
-      "ko": "모든 Bolt 사용자의 Forge 토큰을 리셋했다고 발표하고, 모델 선택기에서 GLM·DeepSeek·Kimi를 쓸 수 있다고 안내.",
-      "es": "Anunció que se reiniciaron los tokens Forge de todos los usuarios de Bolt y que GLM, DeepSeek y Kimi están en el selector de modelos.",
-      "fr": "Annonce de la réinitialisation des jetons Forge de tous les utilisateurs de Bolt ; GLM, DeepSeek et Kimi sont disponibles dans le sélecteur de modèles.",
-      "de": "Kündigte an, dass die Forge-Tokens aller Bolt-Nutzer zurückgesetzt wurden; GLM, DeepSeek und Kimi stehen in der Modellauswahl bereit.",
-      "pt-BR": "Anunciou o reset dos tokens Forge de todos os usuários do Bolt e que GLM, DeepSeek e Kimi estão no seletor de modelos.",
-      "hi": "सभी Bolt उपयोगकर्ताओं के Forge टोकन रीसेट करने की घोषणा; मॉडल पिकर में GLM, DeepSeek और Kimi उपलब्ध हैं।",
-      "id": "Mengumumkan reset token Forge untuk semua pengguna Bolt; GLM, DeepSeek, dan Kimi tersedia di pemilih model."
-     },
-     "effective_i18n": {
-      "en": "Immediate reset at the time of the announcement (per the post)."
-     },
-     "scope_i18n": {
-      "en": "Forge tokens for every Bolt user"
-     },
-     "poster_i18n": {
-      "en": "bolt.new (@boltdotnew, official account)"
-     }
-    }
-   ],
+   "items": [],
    "name_en": "Bolt",
    "name_i18n": {
     "en": "Bolt",
