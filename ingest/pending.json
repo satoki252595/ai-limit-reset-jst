@@ -42,6 +42,14 @@
    "url": "https://x.com/thsottiaux/status/2116405414921384099",
    "reason": "Day 26 post (multi-account switching on mobile) says 'Next two days will be resets… banked… do with this what you may'. Allowlisted author, but it is a teaser with no date, time or time zone and no scope; Day 26 itself is not a reset. Not published. Expect Day 27/28 posts (around 2026-11-01/02, previous Day posts ~05:40 UTC) to carry the actual banked resets; publish those as banked entries when they appear. Ask the user once whether to also publish this teaser as a scheduled/approximate entry. SUPERSEDED 2026-11-01 12:55 JST: the Day 27 post 'Banked 1/2' (https://x.com/thsottiaux/status/2116692529970311254) was published as a banked entry; the teaser itself will not be published. Watch for 'Banked 2/2'.",
    "status": "superseded"
+  },
+  {
+   "id": "observed-2026-11-02-grokbot-usage-halved",
+   "service": "grok",
+   "announced_utc": "2026-11-02T09:06:56Z",
+   "channel": "observed (user reports on X of Grok Bot weekly usage dropping mid-cycle)",
+   "url": "https://x.com/XFreeze/status/2117181654657847430",
+   "reason": "From about 17:30 JST on Nov 2, 2026 many Grok Bot users reported their weekly usage meter suddenly dropped by roughly half (e.g. 93%→47% https://x.com/XFreeze/status/2117181654657847430 ; 17%→9% https://x.com/kikiwong09/status/2117171373743259958 ; 'reset to 50%' https://x.com/BlueEyedFilly/status/2117238929883607467). No @bot/@xai/@elonmusk post acknowledges it; earlier the same day @elonmusk said Grok Bot serving cost was unsustainably high (2116992258520064397) and promised no reset. Could be a recalibration of the earlier usage spike rather than a reset. No exact time. Publish only if an allowlisted account or official page acknowledges it as a reset."
   }
  ]
 }

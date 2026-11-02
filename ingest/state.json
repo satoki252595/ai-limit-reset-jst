@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-11-02T03:48:00Z",
- "last_run_jst": "2026-11-02T12:48:00+09:00",
+ "last_run_utc": "2026-11-02T15:45:00Z",
+ "last_run_jst": "2026-11-03T00:45:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2117100122966532152",
- "x_calls_this_run": 9,
- "note": "Scheduled run from newest_seen_id 2116917808600613317. Allowlisted query (all README terms incl. Banked/Day and completion phrases): 3 hits — @thsottiaux 'Day 28/ Banked 2/2' (2117035794678546764, already published in weekly audit 54dbba4), @thsottiaux joke reply 'I demand a banked reset' (not an announcement), 1 @bot auto-reply (ignored per rule). @thsottiaux timeline since last id: no other reset posts; no self-replies under Banked 2/2, Banked 1/2, or open scheduled Codex Day 17 (2113162277688070445) / Day 18 (2113492187770175603); Kimi 2114450610724708492 no self-replies — all three stay scheduled-unconfirmed. 28-day Codex run ended with Day 28. @elonmusk/@bot/@xai: Grok Bot usage drain / limit cut discussion (Elon reply 2116992258520064397 'cost of serving Grok Bot was unsustainably high'), not a reset. Non-allowlisted query: 48 results over 2 pages (covered back to since_id): chatter about Banked 2/2 (already published), Grok Bot users asking for a reset (requests only). Japanese query and Muse reset check: only users' regular weekly-reset chatter, no global reset. No new published or pending. Official sources via curl: help.openai 403 (known); other 37 sources 200; no new reset announcements. No X call failures or rate limits."
+ "newest_seen_id": "2117279402077860047",
+ "x_calls_this_run": 10,
+ "note": "Scheduled run from newest_seen_id 2117100122966532152. Full-term allowlisted query (1069 chars) and a split query returned 0 (possibly length-related), so a short-term allowlisted query (reset/limits/limit/banked/quota/usage/done/landed/live) was used: only 2 @bot auto-replies (ignored per rule). No self-replies under open scheduled Codex Day 17 (2113162277688070445) / Day 18 (2113492187770175603) or Kimi (2114450610724708492); all stay scheduled-unconfirmed. Non-allowlisted query: 75 results over 3 pages (back to ~05:24 UTC Nov 2; older part of the window covered by the previous run's scan up to 2117100122966532152 only partly — page 4 not fetched): Codex Banked 2/2 chatter (already published), and many Grok Bot users reporting their weekly usage meter dropping ~50% mid-cycle from ~08:26 UTC Nov 2 with no official post -> added pending observed-2026-11-02-grokbot-usage-halved. Japanese query: 1 news roundup, nothing new. Official sources via curl: help.openai 403 (known); other 33 official sources 200; no new reset announcements. No X call failures or rate limits."
 }
