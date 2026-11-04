@@ -115,11 +115,6 @@
     "source": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny"
    },
    {
-    "username": "_catwu",
-    "role": "Head of Product, Claude Code, Anthropic",
-    "source": "https://linkedin.com/in/cat-wu"
-   },
-   {
     "username": "trq212",
     "role": "Member of Technical Staff, Claude Code team, Anthropic",
     "source": "https://linkedin.com/in/thariqshihipar"
@@ -220,6 +215,10 @@
   {
    "username": "windsurf",
    "reason": "Retired account (bio: 'The product formerly known as Windsurf'); posts nothing. Use @cognition."
+  },
+  {
+   "username": "_catwu",
+   "reason": "Left Anthropic (farewell post 2026-11-03, https://x.com/_catwu/status/2117731934340337676: \"Friday was my last day at Anthropic\"); no longer an official Claude Code voice."
   }
  ]
 }
