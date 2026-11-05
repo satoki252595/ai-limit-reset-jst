@@ -1,8 +1,8 @@
 {
- "last_run_utc": "2026-11-04T15:45:00Z",
- "last_run_jst": "2026-11-05T00:45:00+09:00",
+ "last_run_utc": "2026-11-05T03:47:00Z",
+ "last_run_jst": "2026-11-05T12:47:00+09:00",
  "searched_since_utc": "2026-09-10T00:00:00Z",
- "newest_seen_id": "2118005794721706467",
- "x_calls_this_run": 10,
- "note": "Scheduled run from newest_seen_id 2117821925531730351. Allowlisted queries split into two 16/15-author groups x three term sets (all <=506 chars): 0 results each. Sanity no-term top-level query on 10 key accounts: only @thsottiaux 'ChatBLT' quote post (2117888243119304945; not a reset), so search is working. No self-replies under open scheduled Codex Day 17 (2113162277688070445) / Day 18 (2113492187770175603) or Kimi (2114450610724708492); all stay scheduled-unconfirmed. Non-allowlisted query (12 results): user chatter only (people redeeming banked Codex/Claude resets, a Chinese user post saying no global reset today, questions to OpenAI about reset cards, speculation about a reset with an 'Astra 6.2' launch); nothing new for pending. Japanese query: 2 results, user chatter only. Official sources via curl: help.openai 403 (known); other 37 sources 200; no new reset announcements. No pruning needed. No X call failures or rate limits."
+ "newest_seen_id": "2118176861796933750",
+ "x_calls_this_run": 8,
+ "note": "Scheduled run from newest_seen_id 2118005794721706467. Allowlisted queries split into two 16/15-author groups x two term sets (all under ~500 chars). Hits were not resets: @ClaudeDevs 2118063143167693011 (background subagents now use less of the usage limit; efficiency change, not a reset), @OpenAIDevs October recap article, @bot auto-reply, @boltdotnew and @Kimi_Moonshot replies. Sanity top-level query on 10 key accounts: Kimi K3.1 Pro weights release (2118010528123773297), GPT-Image-2.6 in Codex, Grok Bot phone calls, @thsottiaux welcome/team posts; none mention a reset. No self-replies under open scheduled Codex Day 17 (2113162277688070445) / Day 18 (2113492187770175603) or Kimi (2114450610724708492); all stay scheduled-unconfirmed. Non-allowlisted query (4 results): user chatter only (asking Tibo for reset cards, comparison of Codex vs Claude banked resets). Japanese query: 5 results, user chatter only. Official sources via curl: help.openai 403 (known); other 37 sources 200; no new reset announcements (Kimi benefits page notes weekly quota removed for new members, a plan rule, not a reset). No pruning needed. No X call failures or rate limits."
 }
